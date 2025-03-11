@@ -6,12 +6,13 @@ book:
   author: "Zhou Yingxi"
   date: "2025/3/11"
   chapters:
-    - week1.qmd
+    - index.qmd
     - week2.qmd
     - week3.qmd
     - week4.qmd
     - week5.qmd
     - week7.qmd
+    - references.qmd
 
 bibliography: references.bib
 
