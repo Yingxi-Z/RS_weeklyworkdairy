@@ -3,13 +3,15 @@ project:
 
 book:
   title: "RSbook"
-  author: "Norah Jones"
+  author: "Zhou Yingxi"
   date: "2025/3/11"
   chapters:
-    - index.qmd
-    - intro.qmd
-    - summary.qmd
-    - references.qmd
+    - week1.qmd
+    - week2.qmd
+    - week3.qmd
+    - week4.qmd
+    - week5.qmd
+    - week7.qmd
 
 bibliography: references.bib
 
