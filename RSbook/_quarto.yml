@@ -1,10 +1,11 @@
 project:
   type: book
+  output-dir: docs
 
 book:
   title: "RSbook"
   author: "Zhou Yingxi"
-  date: "2025/3/11"
+  date: "2025/3/16"
   chapters:
     - index.qmd
     - week2.qmd
