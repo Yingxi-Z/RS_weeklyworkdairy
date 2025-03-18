@@ -1,3 +1,3 @@
 # Welcome {.unnumbered}
 
-Hi there! I'm Yingxi. On the following pages you'll find my learning dairy for module CASA0023-Remote Sensing For Cities and Environment , featured in the CASA, UCL, MSc program. For each week, you'll find a short summary of some concepts covered that week, examples of how they are applied and some personal reflections.
+Hi there! I'm Yingxi. On the following pages you'll find my learning dairy for module CASA0023-Remote Sensing Cities and Environment , featured in the CASA, UCL, MSc program. For each week, you'll find a short summary of some concepts covered that week, examples of how they are applied, my learning outcomes and some personal reflections.

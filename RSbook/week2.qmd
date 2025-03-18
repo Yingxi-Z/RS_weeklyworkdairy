@@ -1,9 +1,7 @@
-# Introduction
+# Getting started with Remote sensing
 
-This is a book created from markdown and executable code.
+## 1. Summary
 
-See @knuth84 for additional discussion of literate programming.
+## 2. learning outcomes
 
-```{r}
-1 + 1
-```
+## 3. Reflection
