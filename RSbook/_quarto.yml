@@ -5,7 +5,7 @@ project:
 book:
   title: "RSbook- learning dairy"
   author: "Zhou Yingxi"
-  date: "2025/3/16"
+  date: "2025/3/18"
   chapters:
     - index.qmd
     - week2.qmd
