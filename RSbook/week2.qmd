@@ -1,8 +1,8 @@
 # Getting started with Remote sensing
 
-## 1. Summary
+## Summary
 
-### 1.1 What is Remote Sensing?
+### What is Remote Sensing?
 
 -   Remote sensing is basically a way of collecting information about places or objects without physically being there.
 
@@ -10,12 +10,12 @@
 
 -   Think of it like taking a photo from space, but with more than just visible light—some sensors can see heat, detect moisture, or even see through clouds!
 
-### 1.2 Types of Remote Sensing
+### Types of Remote Sensing
 
 -   Passive sensing → Relies on sunlight (like a regular camera, human eyes, satellite sensor).
 
 -   Active sensing → Sends out its own signals and measures the response (like radar or LiDAR).
 
-## 2. Learning outcomes
+## Applications
 
-## 3. Reflection
+## Reflection
