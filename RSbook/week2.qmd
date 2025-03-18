@@ -2,6 +2,20 @@
 
 ## 1. Summary
 
-## 2. learning outcomes
+### 1.1 What is Remote Sensing?
+
+-   Remote sensing is basically a way of collecting information about places or objects without physically being there.
+
+-   It works by detecting energy (usually light or heat) that bounces off the Earth’s surface.
+
+-   Think of it like taking a photo from space, but with more than just visible light—some sensors can see heat, detect moisture, or even see through clouds!
+
+### 1.2 Types of Remote Sensing
+
+-   Passive sensing → Relies on sunlight (like a regular camera, human eyes, satellite sensor).
+
+-   Active sensing → Sends out its own signals and measures the response (like radar or LiDAR).
+
+## 2. Learning outcomes
 
 ## 3. Reflection

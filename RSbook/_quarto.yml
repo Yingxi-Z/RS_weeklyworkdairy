@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 book:
-  title: "RSbook"
+  title: "RSbook- learning dairy"
   author: "Zhou Yingxi"
   date: "2025/3/16"
   chapters:
