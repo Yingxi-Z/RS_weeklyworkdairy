@@ -1,0 +1,17 @@
+### 1.SAR fundamentals
+SAR:
+Different surfaces respond differently to the polarizations
+A SAR signal has both amplitude (backscatter) and phase data.
+different weather show different signal: windy day-the surface of the water is rough
+
+InSAR: combine two or more SAR image
+DInSAR: remove the effet of natural elevtation (DSM/DEM/DTM)
+
+### 2. GEE SAR
+SAR data values:
+identify changes: 
+substract image is not suitable for SAR 
+Ratio images: IR(improved ratio);mean; log; IRL(improved log ratio)
+which is best and how to test them?
+
+
