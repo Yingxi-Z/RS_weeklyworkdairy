@@ -16,6 +16,50 @@
 
 -   Active sensing → Sends out its own signals and measures the response (like radar or LiDAR).
 
+### Electromagnetic Radiation
+
+-   Remote sensing works by detecting electromagnetic radiation (EMR), which includes visible light, infrared, and other types of waves.
+
+-   Different surfaces reflect and absorb EMR differently, so we can use this to identify and analyze objects from a distance.
+
+-   Remote sensing uses different parts of the electromagnetic spectrum：
+
+![](images/EM_spectrum_compare_level1_lg.jpg)
+
+Figure 1 (source: )
+
+### Resolution – How clear is the Image?
+
+-   Spatial resolution – How detailed an image is (higher resolution = smaller objects visible).
+
+-   Temporal resolution – How often images are taken (e.g., some satellites scan daily, others every few weeks).
+
+-   Spectral resolution – How many “colors” or wavelengths are detected (more bands = more data about the environment).
+
+-   Radiometric resolution – How precisely differences in energy levels are recorded (higher bit depth = more subtle variations detected).
+
 ## Applications
 
+Remote sensing has a wide range of applications in environmental monitoring, agriculture, disaster management, urban planning, and security. In environmental studies, satellite imagery helps track deforestation, land use changes, and air and water pollution. High spatial resolution images from satellites like Sentinel-2 and Landsat monitor illegal logging and urban expansion. Spectral resolution data, particularly near-infrared, assesses vegetation health and carbon storage, while satellites like MODIS and Sentinel-5P detect pollutants in the atmosphere and water bodies.
+
+In agriculture, remote sensing supports precision farming by monitoring crop health, soil moisture, and irrigation. Multispectral sensors detect plant stress and diseases early, while thermal infrared data tracks soil moisture and evaporation. High-resolution imagery allows for targeted fertilization and pest control, improving efficiency and reducing waste. These technologies help ensure food security by optimizing agricultural production.
+
+Disaster management heavily relies on remote sensing for early warning and response. Radar satellites like Sentinel-1, with frequent temporal resolution, track flood extent even through cloud cover. Wildfires are detected in real time using thermal infrared sensors, allowing rapid emergency response. Earthquakes and landslides can be predicted and monitored using high spatial and radiometric resolution data, helping assess risk and mitigate damage.
+
+In urban planning, remote sensing assists in monitoring city growth, transportation networks, and the heat island effect. Thermal infrared data identifies temperature variations in urban areas, guiding sustainable city development. Traffic patterns and congestion can also be analyzed through satellite imagery, supporting better infrastructure planning.
+
+Security and defense use remote sensing for border surveillance, maritime monitoring, and disaster response. Radar and optical satellites track illegal activities such as smuggling and unauthorized fishing. High temporal resolution images assist in military strategy and humanitarian aid planning.
+
+Overall, remote sensing plays a crucial role in various fields, with different types of resolution providing essential data for decision-making. As technology advances, its applications will continue to expand, offering more detailed insights into our world.
+
 ## Reflection
+
+This lecture provided a clear introduction to remote sensing, focusing on key concepts like spatial, temporal, spectral, and radiometric resolution. I had a general idea of how satellite imagery works, but I didn’t realize how different types of resolution determine what kind of information can be extracted. For example, high temporal resolution is essential for disaster monitoring, while high spectral resolution is better suited for analyzing vegetation health. Understanding these differences helped me see why different satellites are designed for specific applications.
+
+One of the most interesting aspects was learning about the wide range of applications. I was aware that remote sensing is used for weather forecasting and mapping, but I hadn’t considered its role in agriculture, urban planning, and security. It was fascinating to see how thermal infrared sensors detect wildfires in real-time, how radar satellites track floods through cloud cover, and how spectral data can reveal plant stress before it’s visible. The idea that satellite imagery can help design cooler cities by analyzing heat islands also stood out to me.
+
+While the lecture covered the fundamentals, I’m curious about how satellite data is processed and analyzed. The raw images must be converted into meaningful insights, often using GIS and machine learning techniques. I’d like to explore more about how large-scale environmental changes are detected and modeled over time.
+
+Overall, this lecture gave me a deeper appreciation for remote sensing and its impact on our world. It’s amazing how much satellite data influences daily life, from food production to disaster response. Moving forward, I want to learn more about the analytical side of remote sensing and how it connects with my research interests.
+
+## Reference
