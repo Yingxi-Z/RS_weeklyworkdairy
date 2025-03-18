@@ -28,5 +28,15 @@
     "crumbs": [
       "References"
     ]
+  },
+  {
+    "objectID": "week9.html",
+    "href": "week9.html",
+    "title": "7  1.SAR fundamentals",
+    "section": "",
+    "text": "SAR: Different surfaces respond differently to the polarizations A SAR signal has both amplitude (backscatter) and phase data. different weather show different signal: windy day-the surface of the water is rough\nInSAR: combine two or more SAR image DInSAR: remove the effet of natural elevtation (DSM/DEM/DTM)\n\n7.0.1 2. GEE SAR\nSAR data values: identify changes: substract image is not suitable for SAR Ratio images: IR(improved ratio);mean; log; IRL(improved log ratio) which is best and how to test them?",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>1.SAR fundamentals</span>"
+    ]
   }
 ]
