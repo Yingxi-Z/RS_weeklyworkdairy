@@ -7,15 +7,11 @@ output:
     lib_dir: libs
     nature:
       highlightStyle: github
-      countIncrementalSlides: false
----
-
+      countIncrementalSlides: true
+---     
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
 ```
-
----
-
 ## Introduction: What is Sentinel-1 SAR?
 
 - **Sentinel-1** is a satellite mission under the **Copernicus Programme** (ESA)
@@ -24,7 +20,6 @@ options(htmltools.dir.version = FALSE)
   - Works in **all weather conditions** (unlike optical satellites)
   - Useful for **disaster response, urban planning, and environmental monitoring**
   - Detects **flooding, land deformation, and deforestation**
-
 ---
 
 ## Technical Overview
