@@ -1,0 +1,88 @@
+---
+title: "Sentinel-1 SAR: A Satellite-Based Remote Sensing Sensor"
+author: "Yingxi Zhou"
+date: "March 2025"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+---
+
+## Introduction: What is Sentinel-1 SAR?
+
+- **Sentinel-1** is a satellite mission under the **Copernicus Programme** (ESA)
+- Uses **Synthetic Aperture Radar (SAR)** for high-resolution Earth imaging
+- **Key Benefits:**
+  - Works in **all weather conditions** (unlike optical satellites)
+  - Useful for **disaster response, urban planning, and environmental monitoring**
+  - Detects **flooding, land deformation, and deforestation**
+
+---
+
+## Technical Overview
+
+- **SAR Imaging Principle:** Active microwave sensor transmitting signals and analyzing return waves
+- **Sentinel-1A & 1B:** Launched in **2014 & 2016**
+- **Spatial Resolution:** ~5m x 20m (Interferometric Wide Swath Mode)
+- **Revisit Time:** 6–12 days (global coverage)
+
+---
+
+## Application 1: Flood Monitoring & Disaster Management
+
+- **Case Study:** Sentinel-1 SAR mapped the **2021 Henan Floods (China)**
+- **How?** Detects water-covered areas by identifying changes in surface backscatter
+- **Impact:**
+  - Provided real-time flood extent data for emergency response
+  - Unlike optical satellites, SAR works even during storms & at night
+
+---
+
+## Application 2: Urban Growth & Land Subsidence
+
+- **Case Study:** Sentinel-1 SAR tracked urban sprawl & land subsidence in **Jakarta**
+- **Method:** Interferometric SAR (InSAR) to measure ground movement
+- **Findings:** Jakarta is sinking **10-20 cm per year** due to groundwater extraction
+- **Urban Impact:** Helps policymakers tackle **sinking cities**
+
+---
+
+## Challenges & Limitations
+
+- **Complex Data Processing:** Requires expertise in **GIS & Machine Learning**
+- **Resolution Trade-Off:** Not as detailed as LiDAR for small-scale studies
+- **Interference Issues:** Surface roughness & vegetation can affect accuracy
+
+---
+
+## Reflection: Insights & Future Applications
+
+- **Personal Insight:** SAR’s ability to **see through clouds & work at night** makes it vital for disaster response
+- **Future Use Cases:**
+  - Integration of **Sentinel-1 SAR with deep learning** for real-time flood mapping
+  - Potential in **Manchester flooding studies** (relevant to your research!)
+  - Long-term urban growth monitoring for **sustainable city planning**
+
+---
+
+## Conclusion
+
+- **Why Sentinel-1 SAR matters:** Flood detection, urban growth analysis, and disaster management
+- **Final Thought:** SAR technology will continue evolving, playing a vital role in **climate resilience & smart cities**
+
+---
+
+## References
+
+- European Space Agency (ESA), Sentinel-1 Data Documentation
+- Research papers on **SAR-based flood mapping & urban subsidence monitoring**
+- Copernicus Programme reports on **Sentinel-1 applications**
+
