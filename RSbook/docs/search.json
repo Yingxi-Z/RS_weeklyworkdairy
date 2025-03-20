@@ -88,5 +88,15 @@
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Getting started with Remote sensing</span>"
     ]
+  },
+  {
+    "objectID": "week3.html",
+    "href": "week3.html",
+    "title": "2  Xaringan",
+    "section": "",
+    "text": "The content for week 2 is a presentation in Xaringan on the Sentinel-1 SAR satellite.\nThe presentation is below, and the summary, application, and reflection are all included in the slides.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Xaringan</span>"
+    ]
   }
 ]

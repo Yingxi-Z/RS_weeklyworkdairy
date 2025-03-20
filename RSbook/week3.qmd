@@ -1,11 +1,9 @@
 # Xaringan
----
-title: "2.1 Xaringan Presentation - Sentinel-1 SAR"
-format: html
----
 
 The content for week 2 is a presentation in Xaringan on the **Sentinel-1 SAR** satellite.  
 The presentation is below, and the summary, application, and reflection are all included in the slides.
 
+
 ```{r, echo=FALSE}
-knitr::include_url("https://yingxi-z.github.io/RS_weeklyworkdairy/RSbook/xaringan")
+<iframe src="https://yingxi-z.github.io/RS_weeklyworkdairy/RSbook/xaringan.html" width="100%" height="600px"></iframe>
+
