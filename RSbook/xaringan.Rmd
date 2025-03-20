@@ -1,6 +1,6 @@
 ---
 title: "Sentinel-1 SAR: A Satellite-Based Remote Sensing Sensor"
-author: "Yingxi"
+author: "Zhou Yingxi"
 date: "March 2025"
 output:
   xaringan::moon_reader:
