@@ -98,5 +98,55 @@
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Xaringan</span>"
     ]
+  },
+  {
+    "objectID": "week4.html",
+    "href": "week4.html",
+    "title": "3  Remote Sensing Data Processing",
+    "section": "",
+    "text": "3.1 Correction of Remote Sensing Data",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Remote Sensing Data Processing</span>"
+    ]
+  },
+  {
+    "objectID": "week4.html#correction-of-remote-sensing-data",
+    "href": "week4.html#correction-of-remote-sensing-data",
+    "title": "3  Remote Sensing Data Processing",
+    "section": "",
+    "text": "3.1.1 Geometric Correction\n\nProblem: Image positions don’t match actual geographic locations\nCauses:\n\nEarth curvature effects\nSensor viewing angle deviations\nPlatform attitude variations (satellite/aircraft movement)\n\nCorrection Process:\n\nGround Control Points (GCPs): Identify corresponding points between image and real ground\nTransformation Model: Calculate correction formulas (typically polynomial)\nResampling: Assign values to new grid\n\nNearest Neighbor: Preserves original values, suitable for classified data\nBilinear Interpolation: Averages values, produces smoother results\nCubic Convolution: High quality but computationally intensive\n\n\n\n\n\n3.1.2 Atmospheric Correction\n\nProblem: Atmospheric gases and particles interfere with signal transmission\n\nScattering: Changes light direction, increases path radiance\nAbsorption: Weakens signal strength at specific wavelengths\n\nCorrection Methods:\n\nDark Object Subtraction (DOS): Assumes brightness in dark areas comes from atmospheric scattering\nRadiative Transfer Code: Uses physical models to simulate and remove atmospheric effects\nEmpirical Line Correction: Establishes empirical relationships using ground measurements\nSecond-Order Derivative: Reduces background interference in spectral curves\n\nPractical Advice: DOS suitable for beginners, radiative transfer models recommended for professional analysis\n\n\n\n3.1.3 Orthorectification\n\nSpecial type of geometric correction that eliminates displacement caused by terrain\nRequires DEM data to calculate actual position of each pixel\nGenerates orthoimages with uniform scale for direct measurement\n\n\n\n3.1.4 Reflectance Correction\n\nConversion from Digital Numbers (DN) to physical values\nSteps include:\n\nRadiometric calibration: DN to radiance\nTop-of-Atmosphere (TOA) reflectance: Accounts for solar illumination\nSurface reflectance: After atmospheric correction\n\nEssential for quantitative analysis and multi-temporal comparisons\n\n\n\n3.1.5 Data Mosaicking\n\nCombines multiple images into a seamless large-area image\nProcessing Steps:\n\nPrecise registration of adjacent images\nRadiometric balancing to eliminate color differences\nSeamline optimization to avoid obvious features\nEdge blending to eliminate visible seams",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Remote Sensing Data Processing</span>"
+    ]
+  },
+  {
+    "objectID": "week4.html#enhancement-and-analysis-of-remote-sensing-data",
+    "href": "week4.html#enhancement-and-analysis-of-remote-sensing-data",
+    "title": "3  Remote Sensing Data Processing",
+    "section": "3.2 Enhancement and Analysis of Remote Sensing Data",
+    "text": "3.2 Enhancement and Analysis of Remote Sensing Data\n\n3.2.1 Image Enhancement Techniques\n\nContrast Stretching: Expands histogram to enhance feature distinctiveness\nFiltering:\n\nLow-pass filters: Smooth noise\nHigh-pass filters: Enhance edges\n\nBand Combinations: Highlight specific features through different band combinations\nPrincipal Component Analysis (PCA): Dimension reduction while preserving key information\nTexture Analysis: Extracts information about spatial arrangement patterns\n\n\n\n3.2.2 Remote Sensing Indices\n\nVegetation Indices:\n\nNDVI = (NIR-Red)/(NIR+Red): Reflects vegetation vigor\nEVI: Improved NDVI, reduces soil background effects\nSAVI: Suitable for areas with sparse vegetation\n\nWater Indices:\n\nNDWI = (Green-NIR)/(Green+NIR): Extracts water bodies\nMNDWI: Improved version, reduces building interference\n\nBuilt-up Indices:\n\nNDBI = (SWIR-NIR)/(SWIR+NIR): Highlights urban built-up areas\n\nOther Thematic Indices:\n\nSoil indices, snow cover indices, drought indices, etc.\n\n\n\n\n3.2.3 Image Classification Methods\n\nSupervised Classification:\n\nRequires training samples of known categories\nAlgorithms: Maximum Likelihood, Support Vector Machine, Random Forest, Deep Learning\nAdvantages: High accuracy, strong controllability\n\nUnsupervised Classification:\n\nAutomatic clustering, no prior knowledge needed\nAlgorithms: K-means, ISODATA\nAdvantages: Fast, suitable for preliminary analysis of unknown areas\n\nObject-Based Classification:\n\nSegment first, then classify based on homogeneous regions\nConsiders shape, texture, contextual relationships\nSuitable for high-resolution image analysis\n\n\n\n\n3.2.4 Accuracy Assessment\n\nError Matrix: Compares predicted categories with reference data\nEvaluation Metrics:\n\nOverall Accuracy: Total proportion correctly classified\nUser’s Accuracy: Reliability of a classified category (reduces misclassification)\nProducer’s Accuracy: Completeness of an actual category (reduces omission)\nKappa Coefficient: Accounts for the possibility of random correctness\n\n\n\n\n3.2.5 Change Detection Techniques\n\nImage Differencing: Direct calculation of multi-temporal image differences\nRatio Analysis: Calculates before/after ratios, reduces illumination effects\nPost-Classification Comparison: Compares classification results from different periods\nChange Vector Analysis: Direction and magnitude of changes across multiple bands",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Remote Sensing Data Processing</span>"
+    ]
+  },
+  {
+    "objectID": "week4.html#section",
+    "href": "week4.html#section",
+    "title": "3  Remote Sensing Data Processing",
+    "section": "3.3 ",
+    "text": "3.3",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Remote Sensing Data Processing</span>"
+    ]
+  },
+  {
+    "objectID": "week4.html#reference",
+    "href": "week4.html#reference",
+    "title": "3  Remote Sensing Data Processing",
+    "section": "5.1 Reference",
+    "text": "5.1 Reference",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Remote Sensing Data Processing</span>"
+    ]
   }
 ]
