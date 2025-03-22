@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>4&nbsp; Policy – RSbook- learning dairy</title>
+<title>5&nbsp; Google Earth Engine – RSbook- learning dairy</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./week6.html" rel="next">
-<link href="./week4.html" rel="prev">
+<link href="./week7.html" rel="next">
+<link href="./week5.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week5.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Policy</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week6.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Google Earth Engine</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -132,14 +132,14 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week5.html" class="sidebar-item-text sidebar-link active">
+  <a href="./week5.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Policy</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week6.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">week6.html</span></span></a>
+  <a href="./week6.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Google Earth Engine</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -176,10 +176,15 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">4.1</span> Summary</a></li>
-  <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="header-section-number">4.2</span> Applications</a></li>
-  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">4.3</span> Reflection</a></li>
-  <li><a href="#reference" id="toc-reference" class="nav-link" data-scroll-target="#reference"><span class="header-section-number">4.4</span> Reference</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">5.1</span> Summary</a>
+  <ul class="collapse">
+  <li><a href="#advantages-of-gee" id="toc-advantages-of-gee" class="nav-link" data-scroll-target="#advantages-of-gee"><span class="header-section-number">5.1.1</span> Advantages of GEE</a></li>
+  <li><a href="#key-functions-in-gee" id="toc-key-functions-in-gee" class="nav-link" data-scroll-target="#key-functions-in-gee"><span class="header-section-number">5.1.2</span> Key Functions in GEE</a></li>
+  <li><a href="#essential-tools-in-gee" id="toc-essential-tools-in-gee" class="nav-link" data-scroll-target="#essential-tools-in-gee"><span class="header-section-number">5.1.3</span> Essential Tools in GEE</a></li>
+  </ul></li>
+  <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="header-section-number">5.2</span> Applications</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">5.3</span> Reflection</a></li>
+  <li><a href="#reference" id="toc-reference" class="nav-link" data-scroll-target="#reference"><span class="header-section-number">5.4</span> Reference</a></li>
   </ul>
 </nav>
     </div>
@@ -188,7 +193,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Policy</span></h1>
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Google Earth Engine</span></h1>
 </div>
 
 
@@ -205,50 +210,44 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="summary" class="level2" data-number="4.1">
-<h2 data-number="4.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">4.1</span> Summary</h2>
-<p><strong>Advantages of Using Remote Sensing in Policy</strong>:</p>
-<ul>
-<li><p>Provides objective data at large scales and over long time series</p></li>
-<li><p>Cost-effective, especially for inaccessible areas</p></li>
-<li><p>Supports different stages of policy development</p></li>
-<li><p>Data accuracy has significantly improved, particularly in the last 20 years</p></li>
-</ul>
-<p><strong>Key Policy Frameworks</strong>: UN Sustainable Development Goals (SDGs); UN Sendai Framework for Disaster Risk Reduction ; GEO (Group on Earth Observations) working groups; Copernicus program (European)</p>
-<p><strong>Remote Sensing Policy Application Examples</strong>:</p>
-<p>- Dujiangyan City light pollution study (night light data)</p>
-<p>- London tree canopy analysis (aerial and satellite data)</p>
-<p>- Climate change assessment and impacts</p>
-<p>- Urban planning and management</p>
-<p>- Disaster risk assessment (e.g., flood risk mapping)</p>
-<p><strong>Challenges &amp; Limitations</strong>:</p>
-<p>- Data accessibility</p>
-<p>- Technical capacity requirements</p>
-<p>- Time delays and frequency issues</p>
-<p>- Communication barriers between decision</p>
-<p>-makers and researchers</p>
-<p>- Need for integration with ground truth</p>
-<p><strong>Policy Implementation Components</strong>:</p>
-<p>- Requires supporting enforcement and monitoring mechanisms</p>
-<p>- Integration of multi-source data for comprehensive analysis</p>
-<p>- Citizen participation and feedback - Policy evaluation and adjustment</p>
+<section id="summary" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">5.1</span> Summary</h2>
+<p>Lecture 5 introduced Google Earth Engine (GEE), a powerful cloud computing platform designed for processing and analyzing geospatial data, particularly remote sensing data. GEE integrates vast geospatial datasets with strong computational capabilities, enabling users to efficiently process and analyze large-scale data.</p>
+<section id="advantages-of-gee" class="level3" data-number="5.1.1">
+<h3 data-number="5.1.1" class="anchored" data-anchor-id="advantages-of-gee"><span class="header-section-number">5.1.1</span> Advantages of GEE</h3>
+<p>Data Storage and Access: Users can access and process data directly in the cloud without downloading large datasets, saving local storage space and improving efficiency.</p>
+<p>Computational Power: Leveraging Google’s robust infrastructure, GEE can handle large-scale data processing, supporting complex analyses and significantly reducing processing time.</p>
+<p>Programming Interface: GEE offers both JavaScript and Python APIs, allowing users to customize analysis workflows as needed. This flexibility makes it suitable for various applications.</p>
 </section>
-<section id="applications" class="level2" data-number="4.2">
-<h2 data-number="4.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">4.2</span> Applications</h2>
-<p>Remote sensing plays a crucial role in formulating and implementing environmental policies, particularly in areas such as ecological protection, climate change mitigation, resource management, and pollution monitoring. By utilizing satellite imagery, drones, and aerial photography, remote sensing provides large-scale, high-frequency data to support decision-making, enabling governments and organizations to develop evidence-based environmental policies.</p>
-<p>First, remote sensing is widely used in <strong>ecological conservation and natural resource management</strong>. For instance, forest cover monitoring helps assess illegal logging, desertification trends, and ecological restoration efforts. The Brazilian government utilizes NASA’s Landsat data to monitor deforestation in the Amazon rainforest and implement policies to curb forest loss. Additionally, wetland and coastal ecosystem monitoring relies on remote sensing to evaluate the impact of climate change and human activities, supporting international agreements such as the Ramsar Convention.</p>
-<p>Second, remote sensing plays a vital role in <strong>air pollution monitoring</strong>. Atmospheric remote sensing technologies, such as MODIS and Sentinel-5P, provide aerosol optical depth (AOD) data to identify pollution sources and inform mitigation strategies. In China, high-resolution Gaofen satellites are used to monitor PM2.5 concentrations and integrate ground-based observations to enhance the effectiveness of air pollution control policies like the “Blue Sky Protection Campaign.”</p>
-<p>In <strong>water resource management and water pollution monitoring</strong>, remote sensing can track changes in lake, reservoir, and river water quality, including chlorophyll concentration, suspended sediments, and algal bloom outbreaks. The European Environment Agency (EEA), through the Copernicus program, uses Sentinel-2 data to monitor eutrophication in major European water bodies, supporting the implementation of the EU Water Framework Directive. Furthermore, remote sensing contributes to flood prediction and sustainable water resource allocation, aiding urban disaster preparedness and long-term water management.</p>
-<p>Regarding <strong>climate change policy</strong>, remote sensing provides long-term climate data, including global temperature trends, glacier retreat, sea-level rise, and carbon flux estimation. NASA’s GRACE satellite monitors global ice mass loss, offering scientific evidence for climate policies under the Paris Agreement. Additionally, remote sensing-based forest carbon storage estimation supports national carbon trading systems, helping governments achieve carbon neutrality goals.</p>
+<section id="key-functions-in-gee" class="level3" data-number="5.1.2">
+<h3 data-number="5.1.2" class="anchored" data-anchor-id="key-functions-in-gee"><span class="header-section-number">5.1.2</span> Key Functions in GEE</h3>
+<p>Image Processing: Functions like ee.Image allow users to manipulate and analyze satellite images, such as applying filters, enhancing contrast, and extracting spectral indices (e.g., NDVI for vegetation analysis).</p>
+<p>Data Collection and Filtering: ee.ImageCollection enables users to work with large datasets, filtering by date, location, or cloud cover.</p>
+<p>Geospatial Statistics: ee.Reducer functions help compute statistical summaries (e.g., mean, median, min/max values) for specific regions.</p>
+<p>Vector Data Processing: ee.Geometry and ee.FeatureCollection handle vector data like points, lines, and polygons for spatial analysis.</p>
 </section>
-<section id="reflection" class="level2" data-number="4.3">
-<h2 data-number="4.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">4.3</span> Reflection</h2>
-<p>One of the most impactful applications of remote sensing in environmental policy is air pollution monitoring. I find it fascinating how satellite-based observations, such as aerosol optical depth (AOD) data from MODIS and Sentinel-5P, provide real-time insights into air quality. Unlike ground-based sensors, which offer limited spatial coverage, remote sensing allows for large-scale and continuous monitoring, making it an essential tool for policymakers.</p>
-<p>A notable example is China’s use of Gaofen satellites to track PM2.5 levels. This data has been integrated into policies like the “Blue Sky Protection Campaign,” helping authorities identify pollution hotspots and measure the effectiveness of emission reduction strategies. However, I have also realized that satellite data alone is not enough—combining remote sensing with ground-based measurements and machine learning models is crucial for improving accuracy and guiding targeted interventions.</p>
-<p>Moving forward, I am particularly interested in how advancements in AI can enhance the interpretation of air pollution data. As urban areas continue to face air quality challenges, developing more sophisticated remote sensing-based monitoring systems could significantly improve policy responses and public health outcomes.</p>
+<section id="essential-tools-in-gee" class="level3" data-number="5.1.3">
+<h3 data-number="5.1.3" class="anchored" data-anchor-id="essential-tools-in-gee"><span class="header-section-number">5.1.3</span> Essential Tools in GEE</h3>
+<p>Code Editor: A powerful web-based IDE that allows users to write JavaScript scripts, visualize data, and execute computations.</p>
+<p>Asset Manager: Users can upload and manage their own datasets, such as shapefiles or raster images.</p>
+<p>Data Catalog: GEE provides access to extensive remote sensing and geospatial datasets, including Landsat, Sentinel, MODIS, and global climate models.</p>
+<p>Map Visualization Tools: Users can overlay processed images, vector data, and computed results onto interactive maps.</p>
 </section>
-<section id="reference" class="level2" data-number="4.4">
-<h2 data-number="4.4" class="anchored" data-anchor-id="reference"><span class="header-section-number">4.4</span> Reference</h2>
+</section>
+<section id="applications" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">5.2</span> Applications</h2>
+<p>Land Cover Change Detection: By analyzing satellite images from different periods, GEE enables monitoring of land use changes, such as urban expansion and deforestation. This is crucial for environmental protection and resource management.</p>
+<p>Environmental Monitoring: GEE can be used to assess environmental indicators such as water quality and air pollution, supporting environmental protection efforts and policy-making. For example, it helps track the spatial and temporal distribution of air pollutants and evaluate their impact on public health.</p>
+<p>Disaster Management: In the aftermath of natural disasters, GEE allows for rapid assessment of affected areas, aiding disaster response and decision-making. For instance, it can analyze flooded regions to support rescue and recovery planning.</p>
+</section>
+<section id="reflection" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">5.3</span> Reflection</h2>
+<p>I found this session particularly insightful because it demonstrated how large-scale geospatial analysis can be conducted efficiently without requiring high-end hardware. The ability to access and process vast datasets in the cloud is a significant advantage, especially for environmental research, urban planning, and disaster management.</p>
+<p>One key takeaway for me was how GEE integrates various datasets, such as Landsat, Sentinel, and MODIS, into a single platform. This makes it much easier to analyze long-term environmental changes without having to manually collect and preprocess data. The fact that GEE provides pre-processed and ready-to-use datasets greatly simplifies geospatial analysis, which is particularly beneficial for beginners like me.</p>
+<p>However, I also found the learning curve to be somewhat challenging. Unlike traditional GIS software, which often has a graphical user interface, GEE requires scripting in JavaScript or Python. Since I have limited programming experience, writing scripts to filter datasets and visualize results was initially difficult. That said, I recognize that learning to code is an essential skill for advanced geospatial analysis, and this lecture motivated me to improve my scripting abilities.</p>
+</section>
+<section id="reference" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="reference"><span class="header-section-number">5.4</span> Reference</h2>
 
 
 </section>
@@ -673,13 +672,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./week4.html" class="pagination-link" aria-label="Remote Sensing Data Processing">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Remote Sensing Data Processing</span></span>
+      <a href="./week5.html" class="pagination-link" aria-label="Policy">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Policy</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./week6.html" class="pagination-link" aria-label="week6.html">
-        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">week6.html</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./week7.html" class="pagination-link" aria-label="week7.html">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">week7.html</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -1,0 +1,51 @@
+# Google Earth Engine
+
+## Summary
+
+Lecture 5 introduced Google Earth Engine (GEE), a powerful cloud computing platform designed for processing and analyzing geospatial data, particularly remote sensing data. GEE integrates vast geospatial datasets with strong computational capabilities, enabling users to efficiently process and analyze large-scale data.
+
+### Advantages of GEE
+
+Data Storage and Access: Users can access and process data directly in the cloud without downloading large datasets, saving local storage space and improving efficiency.
+
+Computational Power: Leveraging Google’s robust infrastructure, GEE can handle large-scale data processing, supporting complex analyses and significantly reducing processing time.
+
+Programming Interface: GEE offers both JavaScript and Python APIs, allowing users to customize analysis workflows as needed. This flexibility makes it suitable for various applications.
+
+### Key Functions in GEE
+
+Image Processing: Functions like ee.Image allow users to manipulate and analyze satellite images, such as applying filters, enhancing contrast, and extracting spectral indices (e.g., NDVI for vegetation analysis).
+
+Data Collection and Filtering: ee.ImageCollection enables users to work with large datasets, filtering by date, location, or cloud cover.
+
+Geospatial Statistics: ee.Reducer functions help compute statistical summaries (e.g., mean, median, min/max values) for specific regions.
+
+Vector Data Processing: ee.Geometry and ee.FeatureCollection handle vector data like points, lines, and polygons for spatial analysis.
+
+### Essential Tools in GEE
+
+Code Editor: A powerful web-based IDE that allows users to write JavaScript scripts, visualize data, and execute computations.
+
+Asset Manager: Users can upload and manage their own datasets, such as shapefiles or raster images.
+
+Data Catalog: GEE provides access to extensive remote sensing and geospatial datasets, including Landsat, Sentinel, MODIS, and global climate models.
+
+Map Visualization Tools: Users can overlay processed images, vector data, and computed results onto interactive maps.
+
+## Applications
+
+Land Cover Change Detection: By analyzing satellite images from different periods, GEE enables monitoring of land use changes, such as urban expansion and deforestation. This is crucial for environmental protection and resource management.
+
+Environmental Monitoring: GEE can be used to assess environmental indicators such as water quality and air pollution, supporting environmental protection efforts and policy-making. For example, it helps track the spatial and temporal distribution of air pollutants and evaluate their impact on public health.
+
+Disaster Management: In the aftermath of natural disasters, GEE allows for rapid assessment of affected areas, aiding disaster response and decision-making. For instance, it can analyze flooded regions to support rescue and recovery planning.
+
+## Reflection
+
+I found this session particularly insightful because it demonstrated how large-scale geospatial analysis can be conducted efficiently without requiring high-end hardware. The ability to access and process vast datasets in the cloud is a significant advantage, especially for environmental research, urban planning, and disaster management.
+
+One key takeaway for me was how GEE integrates various datasets, such as Landsat, Sentinel, and MODIS, into a single platform. This makes it much easier to analyze long-term environmental changes without having to manually collect and preprocess data. The fact that GEE provides pre-processed and ready-to-use datasets greatly simplifies geospatial analysis, which is particularly beneficial for beginners like me.
+
+However, I also found the learning curve to be somewhat challenging. Unlike traditional GIS software, which often has a graphical user interface, GEE requires scripting in JavaScript or Python. Since I have limited programming experience, writing scripts to filter datasets and visualize results was initially difficult. That said, I recognize that learning to code is an essential skill for advanced geospatial analysis, and this lecture motivated me to improve my scripting abilities.
+
+## Reference
