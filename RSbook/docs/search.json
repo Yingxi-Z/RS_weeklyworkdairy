@@ -248,5 +248,55 @@
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Google Earth Engine</span>"
     ]
+  },
+  {
+    "objectID": "week7.html",
+    "href": "week7.html",
+    "title": "6  Classification Ⅰ",
+    "section": "",
+    "text": "6.1 Summary\nThis lecture covered classification methods in remote sensing, particularly supervised and unsupervised classification. Classification is essential in spatial analysis as it helps extract meaningful information from satellite imagery.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Classification Ⅰ</span>"
+    ]
+  },
+  {
+    "objectID": "week7.html#summary",
+    "href": "week7.html#summary",
+    "title": "6  Classification Ⅰ",
+    "section": "",
+    "text": "6.1.1 Supervised Classification\nSupervised classification relies on labeled training data to categorize pixels. Common methods include:\n\nMaximum Likelihood Classification (MLC): Assumes a normal distribution of data and assigns each pixel to the class with the highest probability.\nSupport Vector Machines (SVM): Identifies an optimal decision boundary between different classes.\nRandom Forest (RF): A machine learning approach using multiple decision trees for classification.\n\n\n\n6.1.2 Unsupervised Classification\nUnsupervised classification groups pixels into clusters based on spectral properties without predefined labels. Common methods include:\n\nK-Means Clustering: Iteratively assigns pixels to K clusters by minimizing variance.\nISODATA (Iterative Self-Organizing Data Analysis): Allows merging and splitting of clusters for more flexibility.\n\nThis method is useful when ground truth data is unavailable, but class labels must be assigned afterward.\n\n\n6.1.3 Mixed Pixels and Challenges\n\nMixed Pixels: A single pixel may contain multiple land cover types, affecting classification accuracy.\nSolutions: Spectral unmixing and increasing spatial resolution can help mitigate this issue.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Classification Ⅰ</span>"
+    ]
+  },
+  {
+    "objectID": "week7.html#applications",
+    "href": "week7.html#applications",
+    "title": "6  Classification Ⅰ",
+    "section": "6.2 Applications",
+    "text": "6.2 Applications\nClassification techniques in remote sensing have numerous real-world applications across environmental monitoring, urban planning, disaster management, and resource assessment. By analyzing satellite imagery, these methods help researchers and decision-makers extract meaningful information to address various global challenges.\nOne of the most common applications is land use and land cover (LULC) mapping. Classification methods allow researchers to distinguish between different land cover types such as forests, urban areas, water bodies, and agricultural fields. This is essential for urban planning, where authorities monitor city expansion and land conversion. Similarly, in deforestation studies, classification helps track forest loss over time, providing critical insights into climate change and conservation efforts. In agriculture, supervised classification techniques are used to differentiate crop types, monitor vegetation health, and estimate yields, helping optimize farming strategies.\nIn environmental monitoring, classification plays a key role in assessing climate change impacts and natural resource management. For example, satellite-based classification is used to analyze desertification trends, glacier retreat, and vegetation changes over time. In coastal zone management, classification helps monitor shoreline changes and detect areas vulnerable to erosion or sea-level rise. Additionally, wetland mapping projects use classification to identify different wetland ecosystems, supporting conservation initiatives.\nDisaster management is another critical area where classification proves useful. In flood-prone regions, classified satellite images help delineate flood-affected areas, allowing authorities to respond effectively. Similarly, wildfire detection relies on classification techniques to identify active fire zones and assess burned areas. In mountainous regions, classification can support landslide risk assessment by identifying unstable slopes and high-risk zones.\nIn transportation and infrastructure, classification helps with road network extraction from satellite images, which is useful for updating maps and planning new routes. Additionally, urban heat island (UHI) studies use classification to analyze heat-retaining surfaces in cities, helping policymakers design cooling strategies like increasing green spaces.\nFinally, water resource management benefits from classification by accurately identifying and monitoring lakes, rivers, and reservoirs. It is also widely used in drought monitoring, where classified images assess vegetation stress and water scarcity.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Classification Ⅰ</span>"
+    ]
+  },
+  {
+    "objectID": "week7.html#reflection",
+    "href": "week7.html#reflection",
+    "title": "6  Classification Ⅰ",
+    "section": "6.3 Reflection",
+    "text": "6.3 Reflection\nThis lecture deepened my understanding of classification techniques in remote sensing, particularly the differences between supervised and unsupervised approaches. I found it fascinating how these methods allow us to extract valuable insights from satellite imagery, helping researchers analyze land use patterns, environmental changes, and disaster impacts. The practical exercises reinforced the theoretical concepts, and I appreciated the opportunity to apply classification algorithms to real-world datasets.\nOne aspect that stood out to me was the challenge of mixed pixels, where a single pixel contains multiple land cover types. This issue highlights the limitations of spatial resolution and the importance of advanced techniques like spectral unmixing. It made me think about how classification accuracy depends not only on the algorithm but also on data quality, resolution, and preprocessing methods. In future studies, I would like to explore how deep learning models, such as convolutional neural networks (CNNs), can improve classification results by learning complex spatial patterns.\nThe applications of classification in disaster management also intrigued me. I had not fully realized the extent to which satellite-based classification supports emergency response efforts, such as flood mapping and wildfire detection. Given my interest in urban and environmental analysis, I see great potential in using classification to study climate-related issues, including urban heat islands and flooding in cities like Manchester. This connects to my ongoing research on Manchester’s flooding problem, where classification techniques could help analyze historical flood patterns and identify high-risk areas.\nOverall, this lecture reinforced the importance of classification in spatial data analysis. It also made me reflect on how I can integrate these techniques into my own research. Moving forward, I aim to enhance my skills in machine learning-based classification and explore its applications in urban resilience and climate adaptation strategies.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Classification Ⅰ</span>"
+    ]
+  },
+  {
+    "objectID": "week7.html#reference",
+    "href": "week7.html#reference",
+    "title": "6  Classification Ⅰ",
+    "section": "6.4 Reference",
+    "text": "6.4 Reference",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Classification Ⅰ</span>"
+    ]
   }
 ]
