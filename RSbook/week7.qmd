@@ -8,7 +8,7 @@ This lecture covered **classification methods** in remote sensing, particularly 
 
 Supervised classification relies on labeled training data to categorize pixels. Common methods include:
 
--    **Maximum Likelihood Classification (MLC):** Assumes a normal distribution of data and assigns each pixel to the class with the highest probability.
+-   **Maximum Likelihood Classification (MLC):** Assumes a normal distribution of data and assigns each pixel to the class with the highest probability.
 
 -   **Support Vector Machines (SVM):** Identifies an optimal decision boundary between different classes.
 
@@ -18,7 +18,7 @@ Supervised classification relies on labeled training data to categorize pixels. 
 
 Unsupervised classification groups pixels into clusters based on spectral properties without predefined labels. Common methods include:
 
--    **K-Means Clustering:** Iteratively assigns pixels to K clusters by minimizing variance.
+-   **K-Means Clustering:** Iteratively assigns pixels to K clusters by minimizing variance.
 
 -   **ISODATA (Iterative Self-Organizing Data Analysis):** Allows merging and splitting of clusters for more flexibility.
 
@@ -26,7 +26,7 @@ This method is useful when ground truth data is unavailable, but class labels mu
 
 ### **Mixed Pixels and Challenges**
 
--    **Mixed Pixels:** A single pixel may contain multiple land cover types, affecting classification accuracy.
+-   **Mixed Pixels:** A single pixel may contain multiple land cover types, affecting classification accuracy.
 
 -   **Solutions:** Spectral unmixing and increasing spatial resolution can help mitigate this issue.
 

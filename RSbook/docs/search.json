@@ -298,5 +298,55 @@
     "crumbs": [
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Classification Ⅰ</span>"
     ]
+  },
+  {
+    "objectID": "week8.html",
+    "href": "week8.html",
+    "title": "7  Classification Ⅱ",
+    "section": "",
+    "text": "7.1 Summary",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Classification Ⅱ</span>"
+    ]
+  },
+  {
+    "objectID": "week8.html#summary",
+    "href": "week8.html#summary",
+    "title": "7  Classification Ⅱ",
+    "section": "",
+    "text": "7.1.1 Classification Methodologies\n\n7.1.1.1 Sub-Pixel Analysis\nSub-pixel analysis addresses the complexity of pixels containing multiple land cover types. Spectral Mixture Analysis (SMA) is a critical technique that decomposes spectral reflectance within a pixel, precisely calculating the proportion of different land covers. This method is particularly useful for accurately classifying mixed pixels by determining the exact contribution of each surface type.\n\n\n7.1.1.2 Object-Based Image Analysis (OBIA)\nOBIA transcends traditional pixel-by-pixel classification by identifying meaningful objects within pixel groups. The primary process involves:\n\nImage segmentation using algorithms like Simple Non-Iterative Clustering (SNIC)\nSupervised or unsupervised classification of identified objects\nConsidering spectral and spatial characteristics of neighboring pixels\n\n\n\n7.1.1.3 Accuracy Assessment\nAccuracy assessment is the cornerstone of reliable remote sensing classification:\n\nProducer’s Accuracy: Percentage of classified samples matching ground truth data\nUser’s Accuracy: Precision of sample matching between different classifications\nOverall Accuracy: Percentage of correctly classified samples across all categories",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Classification Ⅱ</span>"
+    ]
+  },
+  {
+    "objectID": "week8.html#advanced-validation-techniques",
+    "href": "week8.html#advanced-validation-techniques",
+    "title": "7  Classification Ⅱ",
+    "section": "7.2 Advanced Validation Techniques",
+    "text": "7.2 Advanced Validation Techniques\n\n7.2.1 Confusion Matrix\nA critical tool for evaluating classification performance:\n\nDisplays correct prediction scenarios\nAnalyzes omission and commission errors\nCalculates Kappa coefficient to measure alignment between classification and labeled data\n\n\n\n7.2.2 Spatial Cross-Validation\nAddressing spatial autocorrelation challenges:\n\nPrevents model overfitting\nEnsures spatial independence of training and testing datasets\nMitigates overly optimistic accuracy estimations\n\n\n\n7.2.3 Receiver Operating Characteristic (ROC) Curve\nGraphically represents classification model performance by plotting true positive rates against false positive rates, enabling simultaneous evaluation of multiple classification models.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Classification Ⅱ</span>"
+    ]
+  },
+  {
+    "objectID": "week8.html#applications",
+    "href": "week8.html#applications",
+    "title": "7  Classification Ⅱ",
+    "section": "7.3 Applications",
+    "text": "7.3 Applications\nRemote sensing classification techniques extend beyond traditional environmental and urban applications, they also play a crucial role in fields such as public health, archaeology, and military intelligence. By leveraging high-resolution imagery and machine learning algorithms, researchers can extract valuable insights that support various scientific and strategic objectives.\n\n7.3.1 Epidemiology and Public Health\nSatellite-based classification has proven useful in tracking disease outbreaks and environmental factors influencing public health. For instance, remote sensing is used to classify land cover changes associated with vector-borne diseases like malaria and dengue. By identifying stagnant water bodies and deforested areas, health authorities can predict mosquito breeding grounds and improve disease prevention strategies. Additionally, air quality assessments rely on classification to detect pollution hotspots, aiding in respiratory disease mitigation efforts.\n\n\n7.3.2 Archaeological Site Detection\nAdvanced classification techniques, including Object-Based Image Analysis (OBIA), are revolutionizing archaeological studies. By analyzing soil composition, vegetation patterns, and thermal anomalies, researchers can identify buried structures and ancient settlements without excavation. For example, classified satellite images have revealed lost cities in dense rainforests, where conventional survey methods are impractical.\n\n\n7.3.3 Military and Defense Applications\nIn defense and intelligence, classification plays a critical role in monitoring geopolitical changes. High-resolution satellite imagery is classified to detect military installations, track troop movements, and assess terrain conditions. Synthetic Aperture Radar (SAR)-based classification is particularly valuable in detecting hidden structures and distinguishing between natural and artificial objects, even under cloud cover.\n\n\n7.3.4 Space Exploration and Planetary Mapping\nRemote sensing classification is instrumental in analyzing extraterrestrial landscapes. NASA and ESA use classification models to map Martian surface compositions, identifying features such as ice deposits, volcanic plains, and ancient riverbeds. These insights guide rover missions and future colonization efforts by determining suitable landing sites and resource availability.\n\n\n7.3.5 Fisheries and Marine Ecosystem Monitoring\nBeyond terrestrial applications, classification techniques are widely applied in marine studies. Satellite imagery helps identify harmful algal blooms (HABs) that threaten marine biodiversity and human health. Additionally, ocean surface classification supports sustainable fisheries management by tracking fish migration patterns and detecting illegal fishing activities.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Classification Ⅱ</span>"
+    ]
+  },
+  {
+    "objectID": "week8.html#reflection",
+    "href": "week8.html#reflection",
+    "title": "7  Classification Ⅱ",
+    "section": "7.4 Reflection",
+    "text": "7.4 Reflection\nThis lecture deepened my understanding of remote sensing classification techniques and their practical applications, particularly in disaster management. The discussion on sub-pixel analysis and object-based image analysis (OBIA) highlighted their advantages in capturing complex land cover variations, which is relevant to my group project on flood detection in Manchester. Given Manchester’s susceptibility to flooding, accurately classifying flooded areas in urban environments is critical for effective response and resilience planning.\nOne key insight was the importance of high-resolution classification in flood mapping. Traditional pixel-based approaches often misclassify urban water accumulation, while OBIA allows for spatially aware segmentation, distinguishing between flooded roads, waterlogged parks, and unaffected surfaces. Applying OBIA to Sentinel-2 or Landsat imagery in our project could enhance flood risk assessments by improving classification accuracy.\nThe role of machine learning models, such as Convolutional Neural Networks (CNNs), in land cover classification was another crucial takeaway. The Dynamic World approach, which leverages near real-time Sentinel-2 data, demonstrated how semi-supervised classification can improve flood detection. Integrating CNN-based classification with Manchester’s historical flood data and real-time weather inputs could enhance early warning systems.\nLastly, the discussion on spatial cross-validation was particularly relevant. Overfitting to past flood events is a risk when training classification models, especially in urban environments where land cover characteristics change over time. Ensuring that our classification model generalizes well to future flood events will be critical for our project’s success.\nOverall, this lecture provided valuable insights that we can apply to our group work. By refining flood detection models using advanced classification techniques, machine learning, and real-time satellite data, we aim to develop a more effective approach to monitoring and mitigating Manchester’s flood risks.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Classification Ⅱ</span>"
+    ]
   }
 ]
