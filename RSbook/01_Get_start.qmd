@@ -74,4 +74,3 @@ Young, Oran, and Masami Onoda. 2017. “Satellite Earth Observations in Environm
 
 Lima, T. A., Beuchle, R., Langner, A., Grecchi, R. C., Griess, V. C., & Achard, F. (2019). Comparing Sentinel-2 MSI and Landsat 8 OLI imagery for monitoring selective logging in the Brazilian Amazon. Remote sensing, 11(8), 961.
 
-Frimpong, B. F., & Molkenthin, F. (2021). Tracking urban expansion using random forests for the classification of landsat imagery (1986–2015) and predicting urban/built-up areas for 2025: A Study of the Kumasi Metropolis, Ghana. Land, 10(1), 44.
