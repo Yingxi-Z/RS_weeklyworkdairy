@@ -12,13 +12,13 @@ SAR is an active remote sensing sensor that simultaneously records two critical 
 
 ### Key Analytical Considerations
 
-1.  Polarization
+-   Polarization
 
     -   Different polarizations (e.g., VV) reveal surface roughness characteristics
 
     -   Provides insights into surface material properties
 
-2.  Permativity (Dielectric Constant)
+-   Permativity (Dielectric Constant)
 
     -   Indicates the material's reflectivity back to the sensor
 
@@ -26,9 +26,7 @@ SAR is an active remote sensing sensor that simultaneously records two critical 
 
     -   Water tends to reflect signals away from the sensor
 
-3.  Wavelength
-
--   Different bands provide varied surface interaction information
+-   Wavelength : Different bands provide varied surface interaction information
 
 ## Data Representation in Google Earth Engine
 
@@ -36,11 +34,11 @@ SAR is an active remote sensing sensor that simultaneously records two critical 
 
 -   Three primary data units:
 
-    1.  Power scale: Raw SAR data for statistical analysis
+    -   Power scale: Raw SAR data for statistical analysis
 
-    2.  Amplitude: Visualization purposes
+    -   Amplitude: Visualization purposes
 
-    3.  Decibel (dB) scale: Highlighting differences (default in GEE)
+    -   Decibel (dB) scale: Highlighting differences (default in GEE)
 
 ### Unique Advantages and Analysis Techniques
 
@@ -51,11 +49,11 @@ SAR is an active remote sensing sensor that simultaneously records two critical 
 
 #### Analysis Methods
 
-1.  Change Detection
+-   Change Detection
 
     -   Comparing images using ratio or log ratio techniques
 
-2.  Temporal Analysis
+-   Temporal Analysis
 
     -   T-tests
 
@@ -63,7 +61,7 @@ SAR is an active remote sensing sensor that simultaneously records two critical 
 
     -   Exploring variance over time
 
-3.  Data Fusion Techniques
+-   Data Fusion Techniques
 
     -   Principal Component Analysis
 
@@ -71,40 +69,34 @@ SAR is an active remote sensing sensor that simultaneously records two critical 
 
     -   Intensity fusion with optical data
 
-#### 1.SAR fundamentals
-
-SAR: Different surfaces respond differently to the polarizations A SAR signal has both amplitude (backscatter) and phase data. different weather show different signal: windy day-the surface of the water is rough
-
-InSAR: combine two or more SAR image DInSAR: remove the effet of natural elevtation (DSM/DEM/DTM)
-
-### 2. GEE SAR
-
-SAR data values: identify changes: substract image is not suitable for SAR Ratio images: IR(improved ratio);mean; log; IRL(improved log ratio) which is best and how to test them?
-
 ## Applications
 
-### Agricultural Monitoring and Crop Management
+Synthetic Aperture Radar (SAR) remote sensing plays a crucial role in disaster response and environmental monitoring due to its ability to operate in all-weather and day-night conditions. Two key applications include earthquake-induced damage assessment and marine oil spill detection, both of which rely on SAR’s high sensitivity to surface changes.
 
-SAR technology offers unprecedented capabilities in agricultural research and monitoring. Unlike optical sensors constrained by cloud cover and daylight limitations, SAR can consistently track agricultural landscapes throughout the year. By analyzing backscatter signals, researchers can extract critical information about crop health, growth stages, and land use patterns.
+In earthquake damage assessment, SAR polarimetric techniques help detect large-scale destruction when ground surveys are infeasible. By analyzing changes in radar backscattering mechanisms, fully polarimetric SAR (PolSAR) data can improve the detection of damaged urban areas. Advanced classification methods, such as Expectation-Maximization (EM) thresholding and Markov Random Field (MRF) fusion, significantly enhance mapping accuracy, reducing false and missed alarms compared to traditional single-polarization SAR approaches[@park2013].
 
-The technology enables precise monitoring of crop conditions by detecting changes in surface roughness and moisture content. Different polarization modes allow scientists to distinguish between various crop types, assess vegetation density, and predict potential yield. For instance, winter wheat fields exhibit distinct backscatter signatures during different growth stages, enabling early detection of potential crop stress or disease.
+![](images/clipboard-3649435062.png)
 
-Flood and moisture mapping represent another crucial agricultural application. SAR's ability to penetrate cloud cover and measure surface moisture makes it invaluable for tracking potential agricultural risks. Farmers and policymakers can use these insights to predict irrigation needs, assess flood damage, and develop more resilient agricultural strategies.
+Figure 1 Closer look of ALOS/PALSAR images of the target study site acquired before and after
 
-### Disaster Risk and Environmental Management
+Source: @park2013
 
-In disaster management, SAR provides critical real-time monitoring capabilities that traditional remote sensing techniques cannot match. The technology's ability to generate consistent imagery through adverse weather conditions makes it exceptionally valuable for tracking dynamic environmental changes.
+For marine oil spill detection, SAR provides real-time and continuous monitoring of oil pollution. Deep learning models, such as Transformer-UNet and multi-model learning approaches, improve detection accuracy, even in low-quality SAR images. The integration of denoising techniques, such as FFDNet with TransUNet, further refines spill identification. These advancements contribute to more robust and scalable SAR-based oil spill monitoring systems[@dong2023].
 
-Earthquake and landslide risk assessment benefit significantly from SAR interferometry. By comparing multiple SAR images of the same location over time, researchers can detect minute ground surface movements as small as millimeters. This capability allows for early warning systems in tectonically active regions, potentially saving lives and mitigating infrastructure damage.
+![](images/clipboard-2324078235.png)
 
-Additionally, SAR plays a crucial role in monitoring environmental phenomena like deforestation, urban expansion, and coastal changes. Its capacity to provide detailed surface information regardless of atmospheric conditions enables comprehensive environmental surveillance. Scientists can track forest cover changes, monitor sea-level rise, and assess infrastructure development with unprecedented precision.
+Figure 2 The oil spill detection process
+
+Source: @dong2023
+
+By leveraging SAR’s unique capabilities, researchers and engineers can enhance disaster response strategies and environmental protection efforts, improving real-time situational awareness and mitigation measures.
 
 ## Reflection
 
-Before this lecture, I already had a general understanding of **how SAR works**, but my knowledge was mostly theoretical. What I hadn’t fully grasped were its **practical advantages for flood detection** and the specific **data processing techniques** required to extract meaningful insights. The lecture clarified why SAR is so effective in flood monitoring—not just because of its **cloud-penetrating ability**, but also due to its **sensitivity to surface water through backscatter variations**. I found the discussion on **VV vs. VH polarization** particularly useful, as it explained why VV polarization is more responsive to open water, influencing how we selected data for our group project.
+Throughout this course, I have gained a deeper understanding of remote sensing technologies and their wide-ranging applications. Initially, I was unfamiliar with many of the technical aspects, but as I progressed, I learned about different types of remote sensing data, including optical, radar, and thermal imaging. I found the study of SAR (Synthetic Aperture Radar) particularly fascinating, especially its applications in monitoring land deformation, disaster response, and environmental changes.
 
-Initially, our approach to **flood detection in Manchester** was centered on optical data. While we were aware of SAR’s potential, we hadn’t fully considered the practical challenges of working with **speckle noise and change detection methods**. The lecture introduced us to techniques like the **Improved Log Ratio (IRL)**, which proved more effective than simple subtraction when analyzing flood extent. Another key takeaway was how **dielectric properties influence SAR backscatter**, helping us interpret unexpected patterns, such as **higher returns from flooded vegetation** due to double-bounce effects.
+One of the most valuable aspects of this course was understanding how remote sensing supports policy-making. I realized that satellite data is not just for scientific research but also plays a crucial role in urban planning, climate change mitigation, and resource management. The case studies on deforestation monitoring, flood detection, and air quality assessment showed me the real-world impact of remote sensing.
 
-Moving forward, I see value in integrating **SAR and optical data** for a more comprehensive flood analysis and potentially incorporating **InSAR techniques to monitor flood-induced land deformation**. The lecture not only refined our group project’s methodology but also deepened my appreciation for the complexities of **SAR data processing** in real-world applications.
+Additionally, learning tools like Quarto and Xaringan for organizing and presenting remote sensing data was a new and exciting experience. Although I am still mastering these tools, I see their potential for efficiently communicating complex data. Moving forward, I really want to explore how artificial intelligence can enhance remote sensing analysis and contribute to more effective decision-making in environmental and policy applications.
 
 ## Reference
