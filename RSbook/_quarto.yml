@@ -7,13 +7,13 @@ book:
   author: "Zhou Yingxi"
   date: "2025/3/28"
   navbar:
-    logo: casa_logo.jpg      
+    logo: docs/casa_logo.jpg      
     collapse: true                          
     search: true                            
   sidebar:
     style: floating                         
     reader-mode: true
-  favicon: casa_logo.jpg
+  favicon: docs/casa_logo.jpg
   repo-url: https://github.com/Yingxi-Z/RS_weeklyworkdairy  
   repo-actions: [edit, issue]                
   chapters:
