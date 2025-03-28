@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>6&nbsp; Classification Ⅰ – CASA0023 - Learning Diary</title>
+<title>8&nbsp; SAR – CASA0023 - Learning Diary</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./week8.html" rel="next">
-<link href="./index.html" rel="prev">
+<link href="./07_Classification_2.html" rel="prev">
 <link href="./docs/casa_logo.jpg" rel="icon" type="image/jpeg">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -101,7 +100,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week7.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Classification Ⅰ</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./08_SAR.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">SAR</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -120,35 +119,50 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </li>
         <li class="sidebar-item">
- <span class="menu-text">week2.qmd</span>
-  </li>
-        <li class="sidebar-item">
- <span class="menu-text">week3.qmd</span>
-  </li>
-        <li class="sidebar-item">
- <span class="menu-text">week4.qmd</span>
-  </li>
-        <li class="sidebar-item">
- <span class="menu-text">week5.qmd</span>
-  </li>
-        <li class="sidebar-item">
- <span class="menu-text">week6.qmd</span>
-  </li>
+  <div class="sidebar-item-container"> 
+  <a href="./01_Get start.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Getting started with Remote sensing</span></span></a>
+  </div>
+</li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week7.html" class="sidebar-item-text sidebar-link active">
+  <a href="./02_Xaringan.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Xaringan</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03_RS data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Remote Sensing Data</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04_Policy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Policy</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05_GEE.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Google Earth Engine</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06_Classification_1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Classification Ⅰ</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week8.html" class="sidebar-item-text sidebar-link">
+  <a href="./07_Classification_2.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Classification Ⅱ</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week9.html" class="sidebar-item-text sidebar-link">
+  <a href="./08_SAR.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">SAR</span></span></a>
   </div>
 </li>
@@ -162,24 +176,32 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">6.1</span> Summary</a>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">8.1</span> Summary</a>
   <ul class="collapse">
-  <li><a href="#supervised-classification" id="toc-supervised-classification" class="nav-link" data-scroll-target="#supervised-classification"><span class="header-section-number">6.1.1</span> <strong>Supervised Classification</strong></a></li>
-  <li><a href="#unsupervised-classification" id="toc-unsupervised-classification" class="nav-link" data-scroll-target="#unsupervised-classification"><span class="header-section-number">6.1.2</span> <strong>Unsupervised Classification</strong></a></li>
-  <li><a href="#mixed-pixels-and-challenges" id="toc-mixed-pixels-and-challenges" class="nav-link" data-scroll-target="#mixed-pixels-and-challenges"><span class="header-section-number">6.1.3</span> <strong>Mixed Pixels and Challenges</strong></a></li>
+  <li><a href="#technical-characteristics" id="toc-technical-characteristics" class="nav-link" data-scroll-target="#technical-characteristics"><span class="header-section-number">8.1.1</span> Technical Characteristics</a></li>
+  <li><a href="#key-analytical-considerations" id="toc-key-analytical-considerations" class="nav-link" data-scroll-target="#key-analytical-considerations"><span class="header-section-number">8.1.2</span> Key Analytical Considerations</a></li>
   </ul></li>
-  <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="header-section-number">6.2</span> Applications</a></li>
-  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">6.3</span> Reflection</a></li>
-  <li><a href="#reference" id="toc-reference" class="nav-link" data-scroll-target="#reference"><span class="header-section-number">6.4</span> Reference</a></li>
+  <li><a href="#data-representation-in-google-earth-engine" id="toc-data-representation-in-google-earth-engine" class="nav-link" data-scroll-target="#data-representation-in-google-earth-engine"><span class="header-section-number">8.2</span> Data Representation in Google Earth Engine</a>
+  <ul class="collapse">
+  <li><a href="#unique-advantages-and-analysis-techniques" id="toc-unique-advantages-and-analysis-techniques" class="nav-link" data-scroll-target="#unique-advantages-and-analysis-techniques"><span class="header-section-number">8.2.1</span> Unique Advantages and Analysis Techniques</a></li>
+  <li><a href="#gee-sar" id="toc-gee-sar" class="nav-link" data-scroll-target="#gee-sar"><span class="header-section-number">8.2.2</span> 2. GEE SAR</a></li>
+  </ul></li>
+  <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="header-section-number">8.3</span> Applications</a>
+  <ul class="collapse">
+  <li><a href="#agricultural-monitoring-and-crop-management" id="toc-agricultural-monitoring-and-crop-management" class="nav-link" data-scroll-target="#agricultural-monitoring-and-crop-management"><span class="header-section-number">8.3.1</span> Agricultural Monitoring and Crop Management</a></li>
+  <li><a href="#disaster-risk-and-environmental-management" id="toc-disaster-risk-and-environmental-management" class="nav-link" data-scroll-target="#disaster-risk-and-environmental-management"><span class="header-section-number">8.3.2</span> Disaster Risk and Environmental Management</a></li>
+  </ul></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">8.4</span> Reflection</a></li>
+  <li><a href="#reference" id="toc-reference" class="nav-link" data-scroll-target="#reference"><span class="header-section-number">8.5</span> Reference</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/Yingxi-Z/RS_weeklyworkdairy/edit/main/week7.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/Yingxi-Z/RS_weeklyworkdairy/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/Yingxi-Z/RS_weeklyworkdairy/edit/main/08_SAR.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/Yingxi-Z/RS_weeklyworkdairy/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Classification Ⅰ</span></h1>
+<h1 class="title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">SAR</span></h1>
 </div>
 
 
@@ -196,53 +218,112 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="summary" class="level2" data-number="6.1">
-<h2 data-number="6.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">6.1</span> Summary</h2>
-<p>This lecture covered <strong>classification methods</strong> in remote sensing, particularly <strong>supervised and unsupervised classification</strong>. Classification is essential in spatial analysis as it helps extract meaningful information from satellite imagery.</p>
-<section id="supervised-classification" class="level3" data-number="6.1.1">
-<h3 data-number="6.1.1" class="anchored" data-anchor-id="supervised-classification"><span class="header-section-number">6.1.1</span> <strong>Supervised Classification</strong></h3>
-<p>Supervised classification relies on labeled training data to categorize pixels. Common methods include:</p>
+<section id="summary" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">8.1</span> Summary</h2>
+<section id="technical-characteristics" class="level3" data-number="8.1.1">
+<h3 data-number="8.1.1" class="anchored" data-anchor-id="technical-characteristics"><span class="header-section-number">8.1.1</span> Technical Characteristics</h3>
+<p>SAR is an active remote sensing sensor that simultaneously records two critical types of data:</p>
 <ul>
-<li><p><strong>Maximum Likelihood Classification (MLC):</strong> Assumes a normal distribution of data and assigns each pixel to the class with the highest probability.</p></li>
-<li><p><strong>Support Vector Machines (SVM):</strong> Identifies an optimal decision boundary between different classes.</p></li>
-<li><p><strong>Random Forest (RF):</strong> A machine learning approach using multiple decision trees for classification.</p></li>
+<li><p>Amplitude (backscatter)</p></li>
+<li><p>Phase data (wave cycle location)</p></li>
 </ul>
 </section>
-<section id="unsupervised-classification" class="level3" data-number="6.1.2">
-<h3 data-number="6.1.2" class="anchored" data-anchor-id="unsupervised-classification"><span class="header-section-number">6.1.2</span> <strong>Unsupervised Classification</strong></h3>
-<p>Unsupervised classification groups pixels into clusters based on spectral properties without predefined labels. Common methods include:</p>
+<section id="key-analytical-considerations" class="level3" data-number="8.1.2">
+<h3 data-number="8.1.2" class="anchored" data-anchor-id="key-analytical-considerations"><span class="header-section-number">8.1.2</span> Key Analytical Considerations</h3>
+<ol type="1">
+<li><p>Polarization</p>
 <ul>
-<li><p><strong>K-Means Clustering:</strong> Iteratively assigns pixels to K clusters by minimizing variance.</p></li>
-<li><p><strong>ISODATA (Iterative Self-Organizing Data Analysis):</strong> Allows merging and splitting of clusters for more flexibility.</p></li>
-</ul>
-<p>This method is useful when ground truth data is unavailable, but class labels must be assigned afterward.</p>
-</section>
-<section id="mixed-pixels-and-challenges" class="level3" data-number="6.1.3">
-<h3 data-number="6.1.3" class="anchored" data-anchor-id="mixed-pixels-and-challenges"><span class="header-section-number">6.1.3</span> <strong>Mixed Pixels and Challenges</strong></h3>
+<li><p>Different polarizations (e.g., VV) reveal surface roughness characteristics</p></li>
+<li><p>Provides insights into surface material properties</p></li>
+</ul></li>
+<li><p>Permativity (Dielectric Constant)</p>
 <ul>
-<li><p><strong>Mixed Pixels:</strong> A single pixel may contain multiple land cover types, affecting classification accuracy.</p></li>
-<li><p><strong>Solutions:</strong> Spectral unmixing and increasing spatial resolution can help mitigate this issue.</p></li>
+<li><p>Indicates the material’s reflectivity back to the sensor</p></li>
+<li><p>Varies across different surface types</p></li>
+<li><p>Water tends to reflect signals away from the sensor</p></li>
+</ul></li>
+<li><p>Wavelength</p></li>
+</ol>
+<ul>
+<li>Different bands provide varied surface interaction information</li>
 </ul>
 </section>
 </section>
-<section id="applications" class="level2" data-number="6.2">
-<h2 data-number="6.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">6.2</span> Applications</h2>
-<p>Classification techniques in remote sensing have numerous real-world applications across environmental monitoring, urban planning, disaster management, and resource assessment. By analyzing satellite imagery, these methods help researchers and decision-makers extract meaningful information to address various global challenges.</p>
-<p>One of the most common applications is <strong>land use and land cover (LULC) mapping</strong>. Classification methods allow researchers to distinguish between different land cover types such as forests, urban areas, water bodies, and agricultural fields. This is essential for <strong>urban planning</strong>, where authorities monitor city expansion and land conversion. Similarly, in <strong>deforestation studies</strong>, classification helps track forest loss over time, providing critical insights into climate change and conservation efforts. In agriculture, supervised classification techniques are used to <strong>differentiate crop types</strong>, monitor vegetation health, and estimate yields, helping optimize farming strategies.</p>
-<p>In <strong>environmental monitoring</strong>, classification plays a key role in assessing climate change impacts and natural resource management. For example, satellite-based classification is used to analyze <strong>desertification trends, glacier retreat, and vegetation changes</strong> over time. In <strong>coastal zone management</strong>, classification helps monitor shoreline changes and detect areas vulnerable to erosion or sea-level rise. Additionally, wetland mapping projects use classification to identify different wetland ecosystems, supporting conservation initiatives.</p>
-<p><strong>Disaster management</strong> is another critical area where classification proves useful. In flood-prone regions, classified satellite images help delineate <strong>flood-affected areas</strong>, allowing authorities to respond effectively. Similarly, <strong>wildfire detection</strong> relies on classification techniques to identify active fire zones and assess burned areas. In mountainous regions, classification can support <strong>landslide risk assessment</strong> by identifying unstable slopes and high-risk zones.</p>
-<p>In <strong>transportation and infrastructure</strong>, classification helps with <strong>road network extraction</strong> from satellite images, which is useful for updating maps and planning new routes. Additionally, <strong>urban heat island (UHI) studies</strong> use classification to analyze heat-retaining surfaces in cities, helping policymakers design cooling strategies like increasing green spaces.</p>
-<p>Finally, <strong>water resource management</strong> benefits from classification by accurately identifying and monitoring lakes, rivers, and reservoirs. It is also widely used in <strong>drought monitoring</strong>, where classified images assess vegetation stress and water scarcity.</p>
+<section id="data-representation-in-google-earth-engine" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="data-representation-in-google-earth-engine"><span class="header-section-number">8.2</span> Data Representation in Google Earth Engine</h2>
+<ul>
+<li><p>Limited to amplitude (backscatter) data</p></li>
+<li><p>Three primary data units:</p>
+<ol type="1">
+<li><p>Power scale: Raw SAR data for statistical analysis</p></li>
+<li><p>Amplitude: Visualization purposes</p></li>
+<li><p>Decibel (dB) scale: Highlighting differences (default in GEE)</p></li>
+</ol></li>
+</ul>
+<section id="unique-advantages-and-analysis-techniques" class="level3" data-number="8.2.1">
+<h3 data-number="8.2.1" class="anchored" data-anchor-id="unique-advantages-and-analysis-techniques"><span class="header-section-number">8.2.1</span> Unique Advantages and Analysis Techniques</h3>
+<section id="distinctive-sensor-capabilities" class="level4" data-number="8.2.1.1">
+<h4 data-number="8.2.1.1" class="anchored" data-anchor-id="distinctive-sensor-capabilities"><span class="header-section-number">8.2.1.1</span> Distinctive Sensor Capabilities</h4>
+<ul>
+<li>Penetrates cloud cover</li>
+<li>Operates independently of optical sensor limitations</li>
+</ul>
 </section>
-<section id="reflection" class="level2" data-number="6.3">
-<h2 data-number="6.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">6.3</span> Reflection</h2>
-<p>This lecture deepened my understanding of classification techniques in remote sensing, particularly the differences between supervised and unsupervised approaches. I found it fascinating how these methods allow us to extract valuable insights from satellite imagery, helping researchers analyze land use patterns, environmental changes, and disaster impacts. The practical exercises reinforced the theoretical concepts, and I appreciated the opportunity to apply classification algorithms to real-world datasets.</p>
-<p>One aspect that stood out to me was the challenge of <strong>mixed pixels</strong>, where a single pixel contains multiple land cover types. This issue highlights the limitations of spatial resolution and the importance of advanced techniques like spectral unmixing. It made me think about how classification accuracy depends not only on the algorithm but also on data quality, resolution, and preprocessing methods. In future studies, I would like to explore how deep learning models, such as convolutional neural networks (CNNs), can improve classification results by learning complex spatial patterns.</p>
-<p>The applications of classification in disaster management also intrigued me. I had not fully realized the extent to which satellite-based classification supports emergency response efforts, such as flood mapping and wildfire detection. Given my interest in urban and environmental analysis, I see great potential in using classification to study climate-related issues, including <strong>urban heat islands and flooding in cities like Manchester</strong>. This connects to my ongoing research on Manchester’s flooding problem, where classification techniques could help analyze historical flood patterns and identify high-risk areas.</p>
-<p>Overall, this lecture reinforced the importance of classification in spatial data analysis. It also made me reflect on how I can integrate these techniques into my own research. Moving forward, I aim to enhance my skills in machine learning-based classification and explore its applications in urban resilience and climate adaptation strategies.</p>
+<section id="analysis-methods" class="level4" data-number="8.2.1.2">
+<h4 data-number="8.2.1.2" class="anchored" data-anchor-id="analysis-methods"><span class="header-section-number">8.2.1.2</span> Analysis Methods</h4>
+<ol type="1">
+<li><p>Change Detection</p>
+<ul>
+<li>Comparing images using ratio or log ratio techniques</li>
+</ul></li>
+<li><p>Temporal Analysis</p>
+<ul>
+<li><p>T-tests</p></li>
+<li><p>Standard deviation calculations</p></li>
+<li><p>Exploring variance over time</p></li>
+</ul></li>
+<li><p>Data Fusion Techniques</p>
+<ul>
+<li><p>Principal Component Analysis</p></li>
+<li><p>Object-Based Image Analysis</p></li>
+<li><p>Intensity fusion with optical data</p></li>
+</ul></li>
+</ol>
 </section>
-<section id="reference" class="level2" data-number="6.4">
-<h2 data-number="6.4" class="anchored" data-anchor-id="reference"><span class="header-section-number">6.4</span> Reference</h2>
+<section id="sar-fundamentals" class="level4" data-number="8.2.1.3">
+<h4 data-number="8.2.1.3" class="anchored" data-anchor-id="sar-fundamentals"><span class="header-section-number">8.2.1.3</span> 1.SAR fundamentals</h4>
+<p>SAR: Different surfaces respond differently to the polarizations A SAR signal has both amplitude (backscatter) and phase data. different weather show different signal: windy day-the surface of the water is rough</p>
+<p>InSAR: combine two or more SAR image DInSAR: remove the effet of natural elevtation (DSM/DEM/DTM)</p>
+</section>
+</section>
+<section id="gee-sar" class="level3" data-number="8.2.2">
+<h3 data-number="8.2.2" class="anchored" data-anchor-id="gee-sar"><span class="header-section-number">8.2.2</span> 2. GEE SAR</h3>
+<p>SAR data values: identify changes: substract image is not suitable for SAR Ratio images: IR(improved ratio);mean; log; IRL(improved log ratio) which is best and how to test them?</p>
+</section>
+</section>
+<section id="applications" class="level2" data-number="8.3">
+<h2 data-number="8.3" class="anchored" data-anchor-id="applications"><span class="header-section-number">8.3</span> Applications</h2>
+<section id="agricultural-monitoring-and-crop-management" class="level3" data-number="8.3.1">
+<h3 data-number="8.3.1" class="anchored" data-anchor-id="agricultural-monitoring-and-crop-management"><span class="header-section-number">8.3.1</span> Agricultural Monitoring and Crop Management</h3>
+<p>SAR technology offers unprecedented capabilities in agricultural research and monitoring. Unlike optical sensors constrained by cloud cover and daylight limitations, SAR can consistently track agricultural landscapes throughout the year. By analyzing backscatter signals, researchers can extract critical information about crop health, growth stages, and land use patterns.</p>
+<p>The technology enables precise monitoring of crop conditions by detecting changes in surface roughness and moisture content. Different polarization modes allow scientists to distinguish between various crop types, assess vegetation density, and predict potential yield. For instance, winter wheat fields exhibit distinct backscatter signatures during different growth stages, enabling early detection of potential crop stress or disease.</p>
+<p>Flood and moisture mapping represent another crucial agricultural application. SAR’s ability to penetrate cloud cover and measure surface moisture makes it invaluable for tracking potential agricultural risks. Farmers and policymakers can use these insights to predict irrigation needs, assess flood damage, and develop more resilient agricultural strategies.</p>
+</section>
+<section id="disaster-risk-and-environmental-management" class="level3" data-number="8.3.2">
+<h3 data-number="8.3.2" class="anchored" data-anchor-id="disaster-risk-and-environmental-management"><span class="header-section-number">8.3.2</span> Disaster Risk and Environmental Management</h3>
+<p>In disaster management, SAR provides critical real-time monitoring capabilities that traditional remote sensing techniques cannot match. The technology’s ability to generate consistent imagery through adverse weather conditions makes it exceptionally valuable for tracking dynamic environmental changes.</p>
+<p>Earthquake and landslide risk assessment benefit significantly from SAR interferometry. By comparing multiple SAR images of the same location over time, researchers can detect minute ground surface movements as small as millimeters. This capability allows for early warning systems in tectonically active regions, potentially saving lives and mitigating infrastructure damage.</p>
+<p>Additionally, SAR plays a crucial role in monitoring environmental phenomena like deforestation, urban expansion, and coastal changes. Its capacity to provide detailed surface information regardless of atmospheric conditions enables comprehensive environmental surveillance. Scientists can track forest cover changes, monitor sea-level rise, and assess infrastructure development with unprecedented precision.</p>
+</section>
+</section>
+<section id="reflection" class="level2" data-number="8.4">
+<h2 data-number="8.4" class="anchored" data-anchor-id="reflection"><span class="header-section-number">8.4</span> Reflection</h2>
+<p>Before this lecture, I already had a general understanding of <strong>how SAR works</strong>, but my knowledge was mostly theoretical. What I hadn’t fully grasped were its <strong>practical advantages for flood detection</strong> and the specific <strong>data processing techniques</strong> required to extract meaningful insights. The lecture clarified why SAR is so effective in flood monitoring—not just because of its <strong>cloud-penetrating ability</strong>, but also due to its <strong>sensitivity to surface water through backscatter variations</strong>. I found the discussion on <strong>VV vs.&nbsp;VH polarization</strong> particularly useful, as it explained why VV polarization is more responsive to open water, influencing how we selected data for our group project.</p>
+<p>Initially, our approach to <strong>flood detection in Manchester</strong> was centered on optical data. While we were aware of SAR’s potential, we hadn’t fully considered the practical challenges of working with <strong>speckle noise and change detection methods</strong>. The lecture introduced us to techniques like the <strong>Improved Log Ratio (IRL)</strong>, which proved more effective than simple subtraction when analyzing flood extent. Another key takeaway was how <strong>dielectric properties influence SAR backscatter</strong>, helping us interpret unexpected patterns, such as <strong>higher returns from flooded vegetation</strong> due to double-bounce effects.</p>
+<p>Moving forward, I see value in integrating <strong>SAR and optical data</strong> for a more comprehensive flood analysis and potentially incorporating <strong>InSAR techniques to monitor flood-induced land deformation</strong>. The lecture not only refined our group project’s methodology but also deepened my appreciation for the complexities of <strong>SAR data processing</strong> in real-world applications.</p>
+</section>
+<section id="reference" class="level2" data-number="8.5">
+<h2 data-number="8.5" class="anchored" data-anchor-id="reference"><span class="header-section-number">8.5</span> Reference</h2>
 
 
 </section>
@@ -811,14 +892,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link" aria-label="Welcome">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Welcome</span>
+      <a href="./07_Classification_2.html" class="pagination-link" aria-label="Classification Ⅱ">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Classification Ⅱ</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./week8.html" class="pagination-link" aria-label="Classification Ⅱ">
-        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Classification Ⅱ</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
@@ -826,4 +904,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/Yingxi-Z/RS_weeklyworkdairy/edit/main/week7.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/Yingxi-Z/RS_weeklyworkdairy/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/Yingxi-Z/RS_weeklyworkdairy/edit/main/08_SAR.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/Yingxi-Z/RS_weeklyworkdairy/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

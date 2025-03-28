@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>6&nbsp; Classification Ⅰ – CASA0023 - Learning Diary</title>
+<title>3&nbsp; Remote Sensing Data – CASA0023 - Learning Diary</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./week8.html" rel="next">
-<link href="./index.html" rel="prev">
+<link href="./04_Policy.html" rel="next">
+<link href="./02_Xaringan.html" rel="prev">
 <link href="./docs/casa_logo.jpg" rel="icon" type="image/jpeg">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -101,7 +101,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week7.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Classification Ⅰ</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./03_RS data.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Remote Sensing Data</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -120,35 +120,50 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </li>
         <li class="sidebar-item">
- <span class="menu-text">week2.qmd</span>
-  </li>
-        <li class="sidebar-item">
- <span class="menu-text">week3.qmd</span>
-  </li>
-        <li class="sidebar-item">
- <span class="menu-text">week4.qmd</span>
-  </li>
-        <li class="sidebar-item">
- <span class="menu-text">week5.qmd</span>
-  </li>
-        <li class="sidebar-item">
- <span class="menu-text">week6.qmd</span>
-  </li>
+  <div class="sidebar-item-container"> 
+  <a href="./01_Get start.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Getting started with Remote sensing</span></span></a>
+  </div>
+</li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week7.html" class="sidebar-item-text sidebar-link active">
+  <a href="./02_Xaringan.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Xaringan</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03_RS data.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Remote Sensing Data</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04_Policy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Policy</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05_GEE.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Google Earth Engine</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06_Classification_1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Classification Ⅰ</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week8.html" class="sidebar-item-text sidebar-link">
+  <a href="./07_Classification_2.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Classification Ⅱ</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week9.html" class="sidebar-item-text sidebar-link">
+  <a href="./08_SAR.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">SAR</span></span></a>
   </div>
 </li>
@@ -162,24 +177,36 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">6.1</span> Summary</a>
+  <li><a href="#correction-of-remote-sensing-data" id="toc-correction-of-remote-sensing-data" class="nav-link active" data-scroll-target="#correction-of-remote-sensing-data"><span class="header-section-number">3.1</span> Correction of Remote Sensing Data</a>
   <ul class="collapse">
-  <li><a href="#supervised-classification" id="toc-supervised-classification" class="nav-link" data-scroll-target="#supervised-classification"><span class="header-section-number">6.1.1</span> <strong>Supervised Classification</strong></a></li>
-  <li><a href="#unsupervised-classification" id="toc-unsupervised-classification" class="nav-link" data-scroll-target="#unsupervised-classification"><span class="header-section-number">6.1.2</span> <strong>Unsupervised Classification</strong></a></li>
-  <li><a href="#mixed-pixels-and-challenges" id="toc-mixed-pixels-and-challenges" class="nav-link" data-scroll-target="#mixed-pixels-and-challenges"><span class="header-section-number">6.1.3</span> <strong>Mixed Pixels and Challenges</strong></a></li>
+  <li><a href="#geometric-correction" id="toc-geometric-correction" class="nav-link" data-scroll-target="#geometric-correction"><span class="header-section-number">3.1.1</span> Geometric Correction</a></li>
+  <li><a href="#atmospheric-correction" id="toc-atmospheric-correction" class="nav-link" data-scroll-target="#atmospheric-correction"><span class="header-section-number">3.1.2</span> Atmospheric Correction</a></li>
+  <li><a href="#orthorectification" id="toc-orthorectification" class="nav-link" data-scroll-target="#orthorectification"><span class="header-section-number">3.1.3</span> Orthorectification</a></li>
+  <li><a href="#reflectance-correction" id="toc-reflectance-correction" class="nav-link" data-scroll-target="#reflectance-correction"><span class="header-section-number">3.1.4</span> Reflectance Correction</a></li>
+  <li><a href="#data-mosaicking" id="toc-data-mosaicking" class="nav-link" data-scroll-target="#data-mosaicking"><span class="header-section-number">3.1.5</span> Data Mosaicking</a></li>
   </ul></li>
-  <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="header-section-number">6.2</span> Applications</a></li>
-  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">6.3</span> Reflection</a></li>
-  <li><a href="#reference" id="toc-reference" class="nav-link" data-scroll-target="#reference"><span class="header-section-number">6.4</span> Reference</a></li>
+  <li><a href="#enhancement-and-analysis-of-remote-sensing-data" id="toc-enhancement-and-analysis-of-remote-sensing-data" class="nav-link" data-scroll-target="#enhancement-and-analysis-of-remote-sensing-data"><span class="header-section-number">3.2</span> Enhancement and Analysis of Remote Sensing Data</a>
+  <ul class="collapse">
+  <li><a href="#image-enhancement-techniques" id="toc-image-enhancement-techniques" class="nav-link" data-scroll-target="#image-enhancement-techniques"><span class="header-section-number">3.2.1</span> Image Enhancement Techniques</a></li>
+  <li><a href="#remote-sensing-indices" id="toc-remote-sensing-indices" class="nav-link" data-scroll-target="#remote-sensing-indices"><span class="header-section-number">3.2.2</span> Remote Sensing Indices</a></li>
+  <li><a href="#image-classification-methods" id="toc-image-classification-methods" class="nav-link" data-scroll-target="#image-classification-methods"><span class="header-section-number">3.2.3</span> Image Classification Methods</a></li>
+  <li><a href="#accuracy-assessment" id="toc-accuracy-assessment" class="nav-link" data-scroll-target="#accuracy-assessment"><span class="header-section-number">3.2.4</span> Accuracy Assessment</a></li>
+  <li><a href="#change-detection-techniques" id="toc-change-detection-techniques" class="nav-link" data-scroll-target="#change-detection-techniques"><span class="header-section-number">3.2.5</span> Change Detection Techniques</a></li>
+  </ul></li>
+  <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="header-section-number">4</span> Applications</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">5</span> Reflection</a>
+  <ul class="collapse">
+  <li><a href="#reference" id="toc-reference" class="nav-link" data-scroll-target="#reference"><span class="header-section-number">5.1</span> Reference</a></li>
+  </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/Yingxi-Z/RS_weeklyworkdairy/edit/main/week7.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/Yingxi-Z/RS_weeklyworkdairy/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/Yingxi-Z/RS_weeklyworkdairy/edit/main/03_RS data.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/Yingxi-Z/RS_weeklyworkdairy/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Classification Ⅰ</span></h1>
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Remote Sensing Data</span></h1>
 </div>
 
 
@@ -196,55 +223,189 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="summary" class="level2" data-number="6.1">
-<h2 data-number="6.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">6.1</span> Summary</h2>
-<p>This lecture covered <strong>classification methods</strong> in remote sensing, particularly <strong>supervised and unsupervised classification</strong>. Classification is essential in spatial analysis as it helps extract meaningful information from satellite imagery.</p>
-<section id="supervised-classification" class="level3" data-number="6.1.1">
-<h3 data-number="6.1.1" class="anchored" data-anchor-id="supervised-classification"><span class="header-section-number">6.1.1</span> <strong>Supervised Classification</strong></h3>
-<p>Supervised classification relies on labeled training data to categorize pixels. Common methods include:</p>
+<section id="correction-of-remote-sensing-data" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="correction-of-remote-sensing-data"><span class="header-section-number">3.1</span> Correction of Remote Sensing Data</h2>
+<section id="geometric-correction" class="level3" data-number="3.1.1">
+<h3 data-number="3.1.1" class="anchored" data-anchor-id="geometric-correction"><span class="header-section-number">3.1.1</span> Geometric Correction</h3>
 <ul>
-<li><p><strong>Maximum Likelihood Classification (MLC):</strong> Assumes a normal distribution of data and assigns each pixel to the class with the highest probability.</p></li>
-<li><p><strong>Support Vector Machines (SVM):</strong> Identifies an optimal decision boundary between different classes.</p></li>
-<li><p><strong>Random Forest (RF):</strong> A machine learning approach using multiple decision trees for classification.</p></li>
+<li><strong>Problem</strong>: Image positions don’t match actual geographic locations</li>
+<li><strong>Causes</strong>:
+<ul>
+<li>Earth curvature effects</li>
+<li>Sensor viewing angle deviations</li>
+<li>Platform attitude variations (satellite/aircraft movement)</li>
+</ul></li>
+<li><strong>Correction Process</strong>:
+<ul>
+<li>Ground Control Points (GCPs): Identify corresponding points between image and real ground</li>
+<li>Transformation Model: Calculate correction formulas (typically polynomial)</li>
+<li>Resampling: Assign values to new grid
+<ul>
+<li>Nearest Neighbor: Preserves original values, suitable for classified data</li>
+<li>Bilinear Interpolation: Averages values, produces smoother results</li>
+<li>Cubic Convolution: High quality but computationally intensive</li>
+</ul></li>
+</ul></li>
 </ul>
 </section>
-<section id="unsupervised-classification" class="level3" data-number="6.1.2">
-<h3 data-number="6.1.2" class="anchored" data-anchor-id="unsupervised-classification"><span class="header-section-number">6.1.2</span> <strong>Unsupervised Classification</strong></h3>
-<p>Unsupervised classification groups pixels into clusters based on spectral properties without predefined labels. Common methods include:</p>
+<section id="atmospheric-correction" class="level3" data-number="3.1.2">
+<h3 data-number="3.1.2" class="anchored" data-anchor-id="atmospheric-correction"><span class="header-section-number">3.1.2</span> Atmospheric Correction</h3>
 <ul>
-<li><p><strong>K-Means Clustering:</strong> Iteratively assigns pixels to K clusters by minimizing variance.</p></li>
-<li><p><strong>ISODATA (Iterative Self-Organizing Data Analysis):</strong> Allows merging and splitting of clusters for more flexibility.</p></li>
-</ul>
-<p>This method is useful when ground truth data is unavailable, but class labels must be assigned afterward.</p>
-</section>
-<section id="mixed-pixels-and-challenges" class="level3" data-number="6.1.3">
-<h3 data-number="6.1.3" class="anchored" data-anchor-id="mixed-pixels-and-challenges"><span class="header-section-number">6.1.3</span> <strong>Mixed Pixels and Challenges</strong></h3>
+<li><strong>Problem</strong>: Atmospheric gases and particles interfere with signal transmission
 <ul>
-<li><p><strong>Mixed Pixels:</strong> A single pixel may contain multiple land cover types, affecting classification accuracy.</p></li>
-<li><p><strong>Solutions:</strong> Spectral unmixing and increasing spatial resolution can help mitigate this issue.</p></li>
+<li>Scattering: Changes light direction, increases path radiance</li>
+<li>Absorption: Weakens signal strength at specific wavelengths</li>
+</ul></li>
+<li><strong>Correction Methods</strong>:
+<ul>
+<li>Dark Object Subtraction (DOS): Assumes brightness in dark areas comes from atmospheric scattering</li>
+<li>Radiative Transfer Code: Uses physical models to simulate and remove atmospheric effects</li>
+<li>Empirical Line Correction: Establishes empirical relationships using ground measurements</li>
+<li>Second-Order Derivative: Reduces background interference in spectral curves</li>
+</ul></li>
+<li><strong>Practical Advice</strong>: DOS suitable for beginners, radiative transfer models recommended for professional analysis</li>
+</ul>
+</section>
+<section id="orthorectification" class="level3" data-number="3.1.3">
+<h3 data-number="3.1.3" class="anchored" data-anchor-id="orthorectification"><span class="header-section-number">3.1.3</span> Orthorectification</h3>
+<ul>
+<li>Special type of geometric correction that eliminates displacement caused by terrain</li>
+<li>Requires DEM data to calculate actual position of each pixel</li>
+<li>Generates orthoimages with uniform scale for direct measurement</li>
+</ul>
+</section>
+<section id="reflectance-correction" class="level3" data-number="3.1.4">
+<h3 data-number="3.1.4" class="anchored" data-anchor-id="reflectance-correction"><span class="header-section-number">3.1.4</span> Reflectance Correction</h3>
+<ul>
+<li>Conversion from Digital Numbers (DN) to physical values</li>
+<li>Steps include:
+<ul>
+<li>Radiometric calibration: DN to radiance</li>
+<li>Top-of-Atmosphere (TOA) reflectance: Accounts for solar illumination</li>
+<li>Surface reflectance: After atmospheric correction</li>
+</ul></li>
+<li>Essential for quantitative analysis and multi-temporal comparisons</li>
+</ul>
+</section>
+<section id="data-mosaicking" class="level3" data-number="3.1.5">
+<h3 data-number="3.1.5" class="anchored" data-anchor-id="data-mosaicking"><span class="header-section-number">3.1.5</span> Data Mosaicking</h3>
+<ul>
+<li>Combines multiple images into a seamless large-area image</li>
+<li><strong>Processing Steps</strong>:
+<ul>
+<li>Precise registration of adjacent images</li>
+<li>Radiometric balancing to eliminate color differences</li>
+<li>Seamline optimization to avoid obvious features</li>
+<li>Edge blending to eliminate visible seams</li>
+</ul></li>
 </ul>
 </section>
 </section>
-<section id="applications" class="level2" data-number="6.2">
-<h2 data-number="6.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">6.2</span> Applications</h2>
-<p>Classification techniques in remote sensing have numerous real-world applications across environmental monitoring, urban planning, disaster management, and resource assessment. By analyzing satellite imagery, these methods help researchers and decision-makers extract meaningful information to address various global challenges.</p>
-<p>One of the most common applications is <strong>land use and land cover (LULC) mapping</strong>. Classification methods allow researchers to distinguish between different land cover types such as forests, urban areas, water bodies, and agricultural fields. This is essential for <strong>urban planning</strong>, where authorities monitor city expansion and land conversion. Similarly, in <strong>deforestation studies</strong>, classification helps track forest loss over time, providing critical insights into climate change and conservation efforts. In agriculture, supervised classification techniques are used to <strong>differentiate crop types</strong>, monitor vegetation health, and estimate yields, helping optimize farming strategies.</p>
-<p>In <strong>environmental monitoring</strong>, classification plays a key role in assessing climate change impacts and natural resource management. For example, satellite-based classification is used to analyze <strong>desertification trends, glacier retreat, and vegetation changes</strong> over time. In <strong>coastal zone management</strong>, classification helps monitor shoreline changes and detect areas vulnerable to erosion or sea-level rise. Additionally, wetland mapping projects use classification to identify different wetland ecosystems, supporting conservation initiatives.</p>
-<p><strong>Disaster management</strong> is another critical area where classification proves useful. In flood-prone regions, classified satellite images help delineate <strong>flood-affected areas</strong>, allowing authorities to respond effectively. Similarly, <strong>wildfire detection</strong> relies on classification techniques to identify active fire zones and assess burned areas. In mountainous regions, classification can support <strong>landslide risk assessment</strong> by identifying unstable slopes and high-risk zones.</p>
-<p>In <strong>transportation and infrastructure</strong>, classification helps with <strong>road network extraction</strong> from satellite images, which is useful for updating maps and planning new routes. Additionally, <strong>urban heat island (UHI) studies</strong> use classification to analyze heat-retaining surfaces in cities, helping policymakers design cooling strategies like increasing green spaces.</p>
-<p>Finally, <strong>water resource management</strong> benefits from classification by accurately identifying and monitoring lakes, rivers, and reservoirs. It is also widely used in <strong>drought monitoring</strong>, where classified images assess vegetation stress and water scarcity.</p>
+<section id="enhancement-and-analysis-of-remote-sensing-data" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="enhancement-and-analysis-of-remote-sensing-data"><span class="header-section-number">3.2</span> Enhancement and Analysis of Remote Sensing Data</h2>
+<section id="image-enhancement-techniques" class="level3" data-number="3.2.1">
+<h3 data-number="3.2.1" class="anchored" data-anchor-id="image-enhancement-techniques"><span class="header-section-number">3.2.1</span> Image Enhancement Techniques</h3>
+<ul>
+<li><strong>Contrast Stretching</strong>: Expands histogram to enhance feature distinctiveness</li>
+<li><strong>Filtering</strong>:
+<ul>
+<li>Low-pass filters: Smooth noise</li>
+<li>High-pass filters: Enhance edges</li>
+</ul></li>
+<li><strong>Band Combinations</strong>: Highlight specific features through different band combinations</li>
+<li><strong>Principal Component Analysis (PCA)</strong>: Dimension reduction while preserving key information</li>
+<li><strong>Texture Analysis</strong>: Extracts information about spatial arrangement patterns</li>
+</ul>
 </section>
-<section id="reflection" class="level2" data-number="6.3">
-<h2 data-number="6.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">6.3</span> Reflection</h2>
-<p>This lecture deepened my understanding of classification techniques in remote sensing, particularly the differences between supervised and unsupervised approaches. I found it fascinating how these methods allow us to extract valuable insights from satellite imagery, helping researchers analyze land use patterns, environmental changes, and disaster impacts. The practical exercises reinforced the theoretical concepts, and I appreciated the opportunity to apply classification algorithms to real-world datasets.</p>
-<p>One aspect that stood out to me was the challenge of <strong>mixed pixels</strong>, where a single pixel contains multiple land cover types. This issue highlights the limitations of spatial resolution and the importance of advanced techniques like spectral unmixing. It made me think about how classification accuracy depends not only on the algorithm but also on data quality, resolution, and preprocessing methods. In future studies, I would like to explore how deep learning models, such as convolutional neural networks (CNNs), can improve classification results by learning complex spatial patterns.</p>
-<p>The applications of classification in disaster management also intrigued me. I had not fully realized the extent to which satellite-based classification supports emergency response efforts, such as flood mapping and wildfire detection. Given my interest in urban and environmental analysis, I see great potential in using classification to study climate-related issues, including <strong>urban heat islands and flooding in cities like Manchester</strong>. This connects to my ongoing research on Manchester’s flooding problem, where classification techniques could help analyze historical flood patterns and identify high-risk areas.</p>
-<p>Overall, this lecture reinforced the importance of classification in spatial data analysis. It also made me reflect on how I can integrate these techniques into my own research. Moving forward, I aim to enhance my skills in machine learning-based classification and explore its applications in urban resilience and climate adaptation strategies.</p>
+<section id="remote-sensing-indices" class="level3" data-number="3.2.2">
+<h3 data-number="3.2.2" class="anchored" data-anchor-id="remote-sensing-indices"><span class="header-section-number">3.2.2</span> Remote Sensing Indices</h3>
+<ul>
+<li><strong>Vegetation Indices</strong>:
+<ul>
+<li>NDVI = (NIR-Red)/(NIR+Red): Reflects vegetation vigor</li>
+<li>EVI: Improved NDVI, reduces soil background effects</li>
+<li>SAVI: Suitable for areas with sparse vegetation</li>
+</ul></li>
+<li><strong>Water Indices</strong>:
+<ul>
+<li>NDWI = (Green-NIR)/(Green+NIR): Extracts water bodies</li>
+<li>MNDWI: Improved version, reduces building interference</li>
+</ul></li>
+<li><strong>Built-up Indices</strong>:
+<ul>
+<li>NDBI = (SWIR-NIR)/(SWIR+NIR): Highlights urban built-up areas</li>
+</ul></li>
+<li><strong>Other Thematic Indices</strong>:
+<ul>
+<li>Soil indices, snow cover indices, drought indices, etc.</li>
+</ul></li>
+</ul>
 </section>
-<section id="reference" class="level2" data-number="6.4">
-<h2 data-number="6.4" class="anchored" data-anchor-id="reference"><span class="header-section-number">6.4</span> Reference</h2>
+<section id="image-classification-methods" class="level3" data-number="3.2.3">
+<h3 data-number="3.2.3" class="anchored" data-anchor-id="image-classification-methods"><span class="header-section-number">3.2.3</span> Image Classification Methods</h3>
+<ul>
+<li><strong>Supervised Classification</strong>:
+<ul>
+<li>Requires training samples of known categories</li>
+<li>Algorithms: Maximum Likelihood, Support Vector Machine, Random Forest, Deep Learning</li>
+<li>Advantages: High accuracy, strong controllability</li>
+</ul></li>
+<li><strong>Unsupervised Classification</strong>:
+<ul>
+<li>Automatic clustering, no prior knowledge needed</li>
+<li>Algorithms: K-means, ISODATA</li>
+<li>Advantages: Fast, suitable for preliminary analysis of unknown areas</li>
+</ul></li>
+<li><strong>Object-Based Classification</strong>:
+<ul>
+<li>Segment first, then classify based on homogeneous regions</li>
+<li>Considers shape, texture, contextual relationships</li>
+<li>Suitable for high-resolution image analysis</li>
+</ul></li>
+</ul>
+</section>
+<section id="accuracy-assessment" class="level3" data-number="3.2.4">
+<h3 data-number="3.2.4" class="anchored" data-anchor-id="accuracy-assessment"><span class="header-section-number">3.2.4</span> Accuracy Assessment</h3>
+<ul>
+<li><strong>Error Matrix</strong>: Compares predicted categories with reference data</li>
+<li><strong>Evaluation Metrics</strong>:
+<ul>
+<li>Overall Accuracy: Total proportion correctly classified</li>
+<li>User’s Accuracy: Reliability of a classified category (reduces misclassification)</li>
+<li>Producer’s Accuracy: Completeness of an actual category (reduces omission)</li>
+<li>Kappa Coefficient: Accounts for the possibility of random correctness</li>
+</ul></li>
+</ul>
+</section>
+<section id="change-detection-techniques" class="level3" data-number="3.2.5">
+<h3 data-number="3.2.5" class="anchored" data-anchor-id="change-detection-techniques"><span class="header-section-number">3.2.5</span> Change Detection Techniques</h3>
+<ul>
+<li><strong>Image Differencing</strong>: Direct calculation of multi-temporal image differences</li>
+<li><strong>Ratio Analysis</strong>: Calculates before/after ratios, reduces illumination effects</li>
+<li><strong>Post-Classification Comparison</strong>: Compares classification results from different periods</li>
+<li><strong>Change Vector Analysis</strong>: Direction and magnitude of changes across multiple bands</li>
+</ul>
+</section>
+</section>
+<section id="applications" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Applications</h1>
+<p>Remote sensing data processing techniques enable a wide array of practical applications across multiple domains. Environmental monitoring represents one of the most significant application areas, where corrected and enhanced satellite imagery facilitates the tracking of deforestation, habitat fragmentation, and biodiversity loss at scales impossible to achieve through ground surveys alone. The temporal dimension of satellite data allows scientists to establish baselines and detect subtle changes over time, providing critical evidence for conservation efforts and policy decisions.</p>
+<p>Urban planning has similarly benefited from advanced remote sensing processing. Geometric correction and orthorectification allow precise mapping of urban infrastructure, while specialized indices like NDBI (Normalized Difference Built-up Index) help planners track urban expansion and identify heat islands. The ability to detect impervious surfaces helps model stormwater runoff and plan green infrastructure, while change detection techniques assist in monitoring unauthorized development and enforcing zoning regulations.</p>
+<p>In agriculture, atmospherically corrected imagery provides accurate information about crop health and stress through indices like NDVI. This enables precision agriculture practices where farmers can apply resources like water and fertilizer exactly where needed, maximizing yields while minimizing environmental impacts. The widespread availability of processed remote sensing data has democratized access to this information, allowing small-scale farmers to benefit from technology previously available only to large agricultural operations.</p>
+<p>Disaster management represents another critical application area. Geometric and radiometric corrections ensure that emergency responders have accurate, usable data in crisis situations. Mosaicking techniques create comprehensive views of affected regions, while change detection identifies damaged infrastructure and displaced populations. During floods, water indices derived from corrected imagery track inundation extent and temporal evolution, supporting evacuation planning and damage assessment.</p>
+<p>Climate science relies heavily on accurate remote sensing data processing to monitor indicators like snow cover, sea ice extent, and land surface temperature. These observations provide essential input for climate models and help validate their predictions, bridging the gap between theoretical projections and observed changes in the Earth system.</p>
+</section>
+<section id="reflection" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Reflection</h1>
+<p>Learning about remote sensing data processing has fundamentally changed my understanding of geospatial analysis. Before this lecture, I viewed satellite imagery as inherently accurate representations of Earth’s surface. I now understand that raw data contains numerous distortions and artifacts that must be systematically addressed before meaningful analysis can begin. This realization has instilled in me a healthy skepticism about geospatial data quality and a deeper appreciation for the rigorous preprocessing required for reliable results.</p>
+<p>The systematic approach to data correction – from geometric to atmospheric to radiometric – mirrors the scientific method itself, requiring both theoretical understanding and practical implementation. I found myself particularly intrigued by the trade-offs involved in selecting correction methods. The choice between simplicity (like Dark Object Subtraction) and sophistication (like radiative transfer models) mirrors decisions I’ll need to make in my own research, balancing accuracy requirements against available resources and expertise.</p>
+<p>This lecture has also highlighted the interdisciplinary nature of remote sensing. The physics of atmospheric scattering, the mathematics of transformation matrices, the computer science of image processing, and the domain knowledge required for interpretation all converge in this field. As someone interested in environmental applications, I now see how essential these technical preprocessing steps are for generating trustworthy analyses that can inform policy and management decisions.</p>
+<p>I was particularly struck by how preprocessing determines what kinds of questions can be reliably answered with remote sensing data. Without proper atmospheric correction, for instance, multi-temporal analyses may detect “changes” that are merely artifacts of different atmospheric conditions. This reinforces the importance of matching processing techniques to research questions and being transparent about limitations when communicating results.</p>
+<section id="reference" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="reference"><span class="header-section-number">5.1</span> Reference</h2>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -811,13 +972,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link" aria-label="Welcome">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Welcome</span>
+      <a href="./02_Xaringan.html" class="pagination-link" aria-label="Xaringan">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Xaringan</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./week8.html" class="pagination-link" aria-label="Classification Ⅱ">
-        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Classification Ⅱ</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./04_Policy.html" class="pagination-link" aria-label="Policy">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Policy</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -826,4 +987,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/Yingxi-Z/RS_weeklyworkdairy/edit/main/week7.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/Yingxi-Z/RS_weeklyworkdairy/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/Yingxi-Z/RS_weeklyworkdairy/edit/main/03_RS data.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/Yingxi-Z/RS_weeklyworkdairy/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

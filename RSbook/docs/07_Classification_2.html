@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>6&nbsp; Classification Ⅰ – CASA0023 - Learning Diary</title>
+<title>7&nbsp; Classification Ⅱ – CASA0023 - Learning Diary</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./week8.html" rel="next">
-<link href="./index.html" rel="prev">
+<link href="./08_SAR.html" rel="next">
+<link href="./06_Classification_1.html" rel="prev">
 <link href="./docs/casa_logo.jpg" rel="icon" type="image/jpeg">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -101,7 +101,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week7.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Classification Ⅰ</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./07_Classification_2.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Classification Ⅱ</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -120,35 +120,50 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </li>
         <li class="sidebar-item">
- <span class="menu-text">week2.qmd</span>
-  </li>
-        <li class="sidebar-item">
- <span class="menu-text">week3.qmd</span>
-  </li>
-        <li class="sidebar-item">
- <span class="menu-text">week4.qmd</span>
-  </li>
-        <li class="sidebar-item">
- <span class="menu-text">week5.qmd</span>
-  </li>
-        <li class="sidebar-item">
- <span class="menu-text">week6.qmd</span>
-  </li>
+  <div class="sidebar-item-container"> 
+  <a href="./01_Get start.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Getting started with Remote sensing</span></span></a>
+  </div>
+</li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week7.html" class="sidebar-item-text sidebar-link active">
+  <a href="./02_Xaringan.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Xaringan</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03_RS data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Remote Sensing Data</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04_Policy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Policy</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05_GEE.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Google Earth Engine</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06_Classification_1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Classification Ⅰ</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week8.html" class="sidebar-item-text sidebar-link">
+  <a href="./07_Classification_2.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Classification Ⅱ</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week9.html" class="sidebar-item-text sidebar-link">
+  <a href="./08_SAR.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">SAR</span></span></a>
   </div>
 </li>
@@ -162,24 +177,29 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">6.1</span> Summary</a>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">7.1</span> Summary</a>
   <ul class="collapse">
-  <li><a href="#supervised-classification" id="toc-supervised-classification" class="nav-link" data-scroll-target="#supervised-classification"><span class="header-section-number">6.1.1</span> <strong>Supervised Classification</strong></a></li>
-  <li><a href="#unsupervised-classification" id="toc-unsupervised-classification" class="nav-link" data-scroll-target="#unsupervised-classification"><span class="header-section-number">6.1.2</span> <strong>Unsupervised Classification</strong></a></li>
-  <li><a href="#mixed-pixels-and-challenges" id="toc-mixed-pixels-and-challenges" class="nav-link" data-scroll-target="#mixed-pixels-and-challenges"><span class="header-section-number">6.1.3</span> <strong>Mixed Pixels and Challenges</strong></a></li>
+  <li><a href="#classification-methodologies" id="toc-classification-methodologies" class="nav-link" data-scroll-target="#classification-methodologies"><span class="header-section-number">7.1.1</span> Classification Methodologies</a></li>
+  <li><a href="#advanced-validation-techniques" id="toc-advanced-validation-techniques" class="nav-link" data-scroll-target="#advanced-validation-techniques"><span class="header-section-number">7.1.2</span> Advanced Validation Techniques</a></li>
   </ul></li>
-  <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="header-section-number">6.2</span> Applications</a></li>
-  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">6.3</span> Reflection</a></li>
-  <li><a href="#reference" id="toc-reference" class="nav-link" data-scroll-target="#reference"><span class="header-section-number">6.4</span> Reference</a></li>
+  <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="header-section-number">7.2</span> Applications</a>
+  <ul class="collapse">
+  <li><a href="#epidemiology-and-public-health" id="toc-epidemiology-and-public-health" class="nav-link" data-scroll-target="#epidemiology-and-public-health"><span class="header-section-number">7.2.1</span> <strong>Epidemiology and Public Health</strong></a></li>
+  <li><a href="#archaeological-site-detection" id="toc-archaeological-site-detection" class="nav-link" data-scroll-target="#archaeological-site-detection"><span class="header-section-number">7.2.2</span> <strong>Archaeological Site Detection</strong></a></li>
+  <li><a href="#military-and-defense-applications" id="toc-military-and-defense-applications" class="nav-link" data-scroll-target="#military-and-defense-applications"><span class="header-section-number">7.2.3</span> <strong>Military and Defense Applications</strong></a></li>
+  <li><a href="#space-exploration-and-planetary-mapping" id="toc-space-exploration-and-planetary-mapping" class="nav-link" data-scroll-target="#space-exploration-and-planetary-mapping"><span class="header-section-number">7.2.4</span> <strong>Space Exploration and Planetary Mapping</strong></a></li>
+  <li><a href="#fisheries-and-marine-ecosystem-monitoring" id="toc-fisheries-and-marine-ecosystem-monitoring" class="nav-link" data-scroll-target="#fisheries-and-marine-ecosystem-monitoring"><span class="header-section-number">7.2.5</span> <strong>Fisheries and Marine Ecosystem Monitoring</strong></a></li>
+  </ul></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">7.3</span> Reflection</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/Yingxi-Z/RS_weeklyworkdairy/edit/main/week7.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/Yingxi-Z/RS_weeklyworkdairy/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/Yingxi-Z/RS_weeklyworkdairy/edit/main/07_Classification_2.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/Yingxi-Z/RS_weeklyworkdairy/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Classification Ⅰ</span></h1>
+<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Classification Ⅱ</span></h1>
 </div>
 
 
@@ -196,53 +216,90 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="summary" class="level2" data-number="6.1">
-<h2 data-number="6.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">6.1</span> Summary</h2>
-<p>This lecture covered <strong>classification methods</strong> in remote sensing, particularly <strong>supervised and unsupervised classification</strong>. Classification is essential in spatial analysis as it helps extract meaningful information from satellite imagery.</p>
-<section id="supervised-classification" class="level3" data-number="6.1.1">
-<h3 data-number="6.1.1" class="anchored" data-anchor-id="supervised-classification"><span class="header-section-number">6.1.1</span> <strong>Supervised Classification</strong></h3>
-<p>Supervised classification relies on labeled training data to categorize pixels. Common methods include:</p>
+<section id="summary" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">7.1</span> Summary</h2>
+<section id="classification-methodologies" class="level3" data-number="7.1.1">
+<h3 data-number="7.1.1" class="anchored" data-anchor-id="classification-methodologies"><span class="header-section-number">7.1.1</span> Classification Methodologies</h3>
+<section id="sub-pixel-analysis" class="level4" data-number="7.1.1.1">
+<h4 data-number="7.1.1.1" class="anchored" data-anchor-id="sub-pixel-analysis"><span class="header-section-number">7.1.1.1</span> Sub-Pixel Analysis</h4>
+<p>Sub-pixel analysis addresses the complexity of pixels containing multiple land cover types. Spectral Mixture Analysis (SMA) is a critical technique that decomposes spectral reflectance within a pixel, precisely calculating the proportion of different land covers. This method is particularly useful for accurately classifying mixed pixels by determining the exact contribution of each surface type.</p>
+</section>
+<section id="object-based-image-analysis-obia" class="level4" data-number="7.1.1.2">
+<h4 data-number="7.1.1.2" class="anchored" data-anchor-id="object-based-image-analysis-obia"><span class="header-section-number">7.1.1.2</span> Object-Based Image Analysis (OBIA)</h4>
+<p>OBIA transcends traditional pixel-by-pixel classification by identifying meaningful objects within pixel groups. The primary process involves:</p>
 <ul>
-<li><p><strong>Maximum Likelihood Classification (MLC):</strong> Assumes a normal distribution of data and assigns each pixel to the class with the highest probability.</p></li>
-<li><p><strong>Support Vector Machines (SVM):</strong> Identifies an optimal decision boundary between different classes.</p></li>
-<li><p><strong>Random Forest (RF):</strong> A machine learning approach using multiple decision trees for classification.</p></li>
+<li><p>Image segmentation using algorithms like Simple Non-Iterative Clustering (SNIC)</p></li>
+<li><p>Supervised or unsupervised classification of identified objects</p></li>
+<li><p>Considering spectral and spatial characteristics of neighboring pixels</p></li>
 </ul>
 </section>
-<section id="unsupervised-classification" class="level3" data-number="6.1.2">
-<h3 data-number="6.1.2" class="anchored" data-anchor-id="unsupervised-classification"><span class="header-section-number">6.1.2</span> <strong>Unsupervised Classification</strong></h3>
-<p>Unsupervised classification groups pixels into clusters based on spectral properties without predefined labels. Common methods include:</p>
+<section id="accuracy-assessment" class="level4" data-number="7.1.1.3">
+<h4 data-number="7.1.1.3" class="anchored" data-anchor-id="accuracy-assessment"><span class="header-section-number">7.1.1.3</span> Accuracy Assessment</h4>
+<p>Accuracy assessment is the cornerstone of reliable remote sensing classification:</p>
 <ul>
-<li><p><strong>K-Means Clustering:</strong> Iteratively assigns pixels to K clusters by minimizing variance.</p></li>
-<li><p><strong>ISODATA (Iterative Self-Organizing Data Analysis):</strong> Allows merging and splitting of clusters for more flexibility.</p></li>
-</ul>
-<p>This method is useful when ground truth data is unavailable, but class labels must be assigned afterward.</p>
-</section>
-<section id="mixed-pixels-and-challenges" class="level3" data-number="6.1.3">
-<h3 data-number="6.1.3" class="anchored" data-anchor-id="mixed-pixels-and-challenges"><span class="header-section-number">6.1.3</span> <strong>Mixed Pixels and Challenges</strong></h3>
-<ul>
-<li><p><strong>Mixed Pixels:</strong> A single pixel may contain multiple land cover types, affecting classification accuracy.</p></li>
-<li><p><strong>Solutions:</strong> Spectral unmixing and increasing spatial resolution can help mitigate this issue.</p></li>
+<li><p>Producer’s Accuracy: Percentage of classified samples matching ground truth data</p></li>
+<li><p>User’s Accuracy: Precision of sample matching between different classifications</p></li>
+<li><p>Overall Accuracy: Percentage of correctly classified samples across all categories</p></li>
 </ul>
 </section>
 </section>
-<section id="applications" class="level2" data-number="6.2">
-<h2 data-number="6.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">6.2</span> Applications</h2>
-<p>Classification techniques in remote sensing have numerous real-world applications across environmental monitoring, urban planning, disaster management, and resource assessment. By analyzing satellite imagery, these methods help researchers and decision-makers extract meaningful information to address various global challenges.</p>
-<p>One of the most common applications is <strong>land use and land cover (LULC) mapping</strong>. Classification methods allow researchers to distinguish between different land cover types such as forests, urban areas, water bodies, and agricultural fields. This is essential for <strong>urban planning</strong>, where authorities monitor city expansion and land conversion. Similarly, in <strong>deforestation studies</strong>, classification helps track forest loss over time, providing critical insights into climate change and conservation efforts. In agriculture, supervised classification techniques are used to <strong>differentiate crop types</strong>, monitor vegetation health, and estimate yields, helping optimize farming strategies.</p>
-<p>In <strong>environmental monitoring</strong>, classification plays a key role in assessing climate change impacts and natural resource management. For example, satellite-based classification is used to analyze <strong>desertification trends, glacier retreat, and vegetation changes</strong> over time. In <strong>coastal zone management</strong>, classification helps monitor shoreline changes and detect areas vulnerable to erosion or sea-level rise. Additionally, wetland mapping projects use classification to identify different wetland ecosystems, supporting conservation initiatives.</p>
-<p><strong>Disaster management</strong> is another critical area where classification proves useful. In flood-prone regions, classified satellite images help delineate <strong>flood-affected areas</strong>, allowing authorities to respond effectively. Similarly, <strong>wildfire detection</strong> relies on classification techniques to identify active fire zones and assess burned areas. In mountainous regions, classification can support <strong>landslide risk assessment</strong> by identifying unstable slopes and high-risk zones.</p>
-<p>In <strong>transportation and infrastructure</strong>, classification helps with <strong>road network extraction</strong> from satellite images, which is useful for updating maps and planning new routes. Additionally, <strong>urban heat island (UHI) studies</strong> use classification to analyze heat-retaining surfaces in cities, helping policymakers design cooling strategies like increasing green spaces.</p>
-<p>Finally, <strong>water resource management</strong> benefits from classification by accurately identifying and monitoring lakes, rivers, and reservoirs. It is also widely used in <strong>drought monitoring</strong>, where classified images assess vegetation stress and water scarcity.</p>
+<section id="advanced-validation-techniques" class="level3" data-number="7.1.2">
+<h3 data-number="7.1.2" class="anchored" data-anchor-id="advanced-validation-techniques"><span class="header-section-number">7.1.2</span> Advanced Validation Techniques</h3>
+<section id="confusion-matrix" class="level4" data-number="7.1.2.1">
+<h4 data-number="7.1.2.1" class="anchored" data-anchor-id="confusion-matrix"><span class="header-section-number">7.1.2.1</span> Confusion Matrix</h4>
+<p>A critical tool for evaluating classification performance:</p>
+<ul>
+<li><p>Displays correct prediction scenarios</p></li>
+<li><p>Analyzes omission and commission errors</p></li>
+<li><p>Calculates Kappa coefficient to measure alignment between classification and labeled data</p></li>
+</ul>
 </section>
-<section id="reflection" class="level2" data-number="6.3">
-<h2 data-number="6.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">6.3</span> Reflection</h2>
-<p>This lecture deepened my understanding of classification techniques in remote sensing, particularly the differences between supervised and unsupervised approaches. I found it fascinating how these methods allow us to extract valuable insights from satellite imagery, helping researchers analyze land use patterns, environmental changes, and disaster impacts. The practical exercises reinforced the theoretical concepts, and I appreciated the opportunity to apply classification algorithms to real-world datasets.</p>
-<p>One aspect that stood out to me was the challenge of <strong>mixed pixels</strong>, where a single pixel contains multiple land cover types. This issue highlights the limitations of spatial resolution and the importance of advanced techniques like spectral unmixing. It made me think about how classification accuracy depends not only on the algorithm but also on data quality, resolution, and preprocessing methods. In future studies, I would like to explore how deep learning models, such as convolutional neural networks (CNNs), can improve classification results by learning complex spatial patterns.</p>
-<p>The applications of classification in disaster management also intrigued me. I had not fully realized the extent to which satellite-based classification supports emergency response efforts, such as flood mapping and wildfire detection. Given my interest in urban and environmental analysis, I see great potential in using classification to study climate-related issues, including <strong>urban heat islands and flooding in cities like Manchester</strong>. This connects to my ongoing research on Manchester’s flooding problem, where classification techniques could help analyze historical flood patterns and identify high-risk areas.</p>
-<p>Overall, this lecture reinforced the importance of classification in spatial data analysis. It also made me reflect on how I can integrate these techniques into my own research. Moving forward, I aim to enhance my skills in machine learning-based classification and explore its applications in urban resilience and climate adaptation strategies.</p>
+<section id="spatial-cross-validation" class="level4" data-number="7.1.2.2">
+<h4 data-number="7.1.2.2" class="anchored" data-anchor-id="spatial-cross-validation"><span class="header-section-number">7.1.2.2</span> Spatial Cross-Validation</h4>
+<p>Addressing spatial autocorrelation challenges:</p>
+<ul>
+<li><p>Prevents model overfitting</p></li>
+<li><p>Ensures spatial independence of training and testing datasets</p></li>
+<li><p>Mitigates overly optimistic accuracy estimations</p></li>
+</ul>
 </section>
-<section id="reference" class="level2" data-number="6.4">
-<h2 data-number="6.4" class="anchored" data-anchor-id="reference"><span class="header-section-number">6.4</span> Reference</h2>
+<section id="receiver-operating-characteristic-roc-curve" class="level4" data-number="7.1.2.3">
+<h4 data-number="7.1.2.3" class="anchored" data-anchor-id="receiver-operating-characteristic-roc-curve"><span class="header-section-number">7.1.2.3</span> Receiver Operating Characteristic (ROC) Curve</h4>
+<p>Graphically represents classification model performance by plotting true positive rates against false positive rates, enabling simultaneous evaluation of multiple classification models.</p>
+</section>
+</section>
+</section>
+<section id="applications" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">7.2</span> Applications</h2>
+<p>Remote sensing classification techniques extend beyond traditional environmental and urban applications, they also play a crucial role in fields such as public health, archaeology, and military intelligence. By leveraging high-resolution imagery and machine learning algorithms, researchers can extract valuable insights that support various scientific and strategic objectives.</p>
+<section id="epidemiology-and-public-health" class="level3" data-number="7.2.1">
+<h3 data-number="7.2.1" class="anchored" data-anchor-id="epidemiology-and-public-health"><span class="header-section-number">7.2.1</span> <strong>Epidemiology and Public Health</strong></h3>
+<p>Satellite-based classification has proven useful in tracking disease outbreaks and environmental factors influencing public health. For instance, remote sensing is used to classify land cover changes associated with vector-borne diseases like malaria and dengue. By identifying stagnant water bodies and deforested areas, health authorities can predict mosquito breeding grounds and improve disease prevention strategies. Additionally, air quality assessments rely on classification to detect pollution hotspots, aiding in respiratory disease mitigation efforts.</p>
+</section>
+<section id="archaeological-site-detection" class="level3" data-number="7.2.2">
+<h3 data-number="7.2.2" class="anchored" data-anchor-id="archaeological-site-detection"><span class="header-section-number">7.2.2</span> <strong>Archaeological Site Detection</strong></h3>
+<p>Advanced classification techniques, including Object-Based Image Analysis (OBIA), are revolutionizing archaeological studies. By analyzing soil composition, vegetation patterns, and thermal anomalies, researchers can identify buried structures and ancient settlements without excavation. For example, classified satellite images have revealed lost cities in dense rainforests, where conventional survey methods are impractical.</p>
+</section>
+<section id="military-and-defense-applications" class="level3" data-number="7.2.3">
+<h3 data-number="7.2.3" class="anchored" data-anchor-id="military-and-defense-applications"><span class="header-section-number">7.2.3</span> <strong>Military and Defense Applications</strong></h3>
+<p>In defense and intelligence, classification plays a critical role in monitoring geopolitical changes. High-resolution satellite imagery is classified to detect military installations, track troop movements, and assess terrain conditions. Synthetic Aperture Radar (SAR)-based classification is particularly valuable in detecting hidden structures and distinguishing between natural and artificial objects, even under cloud cover.</p>
+</section>
+<section id="space-exploration-and-planetary-mapping" class="level3" data-number="7.2.4">
+<h3 data-number="7.2.4" class="anchored" data-anchor-id="space-exploration-and-planetary-mapping"><span class="header-section-number">7.2.4</span> <strong>Space Exploration and Planetary Mapping</strong></h3>
+<p>Remote sensing classification is instrumental in analyzing extraterrestrial landscapes. NASA and ESA use classification models to map Martian surface compositions, identifying features such as ice deposits, volcanic plains, and ancient riverbeds. These insights guide rover missions and future colonization efforts by determining suitable landing sites and resource availability.</p>
+</section>
+<section id="fisheries-and-marine-ecosystem-monitoring" class="level3" data-number="7.2.5">
+<h3 data-number="7.2.5" class="anchored" data-anchor-id="fisheries-and-marine-ecosystem-monitoring"><span class="header-section-number">7.2.5</span> <strong>Fisheries and Marine Ecosystem Monitoring</strong></h3>
+<p>Beyond terrestrial applications, classification techniques are widely applied in marine studies. Satellite imagery helps identify harmful algal blooms (HABs) that threaten marine biodiversity and human health. Additionally, ocean surface classification supports sustainable fisheries management by tracking fish migration patterns and detecting illegal fishing activities.</p>
+</section>
+</section>
+<section id="reflection" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">7.3</span> Reflection</h2>
+<p>This lecture deepened my understanding of remote sensing classification techniques and their practical applications, particularly in disaster management. The discussion on <strong>sub-pixel analysis</strong> and <strong>object-based image analysis (OBIA)</strong> highlighted their advantages in capturing complex land cover variations, which is relevant to my group project on <strong>flood detection in Manchester</strong>. Given Manchester’s susceptibility to flooding, accurately classifying <strong>flooded areas in urban environments</strong> is critical for effective response and resilience planning.</p>
+<p>One key insight was the <strong>importance of high-resolution classification</strong> in flood mapping. Traditional pixel-based approaches often misclassify urban water accumulation, while OBIA allows for <strong>spatially aware segmentation</strong>, distinguishing between <strong>flooded roads, waterlogged parks, and unaffected surfaces</strong>. Applying OBIA to <strong>Sentinel-2 or Landsat imagery</strong> in our project could enhance flood risk assessments by improving classification accuracy.</p>
+<p>The role of <strong>machine learning models</strong>, such as <strong>Convolutional Neural Networks (CNNs)</strong>, in land cover classification was another crucial takeaway. The <strong>Dynamic World approach</strong>, which leverages near real-time Sentinel-2 data, demonstrated how <strong>semi-supervised classification</strong> can improve flood detection. Integrating CNN-based classification with <strong>Manchester’s historical flood data and real-time weather inputs</strong> could enhance early warning systems.</p>
+<p>Lastly, the discussion on <strong>spatial cross-validation</strong> was particularly relevant. Overfitting to past flood events is a risk when training classification models, especially in urban environments where land cover characteristics change over time. Ensuring that our classification model <strong>generalizes well to future flood events</strong> will be critical for our project’s success.</p>
+<p>Overall, this lecture provided valuable insights that we can apply to our group work. By refining flood detection models using <strong>advanced classification techniques, machine learning, and real-time satellite data</strong>, we aim to develop a more effective approach to monitoring and mitigating Manchester’s flood risks.</p>
 
 
 </section>
@@ -811,13 +868,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link" aria-label="Welcome">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Welcome</span>
+      <a href="./06_Classification_1.html" class="pagination-link" aria-label="Classification Ⅰ">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Classification Ⅰ</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./week8.html" class="pagination-link" aria-label="Classification Ⅱ">
-        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Classification Ⅱ</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./08_SAR.html" class="pagination-link" aria-label="SAR">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">SAR</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -826,4 +883,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/Yingxi-Z/RS_weeklyworkdairy/edit/main/week7.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/Yingxi-Z/RS_weeklyworkdairy/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/Yingxi-Z/RS_weeklyworkdairy/edit/main/07_Classification_2.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/Yingxi-Z/RS_weeklyworkdairy/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

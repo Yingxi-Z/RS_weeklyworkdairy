@@ -18,14 +18,14 @@ book:
   repo-actions: [edit, issue]                
   chapters:
     - index.qmd
-    - week2.qmd
-    - week3.qmd
-    - week4.qmd
-    - week5.qmd
-    - week6.qmd
-    - week7.qmd
-    - week8.qmd
-    - week9.qmd
+    - 01_Get start.qmd
+    - 02_Xaringan.qmd
+    - 03_RS data.qmd
+    - 04_Policy.qmd
+    - 05_GEE.qmd
+    - 06_Classification_1.qmd
+    - 07_Classification_2.qmd
+    - 08_SAR.qmd
 
 bibliography: references.bib
 

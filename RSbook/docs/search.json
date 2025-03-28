@@ -102,7 +102,7 @@
   {
     "objectID": "week4.html",
     "href": "week4.html",
-    "title": "3  Remote Sensing Data Processing",
+    "title": "3  Remote Sensing Data",
     "section": "",
     "text": "3.1 Correction of Remote Sensing Data",
     "crumbs": [
@@ -112,7 +112,7 @@
   {
     "objectID": "week4.html#correction-of-remote-sensing-data",
     "href": "week4.html#correction-of-remote-sensing-data",
-    "title": "3  Remote Sensing Data Processing",
+    "title": "3  Remote Sensing Data",
     "section": "",
     "text": "3.1.1 Geometric Correction\n\nProblem: Image positions don’t match actual geographic locations\nCauses:\n\nEarth curvature effects\nSensor viewing angle deviations\nPlatform attitude variations (satellite/aircraft movement)\n\nCorrection Process:\n\nGround Control Points (GCPs): Identify corresponding points between image and real ground\nTransformation Model: Calculate correction formulas (typically polynomial)\nResampling: Assign values to new grid\n\nNearest Neighbor: Preserves original values, suitable for classified data\nBilinear Interpolation: Averages values, produces smoother results\nCubic Convolution: High quality but computationally intensive\n\n\n\n\n\n3.1.2 Atmospheric Correction\n\nProblem: Atmospheric gases and particles interfere with signal transmission\n\nScattering: Changes light direction, increases path radiance\nAbsorption: Weakens signal strength at specific wavelengths\n\nCorrection Methods:\n\nDark Object Subtraction (DOS): Assumes brightness in dark areas comes from atmospheric scattering\nRadiative Transfer Code: Uses physical models to simulate and remove atmospheric effects\nEmpirical Line Correction: Establishes empirical relationships using ground measurements\nSecond-Order Derivative: Reduces background interference in spectral curves\n\nPractical Advice: DOS suitable for beginners, radiative transfer models recommended for professional analysis\n\n\n\n3.1.3 Orthorectification\n\nSpecial type of geometric correction that eliminates displacement caused by terrain\nRequires DEM data to calculate actual position of each pixel\nGenerates orthoimages with uniform scale for direct measurement\n\n\n\n3.1.4 Reflectance Correction\n\nConversion from Digital Numbers (DN) to physical values\nSteps include:\n\nRadiometric calibration: DN to radiance\nTop-of-Atmosphere (TOA) reflectance: Accounts for solar illumination\nSurface reflectance: After atmospheric correction\n\nEssential for quantitative analysis and multi-temporal comparisons\n\n\n\n3.1.5 Data Mosaicking\n\nCombines multiple images into a seamless large-area image\nProcessing Steps:\n\nPrecise registration of adjacent images\nRadiometric balancing to eliminate color differences\nSeamline optimization to avoid obvious features\nEdge blending to eliminate visible seams",
     "crumbs": [
@@ -122,7 +122,7 @@
   {
     "objectID": "week4.html#enhancement-and-analysis-of-remote-sensing-data",
     "href": "week4.html#enhancement-and-analysis-of-remote-sensing-data",
-    "title": "3  Remote Sensing Data Processing",
+    "title": "3  Remote Sensing Data",
     "section": "3.2 Enhancement and Analysis of Remote Sensing Data",
     "text": "3.2 Enhancement and Analysis of Remote Sensing Data\n\n3.2.1 Image Enhancement Techniques\n\nContrast Stretching: Expands histogram to enhance feature distinctiveness\nFiltering:\n\nLow-pass filters: Smooth noise\nHigh-pass filters: Enhance edges\n\nBand Combinations: Highlight specific features through different band combinations\nPrincipal Component Analysis (PCA): Dimension reduction while preserving key information\nTexture Analysis: Extracts information about spatial arrangement patterns\n\n\n\n3.2.2 Remote Sensing Indices\n\nVegetation Indices:\n\nNDVI = (NIR-Red)/(NIR+Red): Reflects vegetation vigor\nEVI: Improved NDVI, reduces soil background effects\nSAVI: Suitable for areas with sparse vegetation\n\nWater Indices:\n\nNDWI = (Green-NIR)/(Green+NIR): Extracts water bodies\nMNDWI: Improved version, reduces building interference\n\nBuilt-up Indices:\n\nNDBI = (SWIR-NIR)/(SWIR+NIR): Highlights urban built-up areas\n\nOther Thematic Indices:\n\nSoil indices, snow cover indices, drought indices, etc.\n\n\n\n\n3.2.3 Image Classification Methods\n\nSupervised Classification:\n\nRequires training samples of known categories\nAlgorithms: Maximum Likelihood, Support Vector Machine, Random Forest, Deep Learning\nAdvantages: High accuracy, strong controllability\n\nUnsupervised Classification:\n\nAutomatic clustering, no prior knowledge needed\nAlgorithms: K-means, ISODATA\nAdvantages: Fast, suitable for preliminary analysis of unknown areas\n\nObject-Based Classification:\n\nSegment first, then classify based on homogeneous regions\nConsiders shape, texture, contextual relationships\nSuitable for high-resolution image analysis\n\n\n\n\n3.2.4 Accuracy Assessment\n\nError Matrix: Compares predicted categories with reference data\nEvaluation Metrics:\n\nOverall Accuracy: Total proportion correctly classified\nUser’s Accuracy: Reliability of a classified category (reduces misclassification)\nProducer’s Accuracy: Completeness of an actual category (reduces omission)\nKappa Coefficient: Accounts for the possibility of random correctness\n\n\n\n\n3.2.5 Change Detection Techniques\n\nImage Differencing: Direct calculation of multi-temporal image differences\nRatio Analysis: Calculates before/after ratios, reduces illumination effects\nPost-Classification Comparison: Compares classification results from different periods\nChange Vector Analysis: Direction and magnitude of changes across multiple bands",
     "crumbs": [
@@ -142,7 +142,7 @@
   {
     "objectID": "week4.html#reference",
     "href": "week4.html#reference",
-    "title": "3  Remote Sensing Data Processing",
+    "title": "3  Remote Sensing Data",
     "section": "5.1 Reference",
     "text": "5.1 Reference",
     "crumbs": [
@@ -392,6 +392,356 @@
   {
     "objectID": "week9.html#reference",
     "href": "week9.html#reference",
+    "title": "8  SAR",
+    "section": "8.5 Reference",
+    "text": "8.5 Reference",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>SAR</span>"
+    ]
+  },
+  {
+    "objectID": "01_Get start.html",
+    "href": "01_Get start.html",
+    "title": "1  Getting started with Remote sensing",
+    "section": "",
+    "text": "1.1 Summary",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Getting started with Remote sensing</span>"
+    ]
+  },
+  {
+    "objectID": "01_Get start.html#summary",
+    "href": "01_Get start.html#summary",
+    "title": "1  Getting started with Remote sensing",
+    "section": "",
+    "text": "1.1.1 What is Remote Sensing?\n\nRemote sensing is basically a way of collecting information about places or objects without physically being there.\nIt works by detecting energy (usually light or heat) that bounces off the Earth’s surface.\nThink of it like taking a photo from space, but with more than just visible light—some sensors can see heat, detect moisture, or even see through clouds!\n\n\n\n1.1.2 Types of Remote Sensing\n\nPassive sensing → Relies on sunlight (like a regular camera, human eyes, satellite sensor).\nActive sensing → Sends out its own signals and measures the response (like radar or LiDAR).\n\n\n\n1.1.3 Electromagnetic Radiation\n\nRemote sensing works by detecting electromagnetic radiation (EMR), which includes visible light, infrared, and other types of waves.\nDifferent surfaces reflect and absorb EMR differently, so we can use this to identify and analyze objects from a distance.\nRemote sensing uses different parts of the electromagnetic spectrum：\n\n\nFigure 1 (source: )\n\n\n1.1.4 Resolution – How clear is the Image?\n\nSpatial resolution – How detailed an image is (higher resolution = smaller objects visible).\nTemporal resolution – How often images are taken (e.g., some satellites scan daily, others every few weeks).\nSpectral resolution – How many “colors” or wavelengths are detected (more bands = more data about the environment).\nRadiometric resolution – How precisely differences in energy levels are recorded (higher bit depth = more subtle variations detected).",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Getting started with Remote sensing</span>"
+    ]
+  },
+  {
+    "objectID": "01_Get start.html#applications",
+    "href": "01_Get start.html#applications",
+    "title": "1  Getting started with Remote sensing",
+    "section": "1.2 Applications",
+    "text": "1.2 Applications\nRemote sensing has a wide range of applications in environmental monitoring, agriculture, disaster management, urban planning, and security. In environmental studies, satellite imagery helps track deforestation, land use changes, and air and water pollution. High spatial resolution images from satellites like Sentinel-2 and Landsat monitor illegal logging and urban expansion. Spectral resolution data, particularly near-infrared, assesses vegetation health and carbon storage, while satellites like MODIS and Sentinel-5P detect pollutants in the atmosphere and water bodies.\nIn agriculture, remote sensing supports precision farming by monitoring crop health, soil moisture, and irrigation. Multispectral sensors detect plant stress and diseases early, while thermal infrared data tracks soil moisture and evaporation. High-resolution imagery allows for targeted fertilization and pest control, improving efficiency and reducing waste. These technologies help ensure food security by optimizing agricultural production.\nDisaster management heavily relies on remote sensing for early warning and response. Radar satellites like Sentinel-1, with frequent temporal resolution, track flood extent even through cloud cover. Wildfires are detected in real time using thermal infrared sensors, allowing rapid emergency response. Earthquakes and landslides can be predicted and monitored using high spatial and radiometric resolution data, helping assess risk and mitigate damage.\nIn urban planning, remote sensing assists in monitoring city growth, transportation networks, and the heat island effect. Thermal infrared data identifies temperature variations in urban areas, guiding sustainable city development. Traffic patterns and congestion can also be analyzed through satellite imagery, supporting better infrastructure planning.\nSecurity and defense use remote sensing for border surveillance, maritime monitoring, and disaster response. Radar and optical satellites track illegal activities such as smuggling and unauthorized fishing. High temporal resolution images assist in military strategy and humanitarian aid planning.\nOverall, remote sensing plays a crucial role in various fields, with different types of resolution providing essential data for decision-making. As technology advances, its applications will continue to expand, offering more detailed insights into our world.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Getting started with Remote sensing</span>"
+    ]
+  },
+  {
+    "objectID": "01_Get start.html#reflection",
+    "href": "01_Get start.html#reflection",
+    "title": "1  Getting started with Remote sensing",
+    "section": "1.3 Reflection",
+    "text": "1.3 Reflection\nThis lecture provided a clear introduction to remote sensing, focusing on key concepts like spatial, temporal, spectral, and radiometric resolution. I had a general idea of how satellite imagery works, but I didn’t realize how different types of resolution determine what kind of information can be extracted. For example, high temporal resolution is essential for disaster monitoring, while high spectral resolution is better suited for analyzing vegetation health. Understanding these differences helped me see why different satellites are designed for specific applications.\nOne of the most interesting aspects was learning about the wide range of applications. I was aware that remote sensing is used for weather forecasting and mapping, but I hadn’t considered its role in agriculture, urban planning, and security. It was fascinating to see how thermal infrared sensors detect wildfires in real-time, how radar satellites track floods through cloud cover, and how spectral data can reveal plant stress before it’s visible. The idea that satellite imagery can help design cooler cities by analyzing heat islands also stood out to me.\nWhile the lecture covered the fundamentals, I’m curious about how satellite data is processed and analyzed. The raw images must be converted into meaningful insights, often using GIS and machine learning techniques. I’d like to explore more about how large-scale environmental changes are detected and modeled over time.\nOverall, this lecture gave me a deeper appreciation for remote sensing and its impact on our world. It’s amazing how much satellite data influences daily life, from food production to disaster response. Moving forward, I want to learn more about the analytical side of remote sensing and how it connects with my research interests.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Getting started with Remote sensing</span>"
+    ]
+  },
+  {
+    "objectID": "01_Get start.html#reference",
+    "href": "01_Get start.html#reference",
+    "title": "1  Getting started with Remote sensing",
+    "section": "1.4 Reference",
+    "text": "1.4 Reference",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Getting started with Remote sensing</span>"
+    ]
+  },
+  {
+    "objectID": "02_Xaringan.html",
+    "href": "02_Xaringan.html",
+    "title": "2  Xaringan",
+    "section": "",
+    "text": "The content for week 2 is a presentation in Xaringan on the Sentinel-1 SAR satellite.\nThe presentation is below, and the summary, application, and reflection are all included in the slides.\n```{r, echo=FALSE}",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Xaringan</span>"
+    ]
+  },
+  {
+    "objectID": "03_RS data.html",
+    "href": "03_RS data.html",
+    "title": "3  Remote Sensing Data",
+    "section": "",
+    "text": "3.1 Correction of Remote Sensing Data",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Remote Sensing Data</span>"
+    ]
+  },
+  {
+    "objectID": "03_RS data.html#correction-of-remote-sensing-data",
+    "href": "03_RS data.html#correction-of-remote-sensing-data",
+    "title": "3  Remote Sensing Data",
+    "section": "",
+    "text": "3.1.1 Geometric Correction\n\nProblem: Image positions don’t match actual geographic locations\nCauses:\n\nEarth curvature effects\nSensor viewing angle deviations\nPlatform attitude variations (satellite/aircraft movement)\n\nCorrection Process:\n\nGround Control Points (GCPs): Identify corresponding points between image and real ground\nTransformation Model: Calculate correction formulas (typically polynomial)\nResampling: Assign values to new grid\n\nNearest Neighbor: Preserves original values, suitable for classified data\nBilinear Interpolation: Averages values, produces smoother results\nCubic Convolution: High quality but computationally intensive\n\n\n\n\n\n3.1.2 Atmospheric Correction\n\nProblem: Atmospheric gases and particles interfere with signal transmission\n\nScattering: Changes light direction, increases path radiance\nAbsorption: Weakens signal strength at specific wavelengths\n\nCorrection Methods:\n\nDark Object Subtraction (DOS): Assumes brightness in dark areas comes from atmospheric scattering\nRadiative Transfer Code: Uses physical models to simulate and remove atmospheric effects\nEmpirical Line Correction: Establishes empirical relationships using ground measurements\nSecond-Order Derivative: Reduces background interference in spectral curves\n\nPractical Advice: DOS suitable for beginners, radiative transfer models recommended for professional analysis\n\n\n\n3.1.3 Orthorectification\n\nSpecial type of geometric correction that eliminates displacement caused by terrain\nRequires DEM data to calculate actual position of each pixel\nGenerates orthoimages with uniform scale for direct measurement\n\n\n\n3.1.4 Reflectance Correction\n\nConversion from Digital Numbers (DN) to physical values\nSteps include:\n\nRadiometric calibration: DN to radiance\nTop-of-Atmosphere (TOA) reflectance: Accounts for solar illumination\nSurface reflectance: After atmospheric correction\n\nEssential for quantitative analysis and multi-temporal comparisons\n\n\n\n3.1.5 Data Mosaicking\n\nCombines multiple images into a seamless large-area image\nProcessing Steps:\n\nPrecise registration of adjacent images\nRadiometric balancing to eliminate color differences\nSeamline optimization to avoid obvious features\nEdge blending to eliminate visible seams",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Remote Sensing Data</span>"
+    ]
+  },
+  {
+    "objectID": "03_RS data.html#enhancement-and-analysis-of-remote-sensing-data",
+    "href": "03_RS data.html#enhancement-and-analysis-of-remote-sensing-data",
+    "title": "3  Remote Sensing Data",
+    "section": "3.2 Enhancement and Analysis of Remote Sensing Data",
+    "text": "3.2 Enhancement and Analysis of Remote Sensing Data\n\n3.2.1 Image Enhancement Techniques\n\nContrast Stretching: Expands histogram to enhance feature distinctiveness\nFiltering:\n\nLow-pass filters: Smooth noise\nHigh-pass filters: Enhance edges\n\nBand Combinations: Highlight specific features through different band combinations\nPrincipal Component Analysis (PCA): Dimension reduction while preserving key information\nTexture Analysis: Extracts information about spatial arrangement patterns\n\n\n\n3.2.2 Remote Sensing Indices\n\nVegetation Indices:\n\nNDVI = (NIR-Red)/(NIR+Red): Reflects vegetation vigor\nEVI: Improved NDVI, reduces soil background effects\nSAVI: Suitable for areas with sparse vegetation\n\nWater Indices:\n\nNDWI = (Green-NIR)/(Green+NIR): Extracts water bodies\nMNDWI: Improved version, reduces building interference\n\nBuilt-up Indices:\n\nNDBI = (SWIR-NIR)/(SWIR+NIR): Highlights urban built-up areas\n\nOther Thematic Indices:\n\nSoil indices, snow cover indices, drought indices, etc.\n\n\n\n\n3.2.3 Image Classification Methods\n\nSupervised Classification:\n\nRequires training samples of known categories\nAlgorithms: Maximum Likelihood, Support Vector Machine, Random Forest, Deep Learning\nAdvantages: High accuracy, strong controllability\n\nUnsupervised Classification:\n\nAutomatic clustering, no prior knowledge needed\nAlgorithms: K-means, ISODATA\nAdvantages: Fast, suitable for preliminary analysis of unknown areas\n\nObject-Based Classification:\n\nSegment first, then classify based on homogeneous regions\nConsiders shape, texture, contextual relationships\nSuitable for high-resolution image analysis\n\n\n\n\n3.2.4 Accuracy Assessment\n\nError Matrix: Compares predicted categories with reference data\nEvaluation Metrics:\n\nOverall Accuracy: Total proportion correctly classified\nUser’s Accuracy: Reliability of a classified category (reduces misclassification)\nProducer’s Accuracy: Completeness of an actual category (reduces omission)\nKappa Coefficient: Accounts for the possibility of random correctness\n\n\n\n\n3.2.5 Change Detection Techniques\n\nImage Differencing: Direct calculation of multi-temporal image differences\nRatio Analysis: Calculates before/after ratios, reduces illumination effects\nPost-Classification Comparison: Compares classification results from different periods\nChange Vector Analysis: Direction and magnitude of changes across multiple bands",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Remote Sensing Data</span>"
+    ]
+  },
+  {
+    "objectID": "03_RS data.html#reference",
+    "href": "03_RS data.html#reference",
+    "title": "3  Remote Sensing Data",
+    "section": "5.1 Reference",
+    "text": "5.1 Reference",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Remote Sensing Data</span>"
+    ]
+  },
+  {
+    "objectID": "04_Policy.html",
+    "href": "04_Policy.html",
+    "title": "4  Policy",
+    "section": "",
+    "text": "4.1 Summary\nAdvantages of Using Remote Sensing in Policy:\nKey Policy Frameworks: UN Sustainable Development Goals (SDGs); UN Sendai Framework for Disaster Risk Reduction ; GEO (Group on Earth Observations) working groups; Copernicus program (European)\nRemote Sensing Policy Application Examples:\n- Dujiangyan City light pollution study (night light data)\n- London tree canopy analysis (aerial and satellite data)\n- Climate change assessment and impacts\n- Urban planning and management\n- Disaster risk assessment (e.g., flood risk mapping)\nChallenges & Limitations:\n- Data accessibility\n- Technical capacity requirements\n- Time delays and frequency issues\n- Communication barriers between decision\n-makers and researchers\n- Need for integration with ground truth\nPolicy Implementation Components:\n- Requires supporting enforcement and monitoring mechanisms\n- Integration of multi-source data for comprehensive analysis\n- Citizen participation and feedback - Policy evaluation and adjustment",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Policy</span>"
+    ]
+  },
+  {
+    "objectID": "04_Policy.html#summary",
+    "href": "04_Policy.html#summary",
+    "title": "4  Policy",
+    "section": "",
+    "text": "Provides objective data at large scales and over long time series\nCost-effective, especially for inaccessible areas\nSupports different stages of policy development\nData accuracy has significantly improved, particularly in the last 20 years",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Policy</span>"
+    ]
+  },
+  {
+    "objectID": "04_Policy.html#applications",
+    "href": "04_Policy.html#applications",
+    "title": "4  Policy",
+    "section": "4.2 Applications",
+    "text": "4.2 Applications\nRemote sensing plays a crucial role in formulating and implementing environmental policies, particularly in areas such as ecological protection, climate change mitigation, resource management, and pollution monitoring. By utilizing satellite imagery, drones, and aerial photography, remote sensing provides large-scale, high-frequency data to support decision-making, enabling governments and organizations to develop evidence-based environmental policies.\nFirst, remote sensing is widely used in ecological conservation and natural resource management. For instance, forest cover monitoring helps assess illegal logging, desertification trends, and ecological restoration efforts. The Brazilian government utilizes NASA’s Landsat data to monitor deforestation in the Amazon rainforest and implement policies to curb forest loss. Additionally, wetland and coastal ecosystem monitoring relies on remote sensing to evaluate the impact of climate change and human activities, supporting international agreements such as the Ramsar Convention.\nSecond, remote sensing plays a vital role in air pollution monitoring. Atmospheric remote sensing technologies, such as MODIS and Sentinel-5P, provide aerosol optical depth (AOD) data to identify pollution sources and inform mitigation strategies. In China, high-resolution Gaofen satellites are used to monitor PM2.5 concentrations and integrate ground-based observations to enhance the effectiveness of air pollution control policies like the “Blue Sky Protection Campaign.”\nIn water resource management and water pollution monitoring, remote sensing can track changes in lake, reservoir, and river water quality, including chlorophyll concentration, suspended sediments, and algal bloom outbreaks. The European Environment Agency (EEA), through the Copernicus program, uses Sentinel-2 data to monitor eutrophication in major European water bodies, supporting the implementation of the EU Water Framework Directive. Furthermore, remote sensing contributes to flood prediction and sustainable water resource allocation, aiding urban disaster preparedness and long-term water management.\nRegarding climate change policy, remote sensing provides long-term climate data, including global temperature trends, glacier retreat, sea-level rise, and carbon flux estimation. NASA’s GRACE satellite monitors global ice mass loss, offering scientific evidence for climate policies under the Paris Agreement. Additionally, remote sensing-based forest carbon storage estimation supports national carbon trading systems, helping governments achieve carbon neutrality goals.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Policy</span>"
+    ]
+  },
+  {
+    "objectID": "04_Policy.html#reflection",
+    "href": "04_Policy.html#reflection",
+    "title": "4  Policy",
+    "section": "4.3 Reflection",
+    "text": "4.3 Reflection\nOne of the most impactful applications of remote sensing in environmental policy is air pollution monitoring. I find it fascinating how satellite-based observations, such as aerosol optical depth (AOD) data from MODIS and Sentinel-5P, provide real-time insights into air quality. Unlike ground-based sensors, which offer limited spatial coverage, remote sensing allows for large-scale and continuous monitoring, making it an essential tool for policymakers.\nA notable example is China’s use of Gaofen satellites to track PM2.5 levels. This data has been integrated into policies like the “Blue Sky Protection Campaign,” helping authorities identify pollution hotspots and measure the effectiveness of emission reduction strategies. However, I have also realized that satellite data alone is not enough—combining remote sensing with ground-based measurements and machine learning models is crucial for improving accuracy and guiding targeted interventions.\nMoving forward, I am particularly interested in how advancements in AI can enhance the interpretation of air pollution data. As urban areas continue to face air quality challenges, developing more sophisticated remote sensing-based monitoring systems could significantly improve policy responses and public health outcomes.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Policy</span>"
+    ]
+  },
+  {
+    "objectID": "04_Policy.html#reference",
+    "href": "04_Policy.html#reference",
+    "title": "4  Policy",
+    "section": "4.4 Reference",
+    "text": "4.4 Reference",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Policy</span>"
+    ]
+  },
+  {
+    "objectID": "05_GEE.html",
+    "href": "05_GEE.html",
+    "title": "5  Google Earth Engine",
+    "section": "",
+    "text": "5.1 Summary\nLecture 5 introduced Google Earth Engine (GEE), a powerful cloud computing platform designed for processing and analyzing geospatial data, particularly remote sensing data. GEE integrates vast geospatial datasets with strong computational capabilities, enabling users to efficiently process and analyze large-scale data.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Google Earth Engine</span>"
+    ]
+  },
+  {
+    "objectID": "05_GEE.html#summary",
+    "href": "05_GEE.html#summary",
+    "title": "5  Google Earth Engine",
+    "section": "",
+    "text": "5.1.1 Advantages of GEE\nData Storage and Access: Users can access and process data directly in the cloud without downloading large datasets, saving local storage space and improving efficiency.\nComputational Power: Leveraging Google’s robust infrastructure, GEE can handle large-scale data processing, supporting complex analyses and significantly reducing processing time.\nProgramming Interface: GEE offers both JavaScript and Python APIs, allowing users to customize analysis workflows as needed. This flexibility makes it suitable for various applications.\n\n\n5.1.2 Key Functions in GEE\nImage Processing: Functions like ee.Image allow users to manipulate and analyze satellite images, such as applying filters, enhancing contrast, and extracting spectral indices (e.g., NDVI for vegetation analysis).\nData Collection and Filtering: ee.ImageCollection enables users to work with large datasets, filtering by date, location, or cloud cover.\nGeospatial Statistics: ee.Reducer functions help compute statistical summaries (e.g., mean, median, min/max values) for specific regions.\nVector Data Processing: ee.Geometry and ee.FeatureCollection handle vector data like points, lines, and polygons for spatial analysis.\n\n\n5.1.3 Essential Tools in GEE\nCode Editor: A powerful web-based IDE that allows users to write JavaScript scripts, visualize data, and execute computations.\nAsset Manager: Users can upload and manage their own datasets, such as shapefiles or raster images.\nData Catalog: GEE provides access to extensive remote sensing and geospatial datasets, including Landsat, Sentinel, MODIS, and global climate models.\nMap Visualization Tools: Users can overlay processed images, vector data, and computed results onto interactive maps.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Google Earth Engine</span>"
+    ]
+  },
+  {
+    "objectID": "05_GEE.html#applications",
+    "href": "05_GEE.html#applications",
+    "title": "5  Google Earth Engine",
+    "section": "5.2 Applications",
+    "text": "5.2 Applications\nLand Cover Change Detection: By analyzing satellite images from different periods, GEE enables monitoring of land use changes, such as urban expansion and deforestation. This is crucial for environmental protection and resource management.\nEnvironmental Monitoring: GEE can be used to assess environmental indicators such as water quality and air pollution, supporting environmental protection efforts and policy-making. For example, it helps track the spatial and temporal distribution of air pollutants and evaluate their impact on public health.\nDisaster Management: In the aftermath of natural disasters, GEE allows for rapid assessment of affected areas, aiding disaster response and decision-making. For instance, it can analyze flooded regions to support rescue and recovery planning.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Google Earth Engine</span>"
+    ]
+  },
+  {
+    "objectID": "05_GEE.html#reflection",
+    "href": "05_GEE.html#reflection",
+    "title": "5  Google Earth Engine",
+    "section": "5.3 Reflection",
+    "text": "5.3 Reflection\nI found this session particularly insightful because it demonstrated how large-scale geospatial analysis can be conducted efficiently without requiring high-end hardware. The ability to access and process vast datasets in the cloud is a significant advantage, especially for environmental research, urban planning, and disaster management.\nOne key takeaway for me was how GEE integrates various datasets, such as Landsat, Sentinel, and MODIS, into a single platform. This makes it much easier to analyze long-term environmental changes without having to manually collect and preprocess data. The fact that GEE provides pre-processed and ready-to-use datasets greatly simplifies geospatial analysis, which is particularly beneficial for beginners like me.\nHowever, I also found the learning curve to be somewhat challenging. Unlike traditional GIS software, which often has a graphical user interface, GEE requires scripting in JavaScript or Python. Since I have limited programming experience, writing scripts to filter datasets and visualize results was initially difficult. That said, I recognize that learning to code is an essential skill for advanced geospatial analysis, and this lecture motivated me to improve my scripting abilities.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Google Earth Engine</span>"
+    ]
+  },
+  {
+    "objectID": "05_GEE.html#reference",
+    "href": "05_GEE.html#reference",
+    "title": "5  Google Earth Engine",
+    "section": "5.4 Reference",
+    "text": "5.4 Reference",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Google Earth Engine</span>"
+    ]
+  },
+  {
+    "objectID": "06_Classification_1.html",
+    "href": "06_Classification_1.html",
+    "title": "6  Classification Ⅰ",
+    "section": "",
+    "text": "6.1 Summary\nThis lecture covered classification methods in remote sensing, particularly supervised and unsupervised classification. Classification is essential in spatial analysis as it helps extract meaningful information from satellite imagery.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Classification Ⅰ</span>"
+    ]
+  },
+  {
+    "objectID": "06_Classification_1.html#summary",
+    "href": "06_Classification_1.html#summary",
+    "title": "6  Classification Ⅰ",
+    "section": "",
+    "text": "6.1.1 Supervised Classification\nSupervised classification relies on labeled training data to categorize pixels. Common methods include:\n\nMaximum Likelihood Classification (MLC): Assumes a normal distribution of data and assigns each pixel to the class with the highest probability.\nSupport Vector Machines (SVM): Identifies an optimal decision boundary between different classes.\nRandom Forest (RF): A machine learning approach using multiple decision trees for classification.\n\n\n\n6.1.2 Unsupervised Classification\nUnsupervised classification groups pixels into clusters based on spectral properties without predefined labels. Common methods include:\n\nK-Means Clustering: Iteratively assigns pixels to K clusters by minimizing variance.\nISODATA (Iterative Self-Organizing Data Analysis): Allows merging and splitting of clusters for more flexibility.\n\nThis method is useful when ground truth data is unavailable, but class labels must be assigned afterward.\n\n\n6.1.3 Mixed Pixels and Challenges\n\nMixed Pixels: A single pixel may contain multiple land cover types, affecting classification accuracy.\nSolutions: Spectral unmixing and increasing spatial resolution can help mitigate this issue.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Classification Ⅰ</span>"
+    ]
+  },
+  {
+    "objectID": "06_Classification_1.html#applications",
+    "href": "06_Classification_1.html#applications",
+    "title": "6  Classification Ⅰ",
+    "section": "6.2 Applications",
+    "text": "6.2 Applications\nClassification techniques in remote sensing have numerous real-world applications across environmental monitoring, urban planning, disaster management, and resource assessment. By analyzing satellite imagery, these methods help researchers and decision-makers extract meaningful information to address various global challenges.\nOne of the most common applications is land use and land cover (LULC) mapping. Classification methods allow researchers to distinguish between different land cover types such as forests, urban areas, water bodies, and agricultural fields. This is essential for urban planning, where authorities monitor city expansion and land conversion. Similarly, in deforestation studies, classification helps track forest loss over time, providing critical insights into climate change and conservation efforts. In agriculture, supervised classification techniques are used to differentiate crop types, monitor vegetation health, and estimate yields, helping optimize farming strategies.\nIn environmental monitoring, classification plays a key role in assessing climate change impacts and natural resource management. For example, satellite-based classification is used to analyze desertification trends, glacier retreat, and vegetation changes over time. In coastal zone management, classification helps monitor shoreline changes and detect areas vulnerable to erosion or sea-level rise. Additionally, wetland mapping projects use classification to identify different wetland ecosystems, supporting conservation initiatives.\nDisaster management is another critical area where classification proves useful. In flood-prone regions, classified satellite images help delineate flood-affected areas, allowing authorities to respond effectively. Similarly, wildfire detection relies on classification techniques to identify active fire zones and assess burned areas. In mountainous regions, classification can support landslide risk assessment by identifying unstable slopes and high-risk zones.\nIn transportation and infrastructure, classification helps with road network extraction from satellite images, which is useful for updating maps and planning new routes. Additionally, urban heat island (UHI) studies use classification to analyze heat-retaining surfaces in cities, helping policymakers design cooling strategies like increasing green spaces.\nFinally, water resource management benefits from classification by accurately identifying and monitoring lakes, rivers, and reservoirs. It is also widely used in drought monitoring, where classified images assess vegetation stress and water scarcity.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Classification Ⅰ</span>"
+    ]
+  },
+  {
+    "objectID": "06_Classification_1.html#reflection",
+    "href": "06_Classification_1.html#reflection",
+    "title": "6  Classification Ⅰ",
+    "section": "6.3 Reflection",
+    "text": "6.3 Reflection\nThis lecture deepened my understanding of classification techniques in remote sensing, particularly the differences between supervised and unsupervised approaches. I found it fascinating how these methods allow us to extract valuable insights from satellite imagery, helping researchers analyze land use patterns, environmental changes, and disaster impacts. The practical exercises reinforced the theoretical concepts, and I appreciated the opportunity to apply classification algorithms to real-world datasets.\nOne aspect that stood out to me was the challenge of mixed pixels, where a single pixel contains multiple land cover types. This issue highlights the limitations of spatial resolution and the importance of advanced techniques like spectral unmixing. It made me think about how classification accuracy depends not only on the algorithm but also on data quality, resolution, and preprocessing methods. In future studies, I would like to explore how deep learning models, such as convolutional neural networks (CNNs), can improve classification results by learning complex spatial patterns.\nThe applications of classification in disaster management also intrigued me. I had not fully realized the extent to which satellite-based classification supports emergency response efforts, such as flood mapping and wildfire detection. Given my interest in urban and environmental analysis, I see great potential in using classification to study climate-related issues, including urban heat islands and flooding in cities like Manchester. This connects to my ongoing research on Manchester’s flooding problem, where classification techniques could help analyze historical flood patterns and identify high-risk areas.\nOverall, this lecture reinforced the importance of classification in spatial data analysis. It also made me reflect on how I can integrate these techniques into my own research. Moving forward, I aim to enhance my skills in machine learning-based classification and explore its applications in urban resilience and climate adaptation strategies.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Classification Ⅰ</span>"
+    ]
+  },
+  {
+    "objectID": "06_Classification_1.html#reference",
+    "href": "06_Classification_1.html#reference",
+    "title": "6  Classification Ⅰ",
+    "section": "6.4 Reference",
+    "text": "6.4 Reference",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Classification Ⅰ</span>"
+    ]
+  },
+  {
+    "objectID": "07_Classification_2.html",
+    "href": "07_Classification_2.html",
+    "title": "7  Classification Ⅱ",
+    "section": "",
+    "text": "7.1 Summary",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Classification Ⅱ</span>"
+    ]
+  },
+  {
+    "objectID": "07_Classification_2.html#summary",
+    "href": "07_Classification_2.html#summary",
+    "title": "7  Classification Ⅱ",
+    "section": "",
+    "text": "7.1.1 Classification Methodologies\n\n7.1.1.1 Sub-Pixel Analysis\nSub-pixel analysis addresses the complexity of pixels containing multiple land cover types. Spectral Mixture Analysis (SMA) is a critical technique that decomposes spectral reflectance within a pixel, precisely calculating the proportion of different land covers. This method is particularly useful for accurately classifying mixed pixels by determining the exact contribution of each surface type.\n\n\n7.1.1.2 Object-Based Image Analysis (OBIA)\nOBIA transcends traditional pixel-by-pixel classification by identifying meaningful objects within pixel groups. The primary process involves:\n\nImage segmentation using algorithms like Simple Non-Iterative Clustering (SNIC)\nSupervised or unsupervised classification of identified objects\nConsidering spectral and spatial characteristics of neighboring pixels\n\n\n\n7.1.1.3 Accuracy Assessment\nAccuracy assessment is the cornerstone of reliable remote sensing classification:\n\nProducer’s Accuracy: Percentage of classified samples matching ground truth data\nUser’s Accuracy: Precision of sample matching between different classifications\nOverall Accuracy: Percentage of correctly classified samples across all categories\n\n\n\n\n7.1.2 Advanced Validation Techniques\n\n7.1.2.1 Confusion Matrix\nA critical tool for evaluating classification performance:\n\nDisplays correct prediction scenarios\nAnalyzes omission and commission errors\nCalculates Kappa coefficient to measure alignment between classification and labeled data\n\n\n\n7.1.2.2 Spatial Cross-Validation\nAddressing spatial autocorrelation challenges:\n\nPrevents model overfitting\nEnsures spatial independence of training and testing datasets\nMitigates overly optimistic accuracy estimations\n\n\n\n7.1.2.3 Receiver Operating Characteristic (ROC) Curve\nGraphically represents classification model performance by plotting true positive rates against false positive rates, enabling simultaneous evaluation of multiple classification models.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Classification Ⅱ</span>"
+    ]
+  },
+  {
+    "objectID": "07_Classification_2.html#applications",
+    "href": "07_Classification_2.html#applications",
+    "title": "7  Classification Ⅱ",
+    "section": "7.2 Applications",
+    "text": "7.2 Applications\nRemote sensing classification techniques extend beyond traditional environmental and urban applications, they also play a crucial role in fields such as public health, archaeology, and military intelligence. By leveraging high-resolution imagery and machine learning algorithms, researchers can extract valuable insights that support various scientific and strategic objectives.\n\n7.2.1 Epidemiology and Public Health\nSatellite-based classification has proven useful in tracking disease outbreaks and environmental factors influencing public health. For instance, remote sensing is used to classify land cover changes associated with vector-borne diseases like malaria and dengue. By identifying stagnant water bodies and deforested areas, health authorities can predict mosquito breeding grounds and improve disease prevention strategies. Additionally, air quality assessments rely on classification to detect pollution hotspots, aiding in respiratory disease mitigation efforts.\n\n\n7.2.2 Archaeological Site Detection\nAdvanced classification techniques, including Object-Based Image Analysis (OBIA), are revolutionizing archaeological studies. By analyzing soil composition, vegetation patterns, and thermal anomalies, researchers can identify buried structures and ancient settlements without excavation. For example, classified satellite images have revealed lost cities in dense rainforests, where conventional survey methods are impractical.\n\n\n7.2.3 Military and Defense Applications\nIn defense and intelligence, classification plays a critical role in monitoring geopolitical changes. High-resolution satellite imagery is classified to detect military installations, track troop movements, and assess terrain conditions. Synthetic Aperture Radar (SAR)-based classification is particularly valuable in detecting hidden structures and distinguishing between natural and artificial objects, even under cloud cover.\n\n\n7.2.4 Space Exploration and Planetary Mapping\nRemote sensing classification is instrumental in analyzing extraterrestrial landscapes. NASA and ESA use classification models to map Martian surface compositions, identifying features such as ice deposits, volcanic plains, and ancient riverbeds. These insights guide rover missions and future colonization efforts by determining suitable landing sites and resource availability.\n\n\n7.2.5 Fisheries and Marine Ecosystem Monitoring\nBeyond terrestrial applications, classification techniques are widely applied in marine studies. Satellite imagery helps identify harmful algal blooms (HABs) that threaten marine biodiversity and human health. Additionally, ocean surface classification supports sustainable fisheries management by tracking fish migration patterns and detecting illegal fishing activities.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Classification Ⅱ</span>"
+    ]
+  },
+  {
+    "objectID": "07_Classification_2.html#reflection",
+    "href": "07_Classification_2.html#reflection",
+    "title": "7  Classification Ⅱ",
+    "section": "7.3 Reflection",
+    "text": "7.3 Reflection\nThis lecture deepened my understanding of remote sensing classification techniques and their practical applications, particularly in disaster management. The discussion on sub-pixel analysis and object-based image analysis (OBIA) highlighted their advantages in capturing complex land cover variations, which is relevant to my group project on flood detection in Manchester. Given Manchester’s susceptibility to flooding, accurately classifying flooded areas in urban environments is critical for effective response and resilience planning.\nOne key insight was the importance of high-resolution classification in flood mapping. Traditional pixel-based approaches often misclassify urban water accumulation, while OBIA allows for spatially aware segmentation, distinguishing between flooded roads, waterlogged parks, and unaffected surfaces. Applying OBIA to Sentinel-2 or Landsat imagery in our project could enhance flood risk assessments by improving classification accuracy.\nThe role of machine learning models, such as Convolutional Neural Networks (CNNs), in land cover classification was another crucial takeaway. The Dynamic World approach, which leverages near real-time Sentinel-2 data, demonstrated how semi-supervised classification can improve flood detection. Integrating CNN-based classification with Manchester’s historical flood data and real-time weather inputs could enhance early warning systems.\nLastly, the discussion on spatial cross-validation was particularly relevant. Overfitting to past flood events is a risk when training classification models, especially in urban environments where land cover characteristics change over time. Ensuring that our classification model generalizes well to future flood events will be critical for our project’s success.\nOverall, this lecture provided valuable insights that we can apply to our group work. By refining flood detection models using advanced classification techniques, machine learning, and real-time satellite data, we aim to develop a more effective approach to monitoring and mitigating Manchester’s flood risks.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Classification Ⅱ</span>"
+    ]
+  },
+  {
+    "objectID": "08_SAR.html",
+    "href": "08_SAR.html",
+    "title": "8  SAR",
+    "section": "",
+    "text": "8.1 Summary",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>SAR</span>"
+    ]
+  },
+  {
+    "objectID": "08_SAR.html#summary",
+    "href": "08_SAR.html#summary",
+    "title": "8  SAR",
+    "section": "",
+    "text": "8.1.1 Technical Characteristics\nSAR is an active remote sensing sensor that simultaneously records two critical types of data:\n\nAmplitude (backscatter)\nPhase data (wave cycle location)\n\n\n\n8.1.2 Key Analytical Considerations\n\nPolarization\n\nDifferent polarizations (e.g., VV) reveal surface roughness characteristics\nProvides insights into surface material properties\n\nPermativity (Dielectric Constant)\n\nIndicates the material’s reflectivity back to the sensor\nVaries across different surface types\nWater tends to reflect signals away from the sensor\n\nWavelength\n\n\nDifferent bands provide varied surface interaction information",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>SAR</span>"
+    ]
+  },
+  {
+    "objectID": "08_SAR.html#data-representation-in-google-earth-engine",
+    "href": "08_SAR.html#data-representation-in-google-earth-engine",
+    "title": "8  SAR",
+    "section": "8.2 Data Representation in Google Earth Engine",
+    "text": "8.2 Data Representation in Google Earth Engine\n\nLimited to amplitude (backscatter) data\nThree primary data units:\n\nPower scale: Raw SAR data for statistical analysis\nAmplitude: Visualization purposes\nDecibel (dB) scale: Highlighting differences (default in GEE)\n\n\n\n8.2.1 Unique Advantages and Analysis Techniques\n\n8.2.1.1 Distinctive Sensor Capabilities\n\nPenetrates cloud cover\nOperates independently of optical sensor limitations\n\n\n\n8.2.1.2 Analysis Methods\n\nChange Detection\n\nComparing images using ratio or log ratio techniques\n\nTemporal Analysis\n\nT-tests\nStandard deviation calculations\nExploring variance over time\n\nData Fusion Techniques\n\nPrincipal Component Analysis\nObject-Based Image Analysis\nIntensity fusion with optical data\n\n\n\n\n8.2.1.3 1.SAR fundamentals\nSAR: Different surfaces respond differently to the polarizations A SAR signal has both amplitude (backscatter) and phase data. different weather show different signal: windy day-the surface of the water is rough\nInSAR: combine two or more SAR image DInSAR: remove the effet of natural elevtation (DSM/DEM/DTM)\n\n\n\n8.2.2 2. GEE SAR\nSAR data values: identify changes: substract image is not suitable for SAR Ratio images: IR(improved ratio);mean; log; IRL(improved log ratio) which is best and how to test them?",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>SAR</span>"
+    ]
+  },
+  {
+    "objectID": "08_SAR.html#applications",
+    "href": "08_SAR.html#applications",
+    "title": "8  SAR",
+    "section": "8.3 Applications",
+    "text": "8.3 Applications\n\n8.3.1 Agricultural Monitoring and Crop Management\nSAR technology offers unprecedented capabilities in agricultural research and monitoring. Unlike optical sensors constrained by cloud cover and daylight limitations, SAR can consistently track agricultural landscapes throughout the year. By analyzing backscatter signals, researchers can extract critical information about crop health, growth stages, and land use patterns.\nThe technology enables precise monitoring of crop conditions by detecting changes in surface roughness and moisture content. Different polarization modes allow scientists to distinguish between various crop types, assess vegetation density, and predict potential yield. For instance, winter wheat fields exhibit distinct backscatter signatures during different growth stages, enabling early detection of potential crop stress or disease.\nFlood and moisture mapping represent another crucial agricultural application. SAR’s ability to penetrate cloud cover and measure surface moisture makes it invaluable for tracking potential agricultural risks. Farmers and policymakers can use these insights to predict irrigation needs, assess flood damage, and develop more resilient agricultural strategies.\n\n\n8.3.2 Disaster Risk and Environmental Management\nIn disaster management, SAR provides critical real-time monitoring capabilities that traditional remote sensing techniques cannot match. The technology’s ability to generate consistent imagery through adverse weather conditions makes it exceptionally valuable for tracking dynamic environmental changes.\nEarthquake and landslide risk assessment benefit significantly from SAR interferometry. By comparing multiple SAR images of the same location over time, researchers can detect minute ground surface movements as small as millimeters. This capability allows for early warning systems in tectonically active regions, potentially saving lives and mitigating infrastructure damage.\nAdditionally, SAR plays a crucial role in monitoring environmental phenomena like deforestation, urban expansion, and coastal changes. Its capacity to provide detailed surface information regardless of atmospheric conditions enables comprehensive environmental surveillance. Scientists can track forest cover changes, monitor sea-level rise, and assess infrastructure development with unprecedented precision.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>SAR</span>"
+    ]
+  },
+  {
+    "objectID": "08_SAR.html#reflection",
+    "href": "08_SAR.html#reflection",
+    "title": "8  SAR",
+    "section": "8.4 Reflection",
+    "text": "8.4 Reflection\nBefore this lecture, I already had a general understanding of how SAR works, but my knowledge was mostly theoretical. What I hadn’t fully grasped were its practical advantages for flood detection and the specific data processing techniques required to extract meaningful insights. The lecture clarified why SAR is so effective in flood monitoring—not just because of its cloud-penetrating ability, but also due to its sensitivity to surface water through backscatter variations. I found the discussion on VV vs. VH polarization particularly useful, as it explained why VV polarization is more responsive to open water, influencing how we selected data for our group project.\nInitially, our approach to flood detection in Manchester was centered on optical data. While we were aware of SAR’s potential, we hadn’t fully considered the practical challenges of working with speckle noise and change detection methods. The lecture introduced us to techniques like the Improved Log Ratio (IRL), which proved more effective than simple subtraction when analyzing flood extent. Another key takeaway was how dielectric properties influence SAR backscatter, helping us interpret unexpected patterns, such as higher returns from flooded vegetation due to double-bounce effects.\nMoving forward, I see value in integrating SAR and optical data for a more comprehensive flood analysis and potentially incorporating InSAR techniques to monitor flood-induced land deformation. The lecture not only refined our group project’s methodology but also deepened my appreciation for the complexities of SAR data processing in real-world applications.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>SAR</span>"
+    ]
+  },
+  {
+    "objectID": "08_SAR.html#reference",
+    "href": "08_SAR.html#reference",
     "title": "8  SAR",
     "section": "8.5 Reference",
     "text": "8.5 Reference",
