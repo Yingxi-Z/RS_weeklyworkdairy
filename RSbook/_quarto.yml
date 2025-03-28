@@ -7,7 +7,7 @@ book:
   author: "Zhou Yingxi"
   date: "2025/3/28"
   navbar:
-    logo: docs/casa_logo.jpg      
+    logo: docs/casa_logo.jpg     
     collapse: true                          
     search: true                            
   sidebar:
@@ -18,7 +18,7 @@ book:
   repo-actions: [edit, issue]                
   chapters:
     - index.qmd
-    - 01_Get start.qmd
+    - 01_Get_start.qmd
     - 02_Xaringan.qmd
     - 03_RS data.qmd
     - 04_Policy.qmd
