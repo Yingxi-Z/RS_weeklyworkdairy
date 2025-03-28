@@ -34,11 +34,17 @@ Map Visualization Tools: Users can overlay processed images, vector data, and co
 
 ## Applications
 
-Land Cover Change Detection: By analyzing satellite images from different periods, GEE enables monitoring of land use changes, such as urban expansion and deforestation. This is crucial for environmental protection and resource management.
+Google Earth Engine (GEE) has emerged as a transformative platform for large-scale environmental monitoring.
 
-Environmental Monitoring: GEE can be used to assess environmental indicators such as water quality and air pollution, supporting environmental protection efforts and policy-making. For example, it helps track the spatial and temporal distribution of air pollutants and evaluate their impact on public health.
+Farhadi et al.[-@farhadi2025introducing] developed an innovative Spectral Flood Mapping Index (SFMI) using Sentinel-2 imagery within GEE, enabling automated flood detection at 10-meter resolution. Their approach leverages GEE's cloud computing power to process multi-temporal data and integrate spectral indices (NDWI, NDVI) through Otsu's thresholding method, significantly reducing processing time compared to traditional workflows. This application is particularly valuable for disaster response, where rapid flood mapping can inform emergency operations within hours of data acquisition.
 
-Disaster Management: In the aftermath of natural disasters, GEE allows for rapid assessment of affected areas, aiding disaster response and decision-making. For instance, it can analyze flooded regions to support rescue and recovery planning.
+For long-term ecological assessment, Liu et al. [-@liu2023analysis] utilized GEE to analyze 40 years of Landsat imagery (1985-2022) for vegetation monitoring on Zhoushan Island. The platform's ability to process over 5,000 Landsat scenes enabled comprehensive NDVI trend analysis, revealing a 13% decline in coastal vegetation. By incorporating spatial statistics (Moran's I) and multivariate analysis of climate, terrain, and anthropogenic factors, the study demonstrated GEE's capacity for complex geospatial modeling at regional scales.
+
+![](images/clipboard-1680012289.png)
+
+Fugire1： Spatiotemporal distribution maps of the NDVI on Zhoushan Island from 1985 to 2022.
+
+Source：@liu2023analysis
 
 ## Reflection
 
@@ -46,6 +52,6 @@ I found this session particularly insightful because it demonstrated how large-s
 
 One key takeaway for me was how GEE integrates various datasets, such as Landsat, Sentinel, and MODIS, into a single platform. This makes it much easier to analyze long-term environmental changes without having to manually collect and preprocess data. The fact that GEE provides pre-processed and ready-to-use datasets greatly simplifies geospatial analysis, which is particularly beneficial for beginners like me.
 
-However, I also found the learning curve to be somewhat challenging. Unlike traditional GIS software, which often has a graphical user interface, GEE requires scripting in JavaScript or Python. Since I have limited programming experience, writing scripts to filter datasets and visualize results was initially difficult. That said, I recognize that learning to code is an essential skill for advanced geospatial analysis, and this lecture motivated me to improve my scripting abilities.
+However, I also found the learning curve to be somewhat challenging. Unlike traditional GIS software, which often has a graphical user interface, GEE requires scripting in JavaScript or Python. Since I have limited programming experience, writing scripts to filter datasets and visualize results was initially difficult. So this lecture really motivated me to improve my scripting abilities.
 
 ## Reference

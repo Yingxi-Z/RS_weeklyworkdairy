@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>6&nbsp; Classification Ⅰ – CASA0023 - Learning Diary</title>
+<title>6&nbsp; Classification I – CASA0023 - Learning Diary</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -101,7 +121,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./06_Classification_1.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Classification Ⅰ</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./06_Classification_1.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Classification I</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -152,7 +172,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./06_Classification_1.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Classification Ⅰ</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Classification I</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -194,7 +214,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Classification Ⅰ</span></h1>
+<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Classification I</span></h1>
 </div>
 
 
@@ -242,24 +262,34 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="applications" class="level2" data-number="6.2">
 <h2 data-number="6.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">6.2</span> Applications</h2>
-<p>Classification techniques in remote sensing have numerous real-world applications across environmental monitoring, urban planning, disaster management, and resource assessment. By analyzing satellite imagery, these methods help researchers and decision-makers extract meaningful information to address various global challenges.</p>
-<p>One of the most common applications is <strong>land use and land cover (LULC) mapping</strong>. Classification methods allow researchers to distinguish between different land cover types such as forests, urban areas, water bodies, and agricultural fields. This is essential for <strong>urban planning</strong>, where authorities monitor city expansion and land conversion. Similarly, in <strong>deforestation studies</strong>, classification helps track forest loss over time, providing critical insights into climate change and conservation efforts. In agriculture, supervised classification techniques are used to <strong>differentiate crop types</strong>, monitor vegetation health, and estimate yields, helping optimize farming strategies.</p>
-<p>In <strong>environmental monitoring</strong>, classification plays a key role in assessing climate change impacts and natural resource management. For example, satellite-based classification is used to analyze <strong>desertification trends, glacier retreat, and vegetation changes</strong> over time. In <strong>coastal zone management</strong>, classification helps monitor shoreline changes and detect areas vulnerable to erosion or sea-level rise. Additionally, wetland mapping projects use classification to identify different wetland ecosystems, supporting conservation initiatives.</p>
-<p><strong>Disaster management</strong> is another critical area where classification proves useful. In flood-prone regions, classified satellite images help delineate <strong>flood-affected areas</strong>, allowing authorities to respond effectively. Similarly, <strong>wildfire detection</strong> relies on classification techniques to identify active fire zones and assess burned areas. In mountainous regions, classification can support <strong>landslide risk assessment</strong> by identifying unstable slopes and high-risk zones.</p>
-<p>In <strong>transportation and infrastructure</strong>, classification helps with <strong>road network extraction</strong> from satellite images, which is useful for updating maps and planning new routes. Additionally, <strong>urban heat island (UHI) studies</strong> use classification to analyze heat-retaining surfaces in cities, helping policymakers design cooling strategies like increasing green spaces.</p>
-<p>Finally, <strong>water resource management</strong> benefits from classification by accurately identifying and monitoring lakes, rivers, and reservoirs. It is also widely used in <strong>drought monitoring</strong>, where classified images assess vegetation stress and water scarcity.</p>
+<p>Remote sensing classification have significantly enhanced land cover mapping and environmental monitoring capabilities.</p>
+<p>Kussul et al. <span class="citation" data-cites="kussul2017deep">(<a href="#ref-kussul2017deep" role="doc-biblioref">2017</a>)</span> developed an innovative deep learning framework combining unsupervised and supervised neural networks for crop type classification in Ukraine. Their multilevel architecture processes multitemporal Landsat-8 and Sentinel-1A data, achieving over 85% accuracy in distinguishing five major crop types. The study demonstrated CNNs’ superior performance compared to traditional multilayer perceptrons, particularly in differentiating spectrally similar crops like maize and soybeans. The integrated unsupervised component effectively handles cloud cover and missing data, while the supervised ensemble improves classification robustness in heterogeneous agricultural areas.</p>
+<p><img src="images/clipboard-2813045684.png" class="img-fluid"></p>
+<p>Figure 1 Example of classification result for the Kyiv region for 2015 based on all Landsat-8 and Sentinel-1A images</p>
+<p>Source: <span class="citation" data-cites="kussul2017deep">Kussul et al. (<a href="#ref-kussul2017deep" role="doc-biblioref">2017</a>)</span></p>
+<p>Billah et al. <span class="citation" data-cites="billah2023random">(<a href="#ref-billah2023random" role="doc-biblioref">2023</a>)</span> implemented a random forest classifier for flood damage assessment in northeast Bangladesh, utilizing combined Sentinel-1 and Sentinel-2 data. Their methodology achieved 90% accuracy in land cover classification, significantly outperforming conventional maximum likelihood methods (74% accuracy). The research highlighted SAR data’s value for reliable flood mapping during monsoons, complemented by optical data for detailed land cover baselines. The study quantified substantial agricultural impacts, with 23.98% of cropland inundated during monsoon floods and 72.41% affected by flash floods, providing critical data for disaster response planning in ecologically sensitive wetland regions.</p>
+<p><img src="images/clipboard-1366614632.png" class="img-fluid"></p>
+<p>Figure 2 Flood maps for the early flood of 2017, flooding of 2019 and severe flooding of 2020</p>
+<p>Source: <span class="citation" data-cites="billah2023random">Billah et al. (<a href="#ref-billah2023random" role="doc-biblioref">2023</a>)</span></p>
 </section>
 <section id="reflection" class="level2" data-number="6.3">
 <h2 data-number="6.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">6.3</span> Reflection</h2>
-<p>This lecture deepened my understanding of classification techniques in remote sensing, particularly the differences between supervised and unsupervised approaches. I found it fascinating how these methods allow us to extract valuable insights from satellite imagery, helping researchers analyze land use patterns, environmental changes, and disaster impacts. The practical exercises reinforced the theoretical concepts, and I appreciated the opportunity to apply classification algorithms to real-world datasets.</p>
-<p>One aspect that stood out to me was the challenge of <strong>mixed pixels</strong>, where a single pixel contains multiple land cover types. This issue highlights the limitations of spatial resolution and the importance of advanced techniques like spectral unmixing. It made me think about how classification accuracy depends not only on the algorithm but also on data quality, resolution, and preprocessing methods. In future studies, I would like to explore how deep learning models, such as convolutional neural networks (CNNs), can improve classification results by learning complex spatial patterns.</p>
-<p>The applications of classification in disaster management also intrigued me. I had not fully realized the extent to which satellite-based classification supports emergency response efforts, such as flood mapping and wildfire detection. Given my interest in urban and environmental analysis, I see great potential in using classification to study climate-related issues, including <strong>urban heat islands and flooding in cities like Manchester</strong>. This connects to my ongoing research on Manchester’s flooding problem, where classification techniques could help analyze historical flood patterns and identify high-risk areas.</p>
-<p>Overall, this lecture reinforced the importance of classification in spatial data analysis. It also made me reflect on how I can integrate these techniques into my own research. Moving forward, I aim to enhance my skills in machine learning-based classification and explore its applications in urban resilience and climate adaptation strategies.</p>
+<p>This lecture deepened my understanding of classification techniques in remote sensing, particularly the differences between supervised and unsupervised approaches. I found it fascinating how these methods allow us to extract valuable information from satellite imagery, helping researchers analyze land use patterns, environmental changes, and disaster impacts.</p>
+<p>One aspect that stood out to me was the challenge of <strong>mixed pixels</strong>, where a single pixel contains multiple land cover types. This issue highlights the limitations of spatial resolution and the importance of advanced techniques like spectral unmixing. It made me think about how classification accuracy depends not only on the algorithm but also on data quality, resolution, and preprocessing methods.</p>
+<p>The applications of classification in disaster management also intrigued me. I had not fully realized the extent to which satellite-based classification supports emergency response efforts, such as flood mapping. This connects to my group research on Manchester’s flooding problem, where classification techniques could help analyze historical flood patterns and identify high-risk areas.</p>
 </section>
 <section id="reference" class="level2" data-number="6.4">
 <h2 data-number="6.4" class="anchored" data-anchor-id="reference"><span class="header-section-number">6.4</span> Reference</h2>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-billah2023random" class="csl-entry" role="listitem">
+Billah, Maruf, A. K. M. Saiful Islam, Wasif Bin Mamoon, and Mohammad Rezaur Rahman. 2023. <span>“Random Forest Classifications for Landuse Mapping to Assess Rapid Flood Damage Using <span>Sentinel-1</span> and <span>Sentinel-2</span> Data.”</span> <em>Remote Sensing Applications: Society and Environment</em> 30: 100947. <a href="https://doi.org/10.1016/j.rsase.2023.100947">https://doi.org/10.1016/j.rsase.2023.100947</a>.
+</div>
+<div id="ref-kussul2017deep" class="csl-entry" role="listitem">
+Kussul, Nataliia, Mykola Lavreniuk, Sergii Skakun, and Andrii Shelestov. 2017. <span>“Deep Learning Classification of Land Cover and Crop Types Using Remote Sensing Data.”</span> <em>IEEE Geoscience and Remote Sensing Letters</em> 14 (5): 778–82. <a href="https://doi.org/10.1109/LGRS.2017.2681128">https://doi.org/10.1109/LGRS.2017.2681128</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->

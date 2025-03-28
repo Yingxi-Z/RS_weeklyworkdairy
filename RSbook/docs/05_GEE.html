@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -152,7 +172,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./06_Classification_1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Classification Ⅰ</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Classification I</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -237,20 +257,31 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="applications" class="level2" data-number="5.2">
 <h2 data-number="5.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">5.2</span> Applications</h2>
-<p>Land Cover Change Detection: By analyzing satellite images from different periods, GEE enables monitoring of land use changes, such as urban expansion and deforestation. This is crucial for environmental protection and resource management.</p>
-<p>Environmental Monitoring: GEE can be used to assess environmental indicators such as water quality and air pollution, supporting environmental protection efforts and policy-making. For example, it helps track the spatial and temporal distribution of air pollutants and evaluate their impact on public health.</p>
-<p>Disaster Management: In the aftermath of natural disasters, GEE allows for rapid assessment of affected areas, aiding disaster response and decision-making. For instance, it can analyze flooded regions to support rescue and recovery planning.</p>
+<p>Google Earth Engine (GEE) has emerged as a transformative platform for large-scale environmental monitoring.</p>
+<p>Farhadi et al.<span class="citation" data-cites="farhadi2025introducing">(<a href="#ref-farhadi2025introducing" role="doc-biblioref">2025</a>)</span> developed an innovative Spectral Flood Mapping Index (SFMI) using Sentinel-2 imagery within GEE, enabling automated flood detection at 10-meter resolution. Their approach leverages GEE’s cloud computing power to process multi-temporal data and integrate spectral indices (NDWI, NDVI) through Otsu’s thresholding method, significantly reducing processing time compared to traditional workflows. This application is particularly valuable for disaster response, where rapid flood mapping can inform emergency operations within hours of data acquisition.</p>
+<p>For long-term ecological assessment, Liu et al. <span class="citation" data-cites="liu2023analysis">(<a href="#ref-liu2023analysis" role="doc-biblioref">2023</a>)</span> utilized GEE to analyze 40 years of Landsat imagery (1985-2022) for vegetation monitoring on Zhoushan Island. The platform’s ability to process over 5,000 Landsat scenes enabled comprehensive NDVI trend analysis, revealing a 13% decline in coastal vegetation. By incorporating spatial statistics (Moran’s I) and multivariate analysis of climate, terrain, and anthropogenic factors, the study demonstrated GEE’s capacity for complex geospatial modeling at regional scales.</p>
+<p><img src="images/clipboard-1680012289.png" class="img-fluid"></p>
+<p>Fugire1： Spatiotemporal distribution maps of the NDVI on Zhoushan Island from 1985 to 2022.</p>
+<p>Source：<span class="citation" data-cites="liu2023analysis">Liu, Chen, and Chen (<a href="#ref-liu2023analysis" role="doc-biblioref">2023</a>)</span></p>
 </section>
 <section id="reflection" class="level2" data-number="5.3">
 <h2 data-number="5.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">5.3</span> Reflection</h2>
 <p>I found this session particularly insightful because it demonstrated how large-scale geospatial analysis can be conducted efficiently without requiring high-end hardware. The ability to access and process vast datasets in the cloud is a significant advantage, especially for environmental research, urban planning, and disaster management.</p>
 <p>One key takeaway for me was how GEE integrates various datasets, such as Landsat, Sentinel, and MODIS, into a single platform. This makes it much easier to analyze long-term environmental changes without having to manually collect and preprocess data. The fact that GEE provides pre-processed and ready-to-use datasets greatly simplifies geospatial analysis, which is particularly beneficial for beginners like me.</p>
-<p>However, I also found the learning curve to be somewhat challenging. Unlike traditional GIS software, which often has a graphical user interface, GEE requires scripting in JavaScript or Python. Since I have limited programming experience, writing scripts to filter datasets and visualize results was initially difficult. That said, I recognize that learning to code is an essential skill for advanced geospatial analysis, and this lecture motivated me to improve my scripting abilities.</p>
+<p>However, I also found the learning curve to be somewhat challenging. Unlike traditional GIS software, which often has a graphical user interface, GEE requires scripting in JavaScript or Python. Since I have limited programming experience, writing scripts to filter datasets and visualize results was initially difficult. So this lecture really motivated me to improve my scripting abilities.</p>
 </section>
 <section id="reference" class="level2" data-number="5.4">
 <h2 data-number="5.4" class="anchored" data-anchor-id="reference"><span class="header-section-number">5.4</span> Reference</h2>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-farhadi2025introducing" class="csl-entry" role="listitem">
+Farhadi, Hadi, Hamid Ebadi, Abbas Kiani, and Ali Asgary. 2025. <span>“Introducing a New Index for Flood Mapping Using <span>Sentinel-2</span> Imagery (<span>SFMI</span>).”</span> <em>Computers &amp; Geosciences</em> 194: 105742. <a href="https://doi.org/10.1016/j.cageo.2024.105742">https://doi.org/10.1016/j.cageo.2024.105742</a>.
+</div>
+<div id="ref-liu2023analysis" class="csl-entry" role="listitem">
+Liu, Zheng, Yang Chen, and Cheng Chen. 2023. <span>“Analysis of the Spatiotemporal Characteristics and Influencing Factors of the <span>NDVI</span> Based on the <span>GEE</span> Cloud Platform and <span>Landsat</span> Images.”</span> <em>Remote Sensing</em> 15 (20): 4980. <a href="https://doi.org/10.3390/rs15204980">https://doi.org/10.3390/rs15204980</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
@@ -822,8 +853,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./06_Classification_1.html" class="pagination-link" aria-label="Classification Ⅰ">
-        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Classification Ⅰ</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./06_Classification_1.html" class="pagination-link" aria-label="Classification I">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Classification I</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
