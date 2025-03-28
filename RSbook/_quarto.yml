@@ -3,18 +3,19 @@ project:
   output-dir: docs
 
 book:
-  title: "RSbook- learning dairy"
+  title: "CASA0023 - Learning Diary"
   author: "Zhou Yingxi"
   date: "2025/3/28"
   navbar:
-    logo: casa_logo.jpg      # 导航栏logo路径
-    collapse: true                          # 响应式折叠导航
-    search: true                            # 启用搜索
+    logo: casa_logo.jpg      
+    collapse: true                          
+    search: true                            
   sidebar:
-    style: floating                         # 浮动侧边栏
+    style: floating                         
     reader-mode: true
+  favicon: casa_logo.jpg
   repo-url: https://github.com/Yingxi-Z/RS_weeklyworkdairy  
-  repo-actions: [edit, issue]                # GitHub在线编辑/报错功能
+  repo-actions: [edit, issue]                
   chapters:
     - index.qmd
     - week2.qmd
@@ -31,17 +32,9 @@ bibliography: references.bib
 format:
   html:
     theme:
-      light: [cosmo, flatly]    # 浅色主题备选方案
-      dark: [cosmo, darkly]     # 深色主题备选方案
-    code-link: true             # 代码溯源功能
+      light: [cosmo, flatly]    
+      dark: [cosmo, darkly]     
+    code-link: true             
   pdf:
-    documentclass: scrbook      # LaTeX书籍排版
-#format:
- # html:
- #   theme:
- #     - cosmo
-  #    - brand
-  #  css: styles.css
-
-#editor: visual
+    documentclass: scrbook      
 
