@@ -4,13 +4,13 @@
 
 **Advantages of Using Remote Sensing in Policy**:
 
- - Provides objective data at large scales and over long time series
+-   Provides objective data at large scales and over long time series
 
- - Cost-effective, especially for inaccessible areas
+-   Cost-effective, especially for inaccessible areas
 
- - Supports different stages of policy development
+-   Supports different stages of policy development
 
- - Data accuracy has significantly improved, particularly in the last 20 years
+-   Data accuracy has significantly improved, particularly in the last 20 years
 
 **Key Policy Frameworks**: UN Sustainable Development Goals (SDGs); UN Sendai Framework for Disaster Risk Reduction ; GEO (Group on Earth Observations) working groups; Copernicus program (European)
 

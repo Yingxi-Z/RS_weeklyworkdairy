@@ -28,9 +28,9 @@ Accuracy assessment is the cornerstone of reliable remote sensing classification
 
 -   Overall Accuracy: Percentage of correctly classified samples across all categories
 
-## Advanced Validation Techniques
+### Advanced Validation Techniques
 
-### Confusion Matrix
+#### Confusion Matrix
 
 A critical tool for evaluating classification performance:
 
@@ -40,7 +40,7 @@ A critical tool for evaluating classification performance:
 
 -   Calculates Kappa coefficient to measure alignment between classification and labeled data
 
-### Spatial Cross-Validation
+#### Spatial Cross-Validation
 
 Addressing spatial autocorrelation challenges:
 
@@ -50,7 +50,7 @@ Addressing spatial autocorrelation challenges:
 
 -   Mitigates overly optimistic accuracy estimations
 
-### Receiver Operating Characteristic (ROC) Curve
+#### Receiver Operating Characteristic (ROC) Curve
 
 Graphically represents classification model performance by plotting true positive rates against false positive rates, enabling simultaneous evaluation of multiple classification models.
 

@@ -5,7 +5,16 @@ project:
 book:
   title: "RSbook- learning dairy"
   author: "Zhou Yingxi"
-  date: "2025/3/18"
+  date: "2025/3/28"
+  navbar:
+    logo: casa_logo.jpg      # 导航栏logo路径
+    collapse: true                          # 响应式折叠导航
+    search: true                            # 启用搜索
+  sidebar:
+    style: floating                         # 浮动侧边栏
+    reader-mode: true
+  repo-url: https://github.com/Yingxi-Z/RS_weeklyworkdairy  
+  repo-actions: [edit, issue]                # GitHub在线编辑/报错功能
   chapters:
     - index.qmd
     - week2.qmd
@@ -16,15 +25,23 @@ book:
     - week7.qmd
     - week8.qmd
     - week9.qmd
-    - references.qmd
 
 bibliography: references.bib
 
 format:
   html:
     theme:
-      - cosmo
-      - brand
+      light: [cosmo, flatly]    # 浅色主题备选方案
+      dark: [cosmo, darkly]     # 深色主题备选方案
+    code-link: true             # 代码溯源功能
+  pdf:
+    documentclass: scrbook      # LaTeX书籍排版
+#format:
+ # html:
+ #   theme:
+ #     - cosmo
+  #    - brand
+  #  css: styles.css
 
-editor: visual
+#editor: visual
 
