@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -182,15 +202,9 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#classification-methodologies" id="toc-classification-methodologies" class="nav-link" data-scroll-target="#classification-methodologies"><span class="header-section-number">7.1.1</span> Classification Methodologies</a></li>
   <li><a href="#advanced-validation-techniques" id="toc-advanced-validation-techniques" class="nav-link" data-scroll-target="#advanced-validation-techniques"><span class="header-section-number">7.1.2</span> Advanced Validation Techniques</a></li>
   </ul></li>
-  <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="header-section-number">7.2</span> Applications</a>
-  <ul class="collapse">
-  <li><a href="#epidemiology-and-public-health" id="toc-epidemiology-and-public-health" class="nav-link" data-scroll-target="#epidemiology-and-public-health"><span class="header-section-number">7.2.1</span> <strong>Epidemiology and Public Health</strong></a></li>
-  <li><a href="#archaeological-site-detection" id="toc-archaeological-site-detection" class="nav-link" data-scroll-target="#archaeological-site-detection"><span class="header-section-number">7.2.2</span> <strong>Archaeological Site Detection</strong></a></li>
-  <li><a href="#military-and-defense-applications" id="toc-military-and-defense-applications" class="nav-link" data-scroll-target="#military-and-defense-applications"><span class="header-section-number">7.2.3</span> <strong>Military and Defense Applications</strong></a></li>
-  <li><a href="#space-exploration-and-planetary-mapping" id="toc-space-exploration-and-planetary-mapping" class="nav-link" data-scroll-target="#space-exploration-and-planetary-mapping"><span class="header-section-number">7.2.4</span> <strong>Space Exploration and Planetary Mapping</strong></a></li>
-  <li><a href="#fisheries-and-marine-ecosystem-monitoring" id="toc-fisheries-and-marine-ecosystem-monitoring" class="nav-link" data-scroll-target="#fisheries-and-marine-ecosystem-monitoring"><span class="header-section-number">7.2.5</span> <strong>Fisheries and Marine Ecosystem Monitoring</strong></a></li>
-  </ul></li>
+  <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="header-section-number">7.2</span> Applications</a></li>
   <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">7.3</span> Reflection</a></li>
+  <li><a href="#reference" id="toc-reference" class="nav-link" data-scroll-target="#reference"><span class="header-section-number">7.4</span> Reference</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/Yingxi-Z/RS_weeklyworkdairy/edit/main/07_Classification_2.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/Yingxi-Z/RS_weeklyworkdairy/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -271,37 +285,29 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="applications" class="level2" data-number="7.2">
 <h2 data-number="7.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">7.2</span> Applications</h2>
-<p>Remote sensing classification techniques extend beyond traditional environmental and urban applications, they also play a crucial role in fields such as public health, archaeology, and military intelligence. By leveraging high-resolution imagery and machine learning algorithms, researchers can extract valuable insights that support various scientific and strategic objectives.</p>
-<section id="epidemiology-and-public-health" class="level3" data-number="7.2.1">
-<h3 data-number="7.2.1" class="anchored" data-anchor-id="epidemiology-and-public-health"><span class="header-section-number">7.2.1</span> <strong>Epidemiology and Public Health</strong></h3>
-<p>Satellite-based classification has proven useful in tracking disease outbreaks and environmental factors influencing public health. For instance, remote sensing is used to classify land cover changes associated with vector-borne diseases like malaria and dengue. By identifying stagnant water bodies and deforested areas, health authorities can predict mosquito breeding grounds and improve disease prevention strategies. Additionally, air quality assessments rely on classification to detect pollution hotspots, aiding in respiratory disease mitigation efforts.</p>
-</section>
-<section id="archaeological-site-detection" class="level3" data-number="7.2.2">
-<h3 data-number="7.2.2" class="anchored" data-anchor-id="archaeological-site-detection"><span class="header-section-number">7.2.2</span> <strong>Archaeological Site Detection</strong></h3>
-<p>Advanced classification techniques, including Object-Based Image Analysis (OBIA), are revolutionizing archaeological studies. By analyzing soil composition, vegetation patterns, and thermal anomalies, researchers can identify buried structures and ancient settlements without excavation. For example, classified satellite images have revealed lost cities in dense rainforests, where conventional survey methods are impractical.</p>
-</section>
-<section id="military-and-defense-applications" class="level3" data-number="7.2.3">
-<h3 data-number="7.2.3" class="anchored" data-anchor-id="military-and-defense-applications"><span class="header-section-number">7.2.3</span> <strong>Military and Defense Applications</strong></h3>
-<p>In defense and intelligence, classification plays a critical role in monitoring geopolitical changes. High-resolution satellite imagery is classified to detect military installations, track troop movements, and assess terrain conditions. Synthetic Aperture Radar (SAR)-based classification is particularly valuable in detecting hidden structures and distinguishing between natural and artificial objects, even under cloud cover.</p>
-</section>
-<section id="space-exploration-and-planetary-mapping" class="level3" data-number="7.2.4">
-<h3 data-number="7.2.4" class="anchored" data-anchor-id="space-exploration-and-planetary-mapping"><span class="header-section-number">7.2.4</span> <strong>Space Exploration and Planetary Mapping</strong></h3>
-<p>Remote sensing classification is instrumental in analyzing extraterrestrial landscapes. NASA and ESA use classification models to map Martian surface compositions, identifying features such as ice deposits, volcanic plains, and ancient riverbeds. These insights guide rover missions and future colonization efforts by determining suitable landing sites and resource availability.</p>
-</section>
-<section id="fisheries-and-marine-ecosystem-monitoring" class="level3" data-number="7.2.5">
-<h3 data-number="7.2.5" class="anchored" data-anchor-id="fisheries-and-marine-ecosystem-monitoring"><span class="header-section-number">7.2.5</span> <strong>Fisheries and Marine Ecosystem Monitoring</strong></h3>
-<p>Beyond terrestrial applications, classification techniques are widely applied in marine studies. Satellite imagery helps identify harmful algal blooms (HABs) that threaten marine biodiversity and human health. Additionally, ocean surface classification supports sustainable fisheries management by tracking fish migration patterns and detecting illegal fishing activities.</p>
-</section>
+<p>Remote sensing and deep learning have significantly improved disaster classification, enabling rapid and accurate identification of natural hazards such as landslides, floods, and wildfires.</p>
+<p>Liu &amp; Wu<span class="citation" data-cites="liu2016geological">(<a href="#ref-liu2016geological" role="doc-biblioref">2016</a>)</span> pioneered deep learning applications for geological disaster recognition by developing a <strong>wavelet-enhanced deep auto-encoder (wavDAE)</strong> specifically for landslide detection in optical remote sensing imagery. Their innovative approach begins with <strong>wavelet transform preprocessing</strong>, which decomposes images into multi-frequency components to better capture subtle but critical landslide features, including soil displacement patterns and terrain deformation characteristics. To enhance model robustness, they introduced a novel <strong>corrupting &amp; denoising training strategy</strong>, where the network learns to reconstruct clean images from artificially corrupted inputs, significantly improving its ability to handle real-world challenges like cloud cover and partial obstructions. The extracted high-level features were then classified using a <strong>softmax classifier</strong>, achieving superior performance compared to conventional machine learning methods when tested on <strong>Google Earth imagery</strong>. This early work established important foundations for feature enhancement techniques in geohazard monitoring and demonstrated deep learning’s potential for analyzing complex terrain changes in mountainous regions.</p>
+<p>Another application, Yuan et al.<span class="citation" data-cites="yuan2022research">(<a href="#ref-yuan2022research" role="doc-biblioref">2022</a>)</span> developed <strong>SDS-Network</strong>, a lightweight deep learning model for comprehensive disaster classification in remote sensing images. Their architecture improves upon <strong>ResNet</strong> by incorporating a <strong>spatial attention mechanism</strong> that dynamically focuses computational resources on disaster-affected regions while suppressing irrelevant background information. To optimize operational efficiency for real-time applications, the model employs <strong>depthwise separable convolution</strong>, reducing parameters by 60-70% compared to traditional CNNs while maintaining high accuracy. Rigorous benchmarking against both classical models (AlexNet, VGG16, ResNet18) and modern lightweight architectures (MobileNet, ShuffleNet) demonstrated SDS-Network’s superior performance in terms of both accuracy and computational efficiency. The model’s <strong>strong generalization capability</strong> was confirmed through extensive testing on public datasets covering diverse disaster types including earthquakes, floods, and wildfires. This research represents a significant advancement in deploying AI-powered disaster assessment systems on resource-constrained edge devices for field operations.</p>
 </section>
 <section id="reflection" class="level2" data-number="7.3">
 <h2 data-number="7.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">7.3</span> Reflection</h2>
-<p>This lecture deepened my understanding of remote sensing classification techniques and their practical applications, particularly in disaster management. The discussion on <strong>sub-pixel analysis</strong> and <strong>object-based image analysis (OBIA)</strong> highlighted their advantages in capturing complex land cover variations, which is relevant to my group project on <strong>flood detection in Manchester</strong>. Given Manchester’s susceptibility to flooding, accurately classifying <strong>flooded areas in urban environments</strong> is critical for effective response and resilience planning.</p>
-<p>One key insight was the <strong>importance of high-resolution classification</strong> in flood mapping. Traditional pixel-based approaches often misclassify urban water accumulation, while OBIA allows for <strong>spatially aware segmentation</strong>, distinguishing between <strong>flooded roads, waterlogged parks, and unaffected surfaces</strong>. Applying OBIA to <strong>Sentinel-2 or Landsat imagery</strong> in our project could enhance flood risk assessments by improving classification accuracy.</p>
-<p>The role of <strong>machine learning models</strong>, such as <strong>Convolutional Neural Networks (CNNs)</strong>, in land cover classification was another crucial takeaway. The <strong>Dynamic World approach</strong>, which leverages near real-time Sentinel-2 data, demonstrated how <strong>semi-supervised classification</strong> can improve flood detection. Integrating CNN-based classification with <strong>Manchester’s historical flood data and real-time weather inputs</strong> could enhance early warning systems.</p>
-<p>Lastly, the discussion on <strong>spatial cross-validation</strong> was particularly relevant. Overfitting to past flood events is a risk when training classification models, especially in urban environments where land cover characteristics change over time. Ensuring that our classification model <strong>generalizes well to future flood events</strong> will be critical for our project’s success.</p>
-<p>Overall, this lecture provided valuable insights that we can apply to our group work. By refining flood detection models using <strong>advanced classification techniques, machine learning, and real-time satellite data</strong>, we aim to develop a more effective approach to monitoring and mitigating Manchester’s flood risks.</p>
+<p>This lecture deepened my understanding of remote sensing classification techniques and their practical applications, particularly in disaster management. This is relevant to my group project on flood detection in Manchester. Given Manchester’s susceptibility to flooding, accurately classifying flooded areas in urban environments is critical for effective response and resilience planning.</p>
+<p>One key insight was the importance of high-resolution classification in flood mapping. Traditional pixel-based approaches often misclassify urban water accumulation, while OBIA allows for spatially aware segmentation, distinguishing between flooded roads, waterlogged parks, and unaffected surfaces. I think applying OBIA to Sentinel-2 or Landsat imagery in our project could enhance flood risk assessments by improving classification accuracy.</p>
+<p>The role of machine learning models, such as Convolutional Neural Networks (CNNs), in classification was another crucial takeaway. The Dynamic World approach, which leverages near real-time Sentinel-2 data, demonstrated how semi-supervised classification can improve flood detection. I think integrating CNN-based classification with Manchester’s historical flood data and real-time weather inputs could enhance early warning systems.</p>
+<p>Overall, this lecture provided valuable insights that we can apply to our group work. By refining flood detection models using advanced classification techniques, machine learning, and real-time satellite data, we aim to develop a more effective approach to monitoring and mitigating Manchester’s flood risks.</p>
+</section>
+<section id="reference" class="level2" data-number="7.4">
+<h2 data-number="7.4" class="anchored" data-anchor-id="reference"><span class="header-section-number">7.4</span> Reference</h2>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-liu2016geological" class="csl-entry" role="listitem">
+Liu, Ying, and Linzhi Wu. 2016. <span>“Geological Disaster Recognition on Optical Remote Sensing Images Using Deep Learning.”</span> <em>Procedia Computer Science</em> 91: 566–75. <a href="https://doi.org/10.1016/j.procs.2016.07.144">https://doi.org/10.1016/j.procs.2016.07.144</a>.
+</div>
+<div id="ref-yuan2022research" class="csl-entry" role="listitem">
+Yuan, Jie, Xiaoxue Ma, Guihua Han, Shuo Li, and Wei Gong. 2022. <span>“Research on Lightweight Disaster Classification Based on High-Resolution Remote Sensing Images.”</span> <em>Remote Sensing</em> 14 (11): 2577. <a href="https://doi.org/10.3390/rs14112577">https://doi.org/10.3390/rs14112577</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->

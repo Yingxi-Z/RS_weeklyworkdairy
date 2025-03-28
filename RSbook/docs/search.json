@@ -1,0 +1,52 @@
+[
+  {
+    "objectID": "07_Classification_2.html",
+    "href": "07_Classification_2.html",
+    "title": "7  Classification Ⅱ",
+    "section": "",
+    "text": "7.1 Summary",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Classification Ⅱ</span>"
+    ]
+  },
+  {
+    "objectID": "07_Classification_2.html#summary",
+    "href": "07_Classification_2.html#summary",
+    "title": "7  Classification Ⅱ",
+    "section": "",
+    "text": "7.1.1 Classification Methodologies\n\n7.1.1.1 Sub-Pixel Analysis\nSub-pixel analysis addresses the complexity of pixels containing multiple land cover types. Spectral Mixture Analysis (SMA) is a critical technique that decomposes spectral reflectance within a pixel, precisely calculating the proportion of different land covers. This method is particularly useful for accurately classifying mixed pixels by determining the exact contribution of each surface type.\n\n\n7.1.1.2 Object-Based Image Analysis (OBIA)\nOBIA transcends traditional pixel-by-pixel classification by identifying meaningful objects within pixel groups. The primary process involves:\n\nImage segmentation using algorithms like Simple Non-Iterative Clustering (SNIC)\nSupervised or unsupervised classification of identified objects\nConsidering spectral and spatial characteristics of neighboring pixels\n\n\n\n7.1.1.3 Accuracy Assessment\nAccuracy assessment is the cornerstone of reliable remote sensing classification:\n\nProducer’s Accuracy: Percentage of classified samples matching ground truth data\nUser’s Accuracy: Precision of sample matching between different classifications\nOverall Accuracy: Percentage of correctly classified samples across all categories\n\n\n\n\n7.1.2 Advanced Validation Techniques\n\n7.1.2.1 Confusion Matrix\nA critical tool for evaluating classification performance:\n\nDisplays correct prediction scenarios\nAnalyzes omission and commission errors\nCalculates Kappa coefficient to measure alignment between classification and labeled data\n\n\n\n7.1.2.2 Spatial Cross-Validation\nAddressing spatial autocorrelation challenges:\n\nPrevents model overfitting\nEnsures spatial independence of training and testing datasets\nMitigates overly optimistic accuracy estimations\n\n\n\n7.1.2.3 Receiver Operating Characteristic (ROC) Curve\nGraphically represents classification model performance by plotting true positive rates against false positive rates, enabling simultaneous evaluation of multiple classification models.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Classification Ⅱ</span>"
+    ]
+  },
+  {
+    "objectID": "07_Classification_2.html#applications",
+    "href": "07_Classification_2.html#applications",
+    "title": "7  Classification Ⅱ",
+    "section": "7.2 Applications",
+    "text": "7.2 Applications\nRemote sensing and deep learning have significantly improved disaster classification, enabling rapid and accurate identification of natural hazards such as landslides, floods, and wildfires.\nLiu & Wu(2016) pioneered deep learning applications for geological disaster recognition by developing a wavelet-enhanced deep auto-encoder (wavDAE) specifically for landslide detection in optical remote sensing imagery. Their innovative approach begins with wavelet transform preprocessing, which decomposes images into multi-frequency components to better capture subtle but critical landslide features, including soil displacement patterns and terrain deformation characteristics. To enhance model robustness, they introduced a novel corrupting & denoising training strategy, where the network learns to reconstruct clean images from artificially corrupted inputs, significantly improving its ability to handle real-world challenges like cloud cover and partial obstructions. The extracted high-level features were then classified using a softmax classifier, achieving superior performance compared to conventional machine learning methods when tested on Google Earth imagery. This early work established important foundations for feature enhancement techniques in geohazard monitoring and demonstrated deep learning’s potential for analyzing complex terrain changes in mountainous regions.\nAnother application, Yuan et al.(2022) developed SDS-Network, a lightweight deep learning model for comprehensive disaster classification in remote sensing images. Their architecture improves upon ResNet by incorporating a spatial attention mechanism that dynamically focuses computational resources on disaster-affected regions while suppressing irrelevant background information. To optimize operational efficiency for real-time applications, the model employs depthwise separable convolution, reducing parameters by 60-70% compared to traditional CNNs while maintaining high accuracy. Rigorous benchmarking against both classical models (AlexNet, VGG16, ResNet18) and modern lightweight architectures (MobileNet, ShuffleNet) demonstrated SDS-Network’s superior performance in terms of both accuracy and computational efficiency. The model’s strong generalization capability was confirmed through extensive testing on public datasets covering diverse disaster types including earthquakes, floods, and wildfires. This research represents a significant advancement in deploying AI-powered disaster assessment systems on resource-constrained edge devices for field operations.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Classification Ⅱ</span>"
+    ]
+  },
+  {
+    "objectID": "07_Classification_2.html#reflection",
+    "href": "07_Classification_2.html#reflection",
+    "title": "7  Classification Ⅱ",
+    "section": "7.3 Reflection",
+    "text": "7.3 Reflection\nThis lecture deepened my understanding of remote sensing classification techniques and their practical applications, particularly in disaster management. This is relevant to my group project on flood detection in Manchester. Given Manchester’s susceptibility to flooding, accurately classifying flooded areas in urban environments is critical for effective response and resilience planning.\nOne key insight was the importance of high-resolution classification in flood mapping. Traditional pixel-based approaches often misclassify urban water accumulation, while OBIA allows for spatially aware segmentation, distinguishing between flooded roads, waterlogged parks, and unaffected surfaces. I think applying OBIA to Sentinel-2 or Landsat imagery in our project could enhance flood risk assessments by improving classification accuracy.\nThe role of machine learning models, such as Convolutional Neural Networks (CNNs), in classification was another crucial takeaway. The Dynamic World approach, which leverages near real-time Sentinel-2 data, demonstrated how semi-supervised classification can improve flood detection. I think integrating CNN-based classification with Manchester’s historical flood data and real-time weather inputs could enhance early warning systems.\nOverall, this lecture provided valuable insights that we can apply to our group work. By refining flood detection models using advanced classification techniques, machine learning, and real-time satellite data, we aim to develop a more effective approach to monitoring and mitigating Manchester’s flood risks.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Classification Ⅱ</span>"
+    ]
+  },
+  {
+    "objectID": "07_Classification_2.html#reference",
+    "href": "07_Classification_2.html#reference",
+    "title": "7  Classification Ⅱ",
+    "section": "7.4 Reference",
+    "text": "7.4 Reference\n\n\n\n\nLiu, Ying, and Linzhi Wu. 2016. “Geological Disaster Recognition on Optical Remote Sensing Images Using Deep Learning.” Procedia Computer Science 91: 566–75. https://doi.org/10.1016/j.procs.2016.07.144.\n\n\nYuan, Jie, Xiaoxue Ma, Guihua Han, Shuo Li, and Wei Gong. 2022. “Research on Lightweight Disaster Classification Based on High-Resolution Remote Sensing Images.” Remote Sensing 14 (11): 2577. https://doi.org/10.3390/rs14112577.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Classification Ⅱ</span>"
+    ]
+  }
+]
