@@ -16,56 +16,50 @@
 
 **Remote Sensing Policy Application Examples**:
 
-\- Dujiangyan City light pollution study (night light data)
+- Dujiangyan City light pollution study (night light data)
 
-\- London tree canopy analysis (aerial and satellite data)
+- London tree canopy analysis (aerial and satellite data)
 
-\- Climate change assessment and impacts
+- Climate change assessment and impacts
 
-\- Urban planning and management
+- Urban planning and management
 
-\- Disaster risk assessment (e.g., flood risk mapping)
+- Disaster risk assessment (e.g., flood risk mapping)
 
 **Challenges & Limitations**:
 
-\- Data accessibility
+- Data accessibility
 
-\- Technical capacity requirements
+- Technical capacity requirements
 
-\- Time delays and frequency issues
+- Time delays and frequency issues
 
-\- Communication barriers between decision
+- Communication barriers between decision
 
--makers and researchers
-
-\- Need for integration with ground truth
+- Need for integration with ground truth
 
 **Policy Implementation Components**:
 
-\- Requires supporting enforcement and monitoring mechanisms
+- Requires supporting enforcement and monitoring mechanisms
 
-\- Integration of multi-source data for comprehensive analysis
+- Integration of multi-source data for comprehensive analysis
 
-\- Citizen participation and feedback - Policy evaluation and adjustment
+- Citizen participation and feedback
+
+- Policy evaluation and adjustment
 
 ## Applications
 
-Remote sensing plays a crucial role in formulating and implementing environmental policies, particularly in areas such as ecological protection, climate change mitigation, resource management, and pollution monitoring. By utilizing satellite imagery, drones, and aerial photography, remote sensing provides large-scale, high-frequency data to support decision-making, enabling governments and organizations to develop evidence-based environmental policies.
+Remote sensing is widely used in **ecological conservation and natural resource management**. For instance, In the USA, Mayer and Lopez [-@mayer2011remote] argue that remote sensing has been instrumental in monitoring forest and wetland conservation policies. For forests, remote sensing aids in enforcing the "Roadless Rule" and "Travel Management Rules" by detecting unauthorized roads and trails in national forests. High-resolution imagery, such as IKONOS and aerial photography, helps identify ecological impacts of road fragmentation, guiding management decisions to protect biodiversity and ecosystem services.
 
-First, remote sensing is widely used in **ecological conservation and natural resource management**. For instance, forest cover monitoring helps assess illegal logging, desertification trends, and ecological restoration efforts. The Brazilian government utilizes NASA’s Landsat data to monitor deforestation in the Amazon rainforest and implement policies to curb forest loss. Additionally, wetland and coastal ecosystem monitoring relies on remote sensing to evaluate the impact of climate change and human activities, supporting international agreements such as the Ramsar Convention.
-
-Second, remote sensing plays a vital role in **air pollution monitoring**. Atmospheric remote sensing technologies, such as MODIS and Sentinel-5P, provide aerosol optical depth (AOD) data to identify pollution sources and inform mitigation strategies. In China, high-resolution Gaofen satellites are used to monitor PM2.5 concentrations and integrate ground-based observations to enhance the effectiveness of air pollution control policies like the “Blue Sky Protection Campaign.”
-
-In **water resource management and water pollution monitoring**, remote sensing can track changes in lake, reservoir, and river water quality, including chlorophyll concentration, suspended sediments, and algal bloom outbreaks. The European Environment Agency (EEA), through the Copernicus program, uses Sentinel-2 data to monitor eutrophication in major European water bodies, supporting the implementation of the EU Water Framework Directive. Furthermore, remote sensing contributes to flood prediction and sustainable water resource allocation, aiding urban disaster preparedness and long-term water management.
-
-Regarding **climate change policy**, remote sensing provides long-term climate data, including global temperature trends, glacier retreat, sea-level rise, and carbon flux estimation. NASA’s GRACE satellite monitors global ice mass loss, offering scientific evidence for climate policies under the Paris Agreement. Additionally, remote sensing-based forest carbon storage estimation supports national carbon trading systems, helping governments achieve carbon neutrality goals.
+Also, remote sensing plays a vital role in **air pollution monitoring**. Atmospheric remote sensing technologies, such as MODIS and Sentinel-5P, provide aerosol optical depth (AOD) data to identify pollution sources and inform mitigation strategies[@xue2017fusing]. In China, high-resolution Gaofen satellites are used to monitor PM2.5 concentrations and integrate ground-based observations to enhance the effectiveness of air pollution control policies like the “Blue Sky Protection Campaign.”
 
 ## Reflection
 
-One of the most impactful applications of remote sensing in environmental policy is air pollution monitoring. I find it fascinating how satellite-based observations, such as aerosol optical depth (AOD) data from MODIS and Sentinel-5P, provide real-time insights into air quality. Unlike ground-based sensors, which offer limited spatial coverage, remote sensing allows for large-scale and continuous monitoring, making it an essential tool for policymakers.
+This lecture has provided me with valuable insights into how remote sensing can be applied in policy-making, particularly in areas such as environmental governance, urban planning, and disaster management. One of the key takeaways is how satellite data, including SAR and optical imagery, enables policymakers to make data-driven decisions rather than relying on traditional, often outdated methods. For instance, I learned that remote sensing plays a crucial role in monitoring forest and wetland conservation policies and tracking air pollution. These applications are essential for enforcing environmental policies and meeting sustainability goals.
 
-A notable example is China’s use of Gaofen satellites to track PM2.5 levels. This data has been integrated into policies like the "Blue Sky Protection Campaign," helping authorities identify pollution hotspots and measure the effectiveness of emission reduction strategies. However, I have also realized that satellite data alone is not enough—combining remote sensing with ground-based measurements and machine learning models is crucial for improving accuracy and guiding targeted interventions.
+Another important aspect I learned from the lecture is the role of remote sensing in disaster response and mitigation. By providing near real-time data on earthquakes, floods, and wildfires, remote sensing allows for rapid assessment of affected areas, improving emergency response and resource allocation. This is particularly important in climate adaptation policies, where data accuracy and timeliness are critical.
 
-Moving forward, I am particularly interested in how advancements in AI can enhance the interpretation of air pollution data. As urban areas continue to face air quality challenges, developing more sophisticated remote sensing-based monitoring systems could significantly improve policy responses and public health outcomes.
+Also, I think there are still some challenges in integrating remote sensing into policy frameworks, such as data accessibility, processing complexity, and ethical considerations related to privacy and surveillance. I realized that while remote sensing offers powerful tools for policy decision-making, its effectiveness depends on collaboration between scientists, government agencies, and policymakers. 
 
 ## Reference
