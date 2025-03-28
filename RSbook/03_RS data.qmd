@@ -118,7 +118,7 @@ Atmospheric correction (AC) is essential in ocean colour (OC) remote sensing, as
 
 The study found that ARCSI and LaSRC, designed for land applications, performed poorly over coastal waters, especially in the blue bands (e.g., 443 nm). In contrast, ACOLITE and SeaDAS, optimized for aquatic environments, provided better accuracy. Among them, SeaDAS outperformed ACOLITE, particularly in complex waters, with lower root-mean-square errors (RMSE) ranging from 0.0013 sr⁻¹ (443 nm) to 0.0005 sr⁻¹ (655 nm). Additionally, solar zenith angle and wind speed significantly affected AC errors for ACOLITE and SeaDAS in the 443 nm and 482 nm bands.
 
-These findings are crucial for selecting appropriate AC methods for coastal and inland water monitoring, improving the accuracy of water quality assessments, pollution detection, and climate studies. Further research is needed to validate AC methods in inland and optically complex waters. As remote sensing advances, refining AC algorithms will be essential for enhancing the accuracy of high-resolution sensors like Landsat 8 and Sentinel-2.
+These findings are crucial for selecting appropriate AC methods for coastal and inland water monitoring, improving the accuracy of water quality assessments, pollution detection, and climate studies. Further research is needed to validate AC methods in inland and optically complex waters. As remote sensing advances, refining AC algorithms will be essential for enhancing the accuracy of high-resolution sensors like Landsat 8 and Sentinel-2[-@ilori2019analyzing].
 
 ## Reflection
 
