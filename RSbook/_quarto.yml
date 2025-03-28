@@ -34,7 +34,8 @@ format:
     theme:
       light: [cosmo, flatly]    
       dark: [cosmo, darkly]     
-    code-link: true             
+    code-link: true 
+    base-url: "/RS_weeklyworkdairy/RSbook/docs/"
   pdf:
     documentclass: scrbook      
 
