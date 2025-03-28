@@ -282,8 +282,8 @@ Image?}\label{resolution-how-clear-is-the-image}
 \section{Applications}\label{applications}
 
 In environmental monitoring, satellite remote sensing has emerged as a
-cornerstone technology for tracking deforestation((Lima et al. 2019)),
-land-use changes ((Frimpong and Molkenthin 2021)), and ecological
+cornerstone technology for tracking deforestation(Lima et al. 2019),
+land-use changes (Frimpong and Molkenthin 2021), and ecological
 degradation. The synergistic use of Sentinel-2 and Landsat systems
 exemplifies the unique value of multi-scale Earth observation data in
 ecological governance. The following are two different examples.
@@ -294,7 +294,7 @@ ecological governance. The following are two different examples.
   Monitoring of Selective Logging in Tropical Forests
 \end{itemize}
 
-Lima et al.'s ((2019)) groundbreaking study on selective logging in the
+Lima et al.'s (2019) groundbreaking study on selective logging in the
 Brazilian Amazon employed a self-referenced Normalized Burn Ratio index
 through time-series analysis, revealing a critical paradox: while
 Sentinel-2's 10-meter resolution better detected logging infrastructure
@@ -313,30 +313,32 @@ logging early-warning systems.
 Figure 2 Detail of the sustainable forest management, showing: A) The
 field data collected, B) Sentinel-2, and C) Landsat 8.
 
-Source: Lima and Beuchle
-(\href{https://doi.org/10.3390/rs11080961}{2019})
+Source: Lima et al. (2019)
 
-2.Urban Expansion Analysis of Kumasi, Ghana
+\begin{itemize}
+\tightlist
+\item
+  Urban Expansion Analysis of Kumasi, Ghana
+\end{itemize}
 
-Frimpong and Molkenthin's ((Frimpong and Molkenthin 2021)) longitudinal
-study of Kumasi, Ghana demonstrates remote sensing's urban planning
-applications. By processing 1986-2015 Landsat imagery with Random Forest
-algorithms, the research not only quantified the city's explosive growth
-from 23.78\% (1986) to 72.05\% (2015) urban coverage but also, through
-density decay curves, revealed spatial heterogeneity in expansion
-patterns - particularly an alarming 79.7\% agricultural land conversion
-rate in peri-urban zones. The deliberate selection of Landsat over
-higher-resolution data proved strategic: 30-meter resolution adequately
-captured West Africa's characteristic clustered urban expansion patterns
-while leveraging Landsat's unparalleled 40-year archive for longitudinal
-analysis.
+Frimpong and Molkenthin's (2021) longitudinal study of Kumasi, Ghana
+demonstrates remote sensing's urban planning applications. By processing
+1986-2015 Landsat imagery with Random Forest algorithms, the research
+not only quantified the city's explosive growth from 23.78\% (1986) to
+72.05\% (2015) urban coverage but also, through density decay curves,
+revealed spatial heterogeneity in expansion patterns - particularly an
+alarming 79.7\% agricultural land conversion rate in peri-urban zones.
+The deliberate selection of Landsat over higher-resolution data proved
+strategic: 30-meter resolution adequately captured West Africa's
+characteristic clustered urban expansion patterns while leveraging
+Landsat's unparalleled 40-year archive for longitudinal analysis.
 
 \pandocbounded{\includegraphics[keepaspectratio]{images/clipboard-1503754290.png}}
 
 Figure 2 Land Use Land Cover (LULC) maps for the years 1986, 2013 and
 2015
 
-Source: (Frimpong and Molkenthin 2021)
+Source: Frimpong and Molkenthin (2021)
 
 \section{Reflection}\label{reflection}
 
@@ -368,12 +370,11 @@ research interests.
 
 \chapter{Xaringan}\label{xaringan}
 
-The content for week 2 is a presentation in Xaringan on the
-\textbf{Sentinel-1 SAR} satellite.\\
+Week 2 focused on the use of code to present and host websites and
+slides, allowing for a portfolio to be formed. The task for week 2 is a
+presentation in Xaringan on the \textbf{Sentinel-1 SAR} satellite.\\
 The presentation is below, and the summary, application, and reflection
 are all included in the slides.
-
-```\{r, echo=FALSE\}
 
 \bookmarksetup{startatroot}
 
@@ -692,62 +693,39 @@ Techniques}\label{change-detection-techniques}
 
 \chapter{Applications}\label{applications-1}
 
-Remote sensing data processing techniques enable a wide array of
-practical applications across multiple domains. Environmental monitoring
-represents one of the most significant application areas, where
-corrected and enhanced satellite imagery facilitates the tracking of
-deforestation, habitat fragmentation, and biodiversity loss at scales
-impossible to achieve through ground surveys alone. The temporal
-dimension of satellite data allows scientists to establish baselines and
-detect subtle changes over time, providing critical evidence for
-conservation efforts and policy decisions.
+Atmospheric correction (AC) is essential in ocean colour (OC) remote
+sensing, as errors can significantly affect water reflectance retrieval.
+Ilori et al. (2019) evaluated four AC methods for Landsat 8 OLI:
+\textbf{ARCSI, ACOLITE, LaSRC, and SeaDAS}.
 
-Urban planning has similarly benefited from advanced remote sensing
-processing. Geometric correction and orthorectification allow precise
-mapping of urban infrastructure, while specialized indices like NDBI
-(Normalized Difference Built-up Index) help planners track urban
-expansion and identify heat islands. The ability to detect impervious
-surfaces helps model stormwater runoff and plan green infrastructure,
-while change detection techniques assist in monitoring unauthorized
-development and enforcing zoning regulations.
+The study found that \textbf{ARCSI and LaSRC}, designed for land
+applications, performed poorly over coastal waters, especially in the
+\textbf{blue bands (e.g., 443 nm)}. In contrast, \textbf{ACOLITE and
+SeaDAS}, optimized for aquatic environments, provided better accuracy.
+Among them, \textbf{SeaDAS outperformed ACOLITE}, particularly in
+complex waters, with lower root-mean-square errors (RMSE) ranging from
+\textbf{0.0013 sr⁻¹ (443 nm) to 0.0005 sr⁻¹ (655 nm)}. Additionally,
+\textbf{solar zenith angle and wind speed} significantly affected AC
+errors for \textbf{ACOLITE and SeaDAS} in the 443 nm and 482 nm bands.
 
-In agriculture, atmospherically corrected imagery provides accurate
-information about crop health and stress through indices like NDVI. This
-enables precision agriculture practices where farmers can apply
-resources like water and fertilizer exactly where needed, maximizing
-yields while minimizing environmental impacts. The widespread
-availability of processed remote sensing data has democratized access to
-this information, allowing small-scale farmers to benefit from
-technology previously available only to large agricultural operations.
-
-Disaster management represents another critical application area.
-Geometric and radiometric corrections ensure that emergency responders
-have accurate, usable data in crisis situations. Mosaicking techniques
-create comprehensive views of affected regions, while change detection
-identifies damaged infrastructure and displaced populations. During
-floods, water indices derived from corrected imagery track inundation
-extent and temporal evolution, supporting evacuation planning and damage
-assessment.
-
-Climate science relies heavily on accurate remote sensing data
-processing to monitor indicators like snow cover, sea ice extent, and
-land surface temperature. These observations provide essential input for
-climate models and help validate their predictions, bridging the gap
-between theoretical projections and observed changes in the Earth
-system.
+These findings are crucial for selecting appropriate AC methods for
+\textbf{coastal and inland water monitoring}, improving the accuracy of
+\textbf{water quality assessments, pollution detection, and climate
+studies}. Further research is needed to validate AC methods in inland
+and optically complex waters. As remote sensing advances, refining AC
+algorithms will be essential for enhancing the accuracy of
+high-resolution sensors like \textbf{Landsat 8 and Sentinel-2}.
 
 \bookmarksetup{startatroot}
 
 \chapter{Reflection}\label{reflection-1}
 
 Learning about remote sensing data processing has fundamentally changed
-my understanding of geospatial analysis. Before this lecture, I viewed
-satellite imagery as inherently accurate representations of Earth's
-surface. I now understand that raw data contains numerous distortions
-and artifacts that must be systematically addressed before meaningful
-analysis can begin. This realization has instilled in me a healthy
-skepticism about geospatial data quality and a deeper appreciation for
-the rigorous preprocessing required for reliable results.
+my understanding of geospatial analysis. I now understand that raw data
+contains numerous distortions and artifacts that must be systematically
+addressed before meaningful analysis can begin. This realization has
+instilled in me a deeper appreciation for the rigorous preprocessing
+required for reliable results.
 
 The systematic approach to data correction -- from geometric to
 atmospheric to radiometric -- mirrors the scientific method itself,
@@ -765,14 +743,6 @@ the domain knowledge required for interpretation all converge in this
 field. As someone interested in environmental applications, I now see
 how essential these technical preprocessing steps are for generating
 trustworthy analyses that can inform policy and management decisions.
-
-I was particularly struck by how preprocessing determines what kinds of
-questions can be reliably answered with remote sensing data. Without
-proper atmospheric correction, for instance, multi-temporal analyses may
-detect ``changes'' that are merely artifacts of different atmospheric
-conditions. This reinforces the importance of matching processing
-techniques to research questions and being transparent about limitations
-when communicating results.
 
 \section{Reference}\label{reference-1}
 
@@ -1586,6 +1556,12 @@ Expansion Using Random Forests for the Classification of Landsat Imagery
 (1986--2015) and Predicting Urban/Built-up Areas for 2025: A Study of
 the Kumasi Metropolis, Ghana.''} \emph{Land} 10 (1): 44.
 \url{https://doi.org/10.3390/land10010044}.
+
+\bibitem[\citeproctext]{ref-ilori2019analyzing}
+Ilori, Christopher O., Nima Pahlevan, and Anders Knudby. 2019.
+{``Analyzing Performances of Different Atmospheric Correction Techniques
+for {Landsat} 8: Application for Coastal Remote Sensing.''} \emph{Remote
+Sensing} 11 (4): 469. \url{https://doi.org/10.3390/rs11040469}.
 
 \bibitem[\citeproctext]{ref-lima2019comparing}
 Lima, Taise A., Rémi Beuchle, Andreas Langner, et al. 2019. {``Comparing

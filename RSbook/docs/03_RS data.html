@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -389,22 +409,24 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="applications" class="level1" data-number="4">
 <h1 data-number="4"><span class="header-section-number">4</span> Applications</h1>
-<p>Remote sensing data processing techniques enable a wide array of practical applications across multiple domains. Environmental monitoring represents one of the most significant application areas, where corrected and enhanced satellite imagery facilitates the tracking of deforestation, habitat fragmentation, and biodiversity loss at scales impossible to achieve through ground surveys alone. The temporal dimension of satellite data allows scientists to establish baselines and detect subtle changes over time, providing critical evidence for conservation efforts and policy decisions.</p>
-<p>Urban planning has similarly benefited from advanced remote sensing processing. Geometric correction and orthorectification allow precise mapping of urban infrastructure, while specialized indices like NDBI (Normalized Difference Built-up Index) help planners track urban expansion and identify heat islands. The ability to detect impervious surfaces helps model stormwater runoff and plan green infrastructure, while change detection techniques assist in monitoring unauthorized development and enforcing zoning regulations.</p>
-<p>In agriculture, atmospherically corrected imagery provides accurate information about crop health and stress through indices like NDVI. This enables precision agriculture practices where farmers can apply resources like water and fertilizer exactly where needed, maximizing yields while minimizing environmental impacts. The widespread availability of processed remote sensing data has democratized access to this information, allowing small-scale farmers to benefit from technology previously available only to large agricultural operations.</p>
-<p>Disaster management represents another critical application area. Geometric and radiometric corrections ensure that emergency responders have accurate, usable data in crisis situations. Mosaicking techniques create comprehensive views of affected regions, while change detection identifies damaged infrastructure and displaced populations. During floods, water indices derived from corrected imagery track inundation extent and temporal evolution, supporting evacuation planning and damage assessment.</p>
-<p>Climate science relies heavily on accurate remote sensing data processing to monitor indicators like snow cover, sea ice extent, and land surface temperature. These observations provide essential input for climate models and help validate their predictions, bridging the gap between theoretical projections and observed changes in the Earth system.</p>
+<p>Atmospheric correction (AC) is essential in ocean colour (OC) remote sensing, as errors can significantly affect water reflectance retrieval. Ilori et al. <span class="citation" data-cites="ilori2019analyzing">(<a href="#ref-ilori2019analyzing" role="doc-biblioref">2019</a>)</span> evaluated four AC methods for Landsat 8 OLI: <strong>ARCSI, ACOLITE, LaSRC, and SeaDAS</strong>.</p>
+<p>The study found that <strong>ARCSI and LaSRC</strong>, designed for land applications, performed poorly over coastal waters, especially in the <strong>blue bands (e.g., 443 nm)</strong>. In contrast, <strong>ACOLITE and SeaDAS</strong>, optimized for aquatic environments, provided better accuracy. Among them, <strong>SeaDAS outperformed ACOLITE</strong>, particularly in complex waters, with lower root-mean-square errors (RMSE) ranging from <strong>0.0013 sr⁻¹ (443 nm) to 0.0005 sr⁻¹ (655 nm)</strong>. Additionally, <strong>solar zenith angle and wind speed</strong> significantly affected AC errors for <strong>ACOLITE and SeaDAS</strong> in the 443 nm and 482 nm bands.</p>
+<p>These findings are crucial for selecting appropriate AC methods for <strong>coastal and inland water monitoring</strong>, improving the accuracy of <strong>water quality assessments, pollution detection, and climate studies</strong>. Further research is needed to validate AC methods in inland and optically complex waters. As remote sensing advances, refining AC algorithms will be essential for enhancing the accuracy of high-resolution sensors like <strong>Landsat 8 and Sentinel-2</strong>.</p>
 </section>
 <section id="reflection" class="level1" data-number="5">
 <h1 data-number="5"><span class="header-section-number">5</span> Reflection</h1>
-<p>Learning about remote sensing data processing has fundamentally changed my understanding of geospatial analysis. Before this lecture, I viewed satellite imagery as inherently accurate representations of Earth’s surface. I now understand that raw data contains numerous distortions and artifacts that must be systematically addressed before meaningful analysis can begin. This realization has instilled in me a healthy skepticism about geospatial data quality and a deeper appreciation for the rigorous preprocessing required for reliable results.</p>
+<p>Learning about remote sensing data processing has fundamentally changed my understanding of geospatial analysis. I now understand that raw data contains numerous distortions and artifacts that must be systematically addressed before meaningful analysis can begin. This realization has instilled in me a deeper appreciation for the rigorous preprocessing required for reliable results.</p>
 <p>The systematic approach to data correction – from geometric to atmospheric to radiometric – mirrors the scientific method itself, requiring both theoretical understanding and practical implementation. I found myself particularly intrigued by the trade-offs involved in selecting correction methods. The choice between simplicity (like Dark Object Subtraction) and sophistication (like radiative transfer models) mirrors decisions I’ll need to make in my own research, balancing accuracy requirements against available resources and expertise.</p>
 <p>This lecture has also highlighted the interdisciplinary nature of remote sensing. The physics of atmospheric scattering, the mathematics of transformation matrices, the computer science of image processing, and the domain knowledge required for interpretation all converge in this field. As someone interested in environmental applications, I now see how essential these technical preprocessing steps are for generating trustworthy analyses that can inform policy and management decisions.</p>
-<p>I was particularly struck by how preprocessing determines what kinds of questions can be reliably answered with remote sensing data. Without proper atmospheric correction, for instance, multi-temporal analyses may detect “changes” that are merely artifacts of different atmospheric conditions. This reinforces the importance of matching processing techniques to research questions and being transparent about limitations when communicating results.</p>
 <section id="reference" class="level2" data-number="5.1">
 <h2 data-number="5.1" class="anchored" data-anchor-id="reference"><span class="header-section-number">5.1</span> Reference</h2>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-ilori2019analyzing" class="csl-entry" role="listitem">
+Ilori, Christopher O., Nima Pahlevan, and Anders Knudby. 2019. <span>“Analyzing Performances of Different Atmospheric Correction Techniques for <span>Landsat</span> 8: Application for Coastal Remote Sensing.”</span> <em>Remote Sensing</em> 11 (4): 469. <a href="https://doi.org/10.3390/rs11040469">https://doi.org/10.3390/rs11040469</a>.
+</div>
+</div>
 </section>
 </section>
 
