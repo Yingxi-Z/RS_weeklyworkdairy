@@ -22,13 +22,13 @@
 
 -   Different surfaces reflect and absorb EMR differently, so we can use this to identify and analyze objects from a distance.
 
--   Remote sensing uses different parts of the electromagnetic spectrum：
+-   Different parts of the electromagnetic spectrum：
 
 ![](images/clipboard-1366391390.png)
 
 Figure 1 strength of reflection
 
-Source: Young and Onoda ([2017](#0))
+Source:[@young2017satellite]
 
 ### Resolution – How clear is the Image?
 
@@ -42,23 +42,27 @@ Source: Young and Onoda ([2017](#0))
 
 ## Applications
 
-Remote sensing has a wide range of applications in environmental monitoring, agriculture, disaster management, urban planning, and security.
+In environmental monitoring, satellite remote sensing has emerged as a cornerstone technology for tracking deforestation([@lima2019comparing]), land-use changes ([@frimpong2021tracking]), and ecological degradation. The synergistic use of Sentinel-2 and Landsat systems exemplifies the unique value of multi-scale Earth observation data in ecological governance. The following are two different examples.
 
-In environmental studies, satellite imagery helps track deforestation, land use changes, and air and water pollution. High spatial resolution images from satellites like Sentinel-2 and Landsat monitor illegal logging ([lima and Beuchle,2019](https://doi.org/10.3390/rs11080961)) and urban expansion ([@frimpong2021tracking]) . Spectral resolution data, particularly near-infrared, assesses vegetation health and carbon storage, while satellites like MODIS and Sentinel-5P detect pollutants in the atmosphere and water bodies.
+-   Monitoring of Selective Logging in Tropical Forests
+
+Lima et al.'s ([-@lima2019comparing]) groundbreaking study on selective logging in the Brazilian Amazon employed a self-referenced Normalized Burn Ratio index through time-series analysis, revealing a critical paradox: while Sentinel-2's 10-meter resolution better detected logging infrastructure (43.2% detection rate vs Landsat 8's 35.5%), Landsat 8 captured 36.9% more disturbed area. This counterintuitive finding stems from Landsat's broader spectral range enhancing sub-canopy disturbance sensitivity, whereas Sentinel-2's high resolution, despite its precision, becomes susceptible to canopy gap interference. The study's innovative 300m assessment grid design effectively addressed mixed-pixel challenges while aligning with local forestry management units, a methodology subsequently adopted by Brazil's environmental agency for illegal logging early-warning systems.
 
 ![](images/clipboard-2971102382.png)
 
-Figure 2 Detail of the sustainable forest management, showing: A) The field data collected, B) the areas classified as disturbed according the Sentinel-2, and C) Landsat 8. Background image
+Figure 2 Detail of the sustainable forest management, showing: A) The field data collected, B) Sentinel-2, and C) Landsat 8.
 
 Source: Lima and Beuchle ([2019](https://doi.org/10.3390/rs11080961))
 
-In agriculture, remote sensing supports precision farming by monitoring crop health, soil moisture, and irrigation. Multispectral sensors detect plant stress and diseases early, while thermal infrared data tracks soil moisture and evaporation. High-resolution imagery allows for targeted fertilization and pest control, improving efficiency and reducing waste. These technologies help ensure food security by optimizing agricultural production.
+2.Urban Expansion Analysis of Kumasi, Ghana
 
-Disaster management heavily relies on remote sensing for early warning and response. Radar satellites like Sentinel-1, with frequent temporal resolution, track flood extent even through cloud cover. Wildfires are detected in real time using thermal infrared sensors, allowing rapid emergency response. Earthquakes and landslides can be predicted and monitored using high spatial and radiometric resolution data, helping assess risk and mitigate damage.
+Frimpong and Molkenthin's ([@frimpong2021tracking]) longitudinal study of Kumasi, Ghana demonstrates remote sensing's urban planning applications. By processing 1986-2015 Landsat imagery with Random Forest algorithms, the research not only quantified the city's explosive growth from 23.78% (1986) to 72.05% (2015) urban coverage but also, through density decay curves, revealed spatial heterogeneity in expansion patterns - particularly an alarming 79.7% agricultural land conversion rate in peri-urban zones. The deliberate selection of Landsat over higher-resolution data proved strategic: 30-meter resolution adequately captured West Africa's characteristic clustered urban expansion patterns while leveraging Landsat's unparalleled 40-year archive for longitudinal analysis.
 
-In urban planning, remote sensing assists in monitoring city growth, transportation networks, and the heat island effect. Thermal infrared data identifies temperature variations in urban areas, guiding sustainable city development. Traffic patterns and congestion can also be analyzed through satellite imagery, supporting better infrastructure planning.
+![](images/clipboard-1503754290.png)
 
-Security and defense use remote sensing for border surveillance, maritime monitoring, and disaster response. Radar and optical satellites track illegal activities such as smuggling and unauthorized fishing. High temporal resolution images assist in military strategy and humanitarian aid planning.
+Figure 2 Land Use Land Cover (LULC) maps for the years 1986, 2013 and 2015
+
+Source: [@frimpong2021tracking]
 
 ## Reflection
 
@@ -69,8 +73,3 @@ One of the most interesting aspects was learning about the wide range of applica
 I’m now curious about how satellite data is processed and analyzed. The raw images must be converted into meaningful insights, often using GIS and machine learning techniques. Moving forward, I want to learn more about the analytical side of remote sensing and how it connects with my research interests.
 
 ## Reference
-
-Young, Oran, and Masami Onoda. 2017. “Satellite Earth Observations in Environmental Problem-Solving.” In Satellite Earth Observations and Their Impact on Society and Policy, 3–27.
-
-Lima, T. A., Beuchle, R., Langner, A., Grecchi, R. C., Griess, V. C., & Achard, F. (2019). Comparing Sentinel-2 MSI and Landsat 8 OLI imagery for monitoring selective logging in the Brazilian Amazon. Remote sensing, 11(8), 961.
-

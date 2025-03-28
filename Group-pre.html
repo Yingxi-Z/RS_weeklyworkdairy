@@ -35,7 +35,7 @@ class: center, middle, inverse, title-slide
 ### RStudio, PBC
 ]
 .date[
-### 2016/12/12 (updated: 2025-03-11)
+### 2016/12/12 (updated: 2025-03-24)
 ]
 
 ---
@@ -101,41 +101,65 @@ class: center, bottom, inverse
 
 ---
 
-# Hello Ninja
+# Data Selection and Calculation of Indicators
 
-As a presentation ninja, you certainly should not be satisfied by the "Hello World" example. You need to understand more about two things:
+1.Topographic Data: SRTM DEM (30m)
+- Elevation (El)
+- Slope (Sl)
+- Slope Aspect (SA)
+- River Distance (RD)
+- Watercourse Density (WRD): Total river length / Watershed area
+- Topographic Wetness Index (TWI): ln(Flow accumulation / tan(Slope))
 
-1. The [remark.js](https://remarkjs.com) library;
+2.Remote Sensing Data: Landsat 8 (30m)
+- NDVI: (Band5 - Band4) / (Band5 + Band4)
+- NDWI: (Band3 - Band5) / (Band3 + Band5)
+- Land Use (LU)
 
-1. The **xaringan** package;
+3.Meteorological Data: CHIRPS (downscaled to 30m)
+- Maximum 1-Day Precipitation (MIDP)
 
-Basically **xaringan** injected the chakra of R Markdown (minus Pandoc) into **remark.js**. The slides are rendered by remark.js in the web browser, and the Markdown source needed by remark.js is generated from R Markdown (**knitr**).
-
----
-
-# remark.js
-
-You can see an introduction of remark.js from [its homepage](https://remarkjs.com). You should read the [remark.js Wiki](https://github.com/gnab/remark/wiki) at least once to know how to
-
-- create a new slide (Markdown syntax&lt;sup&gt;*&lt;/sup&gt; and slide properties);
-
-- format a slide (e.g. text alignment);
-
-- configure the slideshow;
-
-- and use the presentation (keyboard shortcuts).
-
-It is important to be familiar with remark.js before you can understand the options in **xaringan**.
-
-.footnote[[*] It is different with Pandoc's Markdown! It is limited but should be enough for presentation purposes. Come on... You do not need a slide for the Table of Contents! Well, the Markdown support in remark.js [may be improved](https://github.com/gnab/remark/issues/142) in the future.]
+4. Pedological Data: Harmonized World Soil Database (downscaled to 30m)
+- Soil Texture (ST): 1-8 (sand → clay)
 
 ---
-background-image: url(https://github.com/yihui/xaringan/releases/download/v0.0.2/karl-moustache.jpg)
-background-size: cover
-class: center, bottom, inverse
+# Machine Learning Modeling--Modeling Steps
+Train models to assess indicator importance and generate flood risk maps.
 
-# I was so happy to have discovered remark.js!
+1.Data Integration
+- Align indicator data with historical flood labels
+- Divide training set (70%) and test set (30%) using watershed spatial stratified sampling
 
+2.Model Selection
+- Primary Model: Random Forest (RF)
+- Comparative Model: XGBoost (to validate robustness)
+
+3.Model Optimization
+- Hyperparameter tuning (grid search or Bayesian optimization)
+- Spatial cross-validation to prevent overfitting
+
+4.Evaluation Metrics
+- AUC-ROC (&gt;0.9 considered excellent)
+- SHAP analysis: Quantify indicator contributions
+---
+# Definition and Calculation of 11 Flood Risk Indicators
+
+1.Topographic Indicators (Derived from SRTM DEM)
+- Elevation (El): Low-lying areas show significantly higher risk
+- Slope (Sl): steep slopes accelerate runoff
+- Slope Aspect (SA): North-facing slopes more prone to water accumulation
+- River Distance (RD): Extracting the Euclidean distance of the river
+- Watercourse Density (WRD): Total river length / Watershed area
+- TWI (Topographic Wetness Index): ln(Flow accumulation / tan(Slope))
+
+2.Spectral Indicators (Landsat 8 Calculations)
+- NDVI: (Band5 - Band4) / (Band5 + Band4)
+- NDWI: (Band3 - Band5) / (Band3 + Band5)
+- Land Use (LU)：
+
+3.Composite Indicators
+- Soil Texture (ST): 1-8 (sand → clay)
+- Maximum 1-Day Precipitation (MIDP)
 ---
 class: inverse, middle, center
 
@@ -340,8 +364,8 @@ library(leaflet)
 leaflet() %&gt;% addTiles() %&gt;% setView(-93.65, 42.0285, zoom = 17)
 ```
 
-<div class="leaflet html-widget html-fill-item" id="htmlwidget-f2bb2d66021356bc5a01" style="width:100%;height:432px;"></div>
-<script type="application/json" data-for="htmlwidget-f2bb2d66021356bc5a01">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]}],"setView":[[42.0285,-93.65000000000001],17,[]]},"evals":[],"jsHooks":[]}</script>
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-15bf87c7e30700040970" style="width:100%;height:432px;"></div>
+<script type="application/json" data-for="htmlwidget-15bf87c7e30700040970">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]}],"setView":[[42.0285,-93.65000000000001],17,[]]},"evals":[],"jsHooks":[]}</script>
 
 ---
 
