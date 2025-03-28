@@ -42,27 +42,27 @@ Source:[@young2017satellite]
 
 ## Applications
 
-In environmental monitoring, satellite remote sensing has emerged as a cornerstone technology for tracking deforestation([@lima2019comparing]), land-use changes ([@frimpong2021tracking]), and ecological degradation. The synergistic use of Sentinel-2 and Landsat systems exemplifies the unique value of multi-scale Earth observation data in ecological governance. The following are two different examples.
+In environmental monitoring, satellite remote sensing has emerged as a cornerstone technology for tracking deforestation[@lima2019comparing], land-use changes [@frimpong2021tracking], and ecological degradation. The synergistic use of Sentinel-2 and Landsat systems exemplifies the unique value of multi-scale Earth observation data in ecological governance. The following are two different examples.
 
 -   Monitoring of Selective Logging in Tropical Forests
 
-Lima et al.'s ([-@lima2019comparing]) groundbreaking study on selective logging in the Brazilian Amazon employed a self-referenced Normalized Burn Ratio index through time-series analysis, revealing a critical paradox: while Sentinel-2's 10-meter resolution better detected logging infrastructure (43.2% detection rate vs Landsat 8's 35.5%), Landsat 8 captured 36.9% more disturbed area. This counterintuitive finding stems from Landsat's broader spectral range enhancing sub-canopy disturbance sensitivity, whereas Sentinel-2's high resolution, despite its precision, becomes susceptible to canopy gap interference. The study's innovative 300m assessment grid design effectively addressed mixed-pixel challenges while aligning with local forestry management units, a methodology subsequently adopted by Brazil's environmental agency for illegal logging early-warning systems.
+Lima et al.'s [-@lima2019comparing] groundbreaking study on selective logging in the Brazilian Amazon employed a self-referenced Normalized Burn Ratio index through time-series analysis, revealing a critical paradox: while Sentinel-2's 10-meter resolution better detected logging infrastructure (43.2% detection rate vs Landsat 8's 35.5%), Landsat 8 captured 36.9% more disturbed area. This counterintuitive finding stems from Landsat's broader spectral range enhancing sub-canopy disturbance sensitivity, whereas Sentinel-2's high resolution, despite its precision, becomes susceptible to canopy gap interference. The study's innovative 300m assessment grid design effectively addressed mixed-pixel challenges while aligning with local forestry management units, a methodology subsequently adopted by Brazil's environmental agency for illegal logging early-warning systems.
 
 ![](images/clipboard-2971102382.png)
 
 Figure 2 Detail of the sustainable forest management, showing: A) The field data collected, B) Sentinel-2, and C) Landsat 8.
 
-Source: Lima and Beuchle ([2019](https://doi.org/10.3390/rs11080961))
+Source: @lima2019comparing
 
-2.Urban Expansion Analysis of Kumasi, Ghana
+-   Urban Expansion Analysis of Kumasi, Ghana
 
-Frimpong and Molkenthin's ([@frimpong2021tracking]) longitudinal study of Kumasi, Ghana demonstrates remote sensing's urban planning applications. By processing 1986-2015 Landsat imagery with Random Forest algorithms, the research not only quantified the city's explosive growth from 23.78% (1986) to 72.05% (2015) urban coverage but also, through density decay curves, revealed spatial heterogeneity in expansion patterns - particularly an alarming 79.7% agricultural land conversion rate in peri-urban zones. The deliberate selection of Landsat over higher-resolution data proved strategic: 30-meter resolution adequately captured West Africa's characteristic clustered urban expansion patterns while leveraging Landsat's unparalleled 40-year archive for longitudinal analysis.
+Frimpong and Molkenthin's [-@frimpong2021tracking] longitudinal study of Kumasi, Ghana demonstrates remote sensing's urban planning applications. By processing 1986-2015 Landsat imagery with Random Forest algorithms, the research not only quantified the city's explosive growth from 23.78% (1986) to 72.05% (2015) urban coverage but also, through density decay curves, revealed spatial heterogeneity in expansion patterns - particularly an alarming 79.7% agricultural land conversion rate in peri-urban zones. The deliberate selection of Landsat over higher-resolution data proved strategic: 30-meter resolution adequately captured West Africa's characteristic clustered urban expansion patterns while leveraging Landsat's unparalleled 40-year archive for longitudinal analysis.
 
 ![](images/clipboard-1503754290.png)
 
 Figure 2 Land Use Land Cover (LULC) maps for the years 1986, 2013 and 2015
 
-Source: [@frimpong2021tracking]
+Source: @frimpong2021tracking
 
 ## Reflection
 
